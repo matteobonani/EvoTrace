@@ -18,6 +18,8 @@ class MyMutation(Mutation):
         """
         # TODO better to not modify more than once a dummy variable, and also check that inside the range, only one variable can be set as 1 [check expanding pop]
         # over each individual
+
+        # print("Population before mutation", len(X))
         for i in range(len(X)):
 
             child = X[i]
@@ -27,5 +29,5 @@ class MyMutation(Mutation):
                     lower_bound, upper_bound = self.feature_range[j]
                     child[j] = random.randint(lower_bound, upper_bound)
             X[i] = child
-
+        # print("Population after mutation", len(X))
         return X

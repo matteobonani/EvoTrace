@@ -1,0 +1,26 @@
+activity A
+activity B
+activity C
+activity D
+activity E
+activity F
+activity G
+activity H
+activity I
+activity J
+activity K
+activity L
+activity M
+activity N
+activity O
+activity P
+activity Q
+activity R
+activity S
+activity T
+Absence[A] | |
+Existence2[B] | |
+Existence2[C] | |
+Response[B, D] | | |
+Chain Response[D, E] | | |
+Not Response[E, F] | | |

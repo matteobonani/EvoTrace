@@ -1,4 +1,6 @@
+
 import random
+from datetime import datetime, timedelta
 
 class Tools:
 
@@ -9,10 +11,12 @@ class Tools:
         """
 
         num_variables = len(population[0])
+
         feature_ranges = []
 
         for j in range(num_variables):
-            if variable_boundaries[j] == 1:  # label variables
+
+            if variable_boundaries[j] == 1:
 
                 min_val = min(trace[j] for trace in population)
                 max_val = max(trace[j] for trace in population)
@@ -53,3 +57,15 @@ class Tools:
                 final_population.append(new_trace)
 
         return final_population
+
+    @staticmethod
+    def generate_random_timestamps(length):
+        start_date = datetime(2024, 12, 10, 10, 0, 0)
+        timestamps = []
+
+        for _ in range(length):
+            random_minutes = random.randint(1, 10)
+            start_date += timedelta(minutes=random_minutes)
+            timestamps.append(start_date.strftime('%Y-%m-%d %H:%M:%S'))
+
+        return timestamps

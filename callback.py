@@ -1,5 +1,7 @@
 from pymoo.core.callback import Callback
 
+
+# TODO plot la media della fit e score vincoli
 class UpdatePopulationCallback(Callback):
     def __init__(self, problem):
         super().__init__()

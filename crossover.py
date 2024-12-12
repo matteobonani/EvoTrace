@@ -9,7 +9,7 @@ class TraceCrossover(Crossover):
         """
         Initialize the crossover operator for trace generation.
         """
-        super().__init__(2, 2)  # two parents produce two offspring
+        super().__init__(n_parents=2, n_offsprings=2)  # two parents produce two offspring
         self.variable_boundaries = variable_boundaries
 
     def _do(self, problem, X, **kwargs):
@@ -18,7 +18,7 @@ class TraceCrossover(Crossover):
         """
         n_parents, n_matings, n_var = X.shape
         Y = np.zeros_like(X)
-        print("Population Before Crossover:", X)
+
         for k in range(n_matings):
 
             # get two parents
@@ -40,6 +40,6 @@ class TraceCrossover(Crossover):
 
             # Y[2, k, :] = child3
 
-        print("Population After Crossover:", X)
+
 
         return Y
