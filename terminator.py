@@ -1,24 +1,19 @@
+from pymoo.termination.default import DefaultMultiObjectiveTermination
 from pymoo.core.termination import Termination
 
+
 class MyTermination(Termination):
-    def __init__(self, min_feasible_solutions):
+    def __init__(self, n_required):
         super().__init__()
-        self.min_feasible_solutions = min_feasible_solutions
-
-    def _do_continue(self, algorithm):
-
-        pop = algorithm.pop
-
-        # Count how many traces have G == 0 (feasible solutions with no violations)
-        feasible_count = sum(individual.G == 0 for individual in pop)
-        for individual in pop:
-            print(f"Individual: {individual}, G: {individual.G}, G[0]: {individual.G[0]}")
-        print(feasible_count)
-
-
-        return feasible_count < self.min_feasible_solutions
-
+        self.n_required = n_required
 
     def _update(self, algorithm):
+        G = algorithm.pop.get("G")
 
-        return algorithm.n_gen
+        n_feasible = (G <= 0).sum()
+
+        if n_feasible >= self.n_required:
+            return 1.0  # termination condition met
+        else:
+            # Progress percentage
+            return n_feasible / self.n_required

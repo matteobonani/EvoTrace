@@ -1,6 +1,7 @@
 
 import random
 from datetime import datetime, timedelta
+import numpy as np
 
 class Tools:
 
@@ -10,16 +11,16 @@ class Tools:
         Calculate the feature range for each variable across the entire population.
         """
 
-        num_variables = len(population[0])
+        population = np.array(population)  # Convert population to a NumPy array for faster operations
+        num_variables = population.shape[1]  # Number of features/variables
 
         feature_ranges = []
 
         for j in range(num_variables):
 
-            if variable_boundaries[j] == 1:
-
-                min_val = min(trace[j] for trace in population)
-                max_val = max(trace[j] for trace in population)
+            if variable_boundaries[j] == 1:  # non-dummy variable
+                min_val = np.min(population[:, j])
+                max_val = np.max(population[:, j])
                 feature_ranges.append((min_val, max_val))
             else:  # dummy variable, range is always [0, 1]
                 feature_ranges.append((0, 1))
