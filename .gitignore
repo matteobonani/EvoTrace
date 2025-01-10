@@ -1,0 +1,13 @@
+
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+venv/
+.env/
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+*.nbconvert.ipynb
