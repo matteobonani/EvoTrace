@@ -16,20 +16,20 @@ class MyMutation(Mutation):
         """
         Perform mutation on a percentage of the population based on mutation_probability.
         """
-        # Convert the feature range to a numpy array for easier handling
-        feature_range = np.array(self.feature_range)  # Shape: (num_features, 2)
 
-        # Generate a random matrix where each entry is a random float between 0 and 1
+        feature_range = np.array(self.feature_range)  # shape: (num_features, 2)
+
+        # generate a random matrix where each entry is a random float between 0 and 1
         mutation_mask = np.random.rand(*X.shape) < self.mutation_probability
 
 
-        lower_bounds = feature_range[:, 0].reshape(1, -1)  # Shape (1, num_features)
-        upper_bounds = feature_range[:, 1].reshape(1, -1)  # Shape (1, num_features)
+        lower_bounds = feature_range[:, 0].reshape(1, -1)  # shape (1, num_features)
+        upper_bounds = feature_range[:, 1].reshape(1, -1)  # shape (1, num_features)
 
-        # Vectorized generation of random integers within the specified bounds
+        # vectorized generation of random integers within the specified bounds
         random_values = np.random.randint(lower_bounds, upper_bounds + 1, size=X.shape)
 
-        # Apply mutations: Replace the features with the random values where mutation_mask is True
+        # apply mutations: Replace the features with the random values where mutation_mask is True
         X[mutation_mask] = random_values[mutation_mask]
 
         return X

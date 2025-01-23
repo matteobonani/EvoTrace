@@ -1,7 +1,7 @@
 import numpy as np
 import random
 
-class MockEncoder:
+class Encoder:
     def __init__(self, activities):
         self.activities = activities
         self.activity_to_vector = {activity: idx for idx, activity in enumerate(activities)}
@@ -15,10 +15,4 @@ class MockEncoder:
     def decode(self, encoded_trace):
 
         return [self.vector_to_activity[idx] for idx in encoded_trace]
-
-
-class MockDeclare4Py:
-    def conformance_checking(self, logs, consider_vacuity=True):
-
-        return {"Constraint1": {"num_violations": random.randint(0, 2)}}
 

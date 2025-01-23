@@ -5,7 +5,7 @@ from Declare4Py.ProcessMiningTasks.ConformanceChecking.MPDeclareAnalyzer import 
 import numpy as np
 import pandas as pd
 
-class MyProblem(ElementwiseProblem):
+class Problem_multi_ElementWise(ElementwiseProblem):
     def __init__(self, trace_length, encoder, d4py, initial_population, xl,xu, event_log, dataframe):
 
         super().__init__(n_var=trace_length,
@@ -43,24 +43,8 @@ class MyProblem(ElementwiseProblem):
         violation_score = int(np.sum(valid_values))
 
         metric_state = np.array(metric_state)
-        metric_state_inverted = 1 - metric_state
+        metric_state_inverted = 1 - metric_state  # inverted so 1 means violation and 0 means sat
         satisfy_score = np.mean(metric_state_inverted)
-
-        # TODO the state return 1 if the constraint is sat, not 0, then should it be negative?
-
-        # print("----------------------------------")
-        # print("satisfy score:\n",satisfy_score)
-        # print("----------------------------------")
-        # print("metric score:\n", metric_state)
-        # print("----------------------------------")
-        # print("metric score2:\n", metric_state_inverted)
-        # print("----------------------------------")
-        # print("violation score:\n", violation_score)
-        # print("----------------------------------")
-        # print("values score:\n", valid_values)
-        # print("----------------------------------")
-        # print("table score:\n", metric_num_violation)
-        # print("----------------------------------")
 
         return satisfy_score, violation_score
 
@@ -98,14 +82,14 @@ class MyProblem(ElementwiseProblem):
 
         out["G"] = [constraint_score[0]]  # feasible if <= 0
 
-        out["F"] = [constraint_score[1], diversity_score]
+        out["F"] = [diversity_score, constraint_score[1]]
 
 
-class MyProblem2(ElementwiseProblem):
+class Problem_single_ElementWise(ElementwiseProblem):
     def __init__(self, trace_length, encoder, d4py, initial_population, xl,xu, event_log, dataframe):
 
         super().__init__(n_var=trace_length,
-                         n_obj=1,  # objectives: constraints and diversity TODO use 1 obj
+                         n_obj=1,  # objectives: diversity
                          n_constr=1, # 1 constraint (total violation score)
                          xl=xl,
                          xu=xu)
@@ -142,21 +126,6 @@ class MyProblem2(ElementwiseProblem):
         metric_state_inverted = 1 - metric_state
         satisfy_score = np.mean(metric_state_inverted)
 
-        # TODO the state return 1 if the constraint is sat, not 0, then should it be negative?
-
-        # print("----------------------------------")
-        # print("satisfy score:\n",satisfy_score)
-        # print("----------------------------------")
-        # print("metric score:\n", metric_state)
-        # print("----------------------------------")
-        # print("metric score2:\n", metric_state_inverted)
-        # print("----------------------------------")
-        # print("violation score:\n", violation_score)
-        # print("----------------------------------")
-        # print("values score:\n", valid_values)
-        # print("----------------------------------")
-        # print("table score:\n", metric_num_violation)
-        # print("----------------------------------")
 
         return satisfy_score
 
@@ -195,7 +164,52 @@ class MyProblem2(ElementwiseProblem):
 
         out["F"] = [diversity_score]
 
+class Problem_single_ElementWise_noConstraints(ElementwiseProblem):
+    def __init__(self, trace_length, encoder, d4py, initial_population, xl,xu, event_log, dataframe):
 
+        super().__init__(n_var=trace_length,
+                         n_obj=1,  # objectives: diversity
+                         n_constr=0,
+                         xl=xl,
+                         xu=xu)
+
+        self.trace_length = trace_length
+        self.encoder = encoder
+        self.d4py = d4py
+        self.initial_population = initial_population
+        self.current_population = self.initial_population
+        self.event_log = event_log
+        self.dataframe = dataframe
+
+
+    def calculate_diversity(self, trace, population):
+        """
+        Calculate diversity as the average Hamming Distance of the trace.
+        """
+
+        population = np.array(population)
+        trace_array = np.tile(trace, (population.shape[0], 1))
+
+        # Calculate the Hamming distance (element-wise comparison)
+        differences = np.sum(population != trace_array, axis=1)
+
+        return np.mean(differences)
+
+    def set_current_population(self, population):
+        """
+        Update the current population.
+        """
+        self.current_population = np.array(population)
+
+    def _evaluate(self, x, out, *args, **kwargs):
+        """
+        Evaluate a single trace.
+        """
+
+        # objective 1: Diversity
+        diversity_score = -self.calculate_diversity(x, self.current_population) # negative because pymoo minimize, choose the lower value
+
+        out["F"] = [diversity_score]
 
 
 from pymoo.core.problem import Problem
