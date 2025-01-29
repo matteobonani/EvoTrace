@@ -22,15 +22,18 @@ class UpdatePopulationCallback(Callback):
         self.problem.set_current_population(population)
 
         # gather fitness and constraint scores for the current population
-        constraint_scores = algorithm.pop.get("G")[:, 0]  # assuming G[0] corresponds to constraint violations
-        diversity_scores = algorithm.pop.get("F")[:, 0]  # assuming F[0] is the diversity score
+        G = algorithm.pop.get("G")
+        if G is not None and G.size > 0:
+            constraint_scores = G[:, 0]  # assuming G[0] corresponds to constraint violations
+            self.constraint_history.append(np.mean(constraint_scores))
         F = algorithm.pop.get("F")
+        diversity_scores = F[:, 0]  # assuming F[0] is the diversity score
         if F.shape[1] > 1:  # if G[1] exists (multi obj GA)
             n_violations_scores = F[:, 1]
             self.n_violations_scores.append(np.mean(n_violations_scores))
 
         # store the average scores for plotting
-        self.constraint_history.append(np.mean(constraint_scores))
+
         self.diversity_scores.append(np.mean(diversity_scores))
 
         self.generation += 1

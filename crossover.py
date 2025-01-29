@@ -39,7 +39,4 @@ class TraceCrossover(Crossover):
             Y[1, k, :] = child2
 
             # Y[2, k, :] = child3
-
-
-
         return Y

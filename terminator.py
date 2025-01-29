@@ -1,4 +1,3 @@
-from pymoo.termination.default import DefaultMultiObjectiveTermination
 from pymoo.core.termination import Termination
 
 
@@ -15,5 +14,4 @@ class MyTermination(Termination):
         if n_feasible >= self.n_required:
             return 1.0  # termination condition met
         else:
-            # Progress percentage
             return n_feasible / self.n_required

@@ -116,11 +116,6 @@ class Problem_single_ElementWise(ElementwiseProblem):
         basic_checker = MPDeclareAnalyzer(log=self.event_log, declare_model=self.d4py, consider_vacuity=False)
         conf_check_res: MPDeclareResultsBrowser = basic_checker.run()
         metric_state = conf_check_res.get_metric(trace_id=0, metric="state")
-        metric_num_violation = conf_check_res.get_metric(trace_id=0, metric="num_violations")
-
-        metric_num_violation = np.array(metric_num_violation, dtype=np.float_)
-        valid_values = metric_num_violation[np.isfinite(metric_num_violation)]
-        violation_score = int(np.sum(valid_values))
 
         metric_state = np.array(metric_state)
         metric_state_inverted = 1 - metric_state
