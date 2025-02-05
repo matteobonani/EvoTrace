@@ -44,7 +44,9 @@ class Problem_multi_ElementWise(ElementwiseProblem):
 
         metric_state = np.array(metric_state)
         metric_state_inverted = 1 - metric_state  # inverted so 1 means violation and 0 means sat
-        satisfy_score = np.mean(metric_state_inverted)
+        # TODO using the mean there are problems to find the solutions, better as i did it at the beggining, counting the the sat and not sat
+        # satisfy_score = np.mean(metric_state_inverted)
+        satisfy_score = np.sum(metric_state_inverted)
 
         return satisfy_score, violation_score
 
@@ -119,7 +121,9 @@ class Problem_single_ElementWise(ElementwiseProblem):
 
         metric_state = np.array(metric_state)
         metric_state_inverted = 1 - metric_state
-        satisfy_score = np.mean(metric_state_inverted)
+        # TODO using the mean there are problems to find the solutions, better as i did it at the beggining, counting the the sat and not sat
+        # satisfy_score = np.mean(metric_state_inverted)
+        satisfy_score = np.sum(metric_state_inverted)
 
 
         return satisfy_score
