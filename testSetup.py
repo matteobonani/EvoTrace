@@ -28,16 +28,22 @@ class Setup:
         Sets up the initial population and shared parameters for the given trace length.
         """
 
-        initial_population = [[random.choice(activities_name) for _ in range(trace_length)] for _ in range(n_traces)]
+        # load CSV file with correct column names
+        df = pd.read_csv("../declare_models/model1_initial_pop.csv", usecols=['Case ID', 'Activity'])
+
+        # group activities by case, filter cases with at least 50 activities, and select the first 10 cases
+        initial_population = [
+                                 activities[:50] for activities in
+                                 (df.groupby('Case ID')['Activity'].apply(list).values) if len(activities) >= 50
+                             ][:10]
+
         initial_encoded_pop = [encoder.encode(trace) for trace in initial_population]
-        features_range = Tools.calculate_feature_range(initial_encoded_pop, [1] * trace_length)
         lower_bounds = 0
         upper_bounds = len(activities_name) - 1
 
         return (
             initial_population,
             initial_encoded_pop,
-            features_range,
             lower_bounds,
             upper_bounds,
             IntegerPolynomialMutation(prob=0.1, eta=20),
@@ -122,7 +128,7 @@ class Setup:
 
         diversity_score = abs(diversity_scores[-1]) / trace_length
         # determine diversity, constraint, n_violations
-        diversity = f"{diversity_scores:.2f}"
+        diversity = f"{diversity_score:.2f}"
         constraint = f"{constraint_scores[-1]:.2f}" if constraint_scores else "NaN"
         n_violations = f"{n_violations_scores[-1]:.2f}" if n_violations_scores else "NaN"
 
@@ -138,7 +144,7 @@ class Setup:
             print(f"Execution Time ({algorithm_type}): {exec_time:.2f} seconds")
 
     @staticmethod
-    def plot_and_save_progress(ID, test_run, algorithm_type, constraints,
+    def plot_and_save_progress(ID, test_run, algorithm_type, constraints,  current_date,
                                diversity_scores=None, constraint_scores=None, n_violations_scores=None, n_generations=None):
         """
         Plot and save the fitness and constraint scores for the given algorithm (callback).
@@ -177,12 +183,12 @@ class Setup:
         # save the plot
         plot_name = f"ID_{ID}_run_{test_run}_{algorithm_type}_{constraints}_constraints.png"
         plt.tight_layout()
-        os.makedirs(f"plots2/run_{test_run}", exist_ok=True)
-        plt.savefig(f"plots2/run_{test_run}/{plot_name}")
+        os.makedirs(f"plots/run_{current_date}", exist_ok=True)
+        plt.savefig(f"plots2/run_{current_date}/{plot_name}")
         plt.close()
 
     @staticmethod
-    def save_feasible_traces(population, encoder, test_run, ID, algorithm_type, constraints):
+    def save_feasible_traces(population, encoder, test_run, ID, algorithm_type, constraints, current_date):
         """
         Save the feasible traces from the final population into a file.
         """
@@ -191,8 +197,8 @@ class Setup:
         G = np.array([individual.G for individual in population])
 
 
-        os.makedirs(f"results/encoded_traces3", exist_ok=True)
-        file_name = f"results/encoded_traces3/ID_{ID}_run_{test_run}_{algorithm_type}_{constraints}_constraints.csv"
+        os.makedirs(f"results/encoded_traces_{current_date}", exist_ok=True)
+        file_name = f"results/encoded_traces_{current_date}/ID_{ID}_run_{test_run}_{algorithm_type}_{constraints}_constraints.csv"
 
         # filter feasible solutions based on constraints
         if constraints == "yes":

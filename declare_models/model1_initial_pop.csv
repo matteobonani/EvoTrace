@@ -1,0 +1,501 @@
+Case ID,Activity,Complete Timestamp,Variant,Variant index,trace:type,lifecycle:transition
+Case No. 01 [positive],LacticAcid,2023-12-30 10:11:58.855,Variant 1,1,positive,complete
+Case No. 01 [positive],CRP,2023-12-31 02:06:36.819,Variant 1,1,positive,complete
+Case No. 01 [positive],ER Sepsis Triage,2023-12-31 09:27:44.228,Variant 1,1,positive,complete
+Case No. 01 [positive],IV Antibiotics,2023-12-31 14:27:51.851,Variant 1,1,positive,complete
+Case No. 01 [positive],IV Liquid,2024-01-01 04:33:31.523,Variant 1,1,positive,complete
+Case No. 01 [positive],Leucocytes,2024-01-01 13:35:04.809,Variant 1,1,positive,complete
+Case No. 01 [positive],Release A,2024-01-02 04:09:53.393,Variant 1,1,positive,complete
+Case No. 01 [positive],Leucocytes,2024-01-02 08:38:26.803,Variant 1,1,positive,complete
+Case No. 01 [positive],ER Registration,2024-01-02 23:01:09.019,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission NC,2024-01-03 15:01:10.702,Variant 1,1,positive,complete
+Case No. 01 [positive],Release B,2024-01-03 19:04:21.598,Variant 1,1,positive,complete
+Case No. 01 [positive],ER Triage,2024-01-03 23:24:35.880,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission NC,2024-01-04 16:46:34.003,Variant 1,1,positive,complete
+Case No. 01 [positive],Release B,2024-01-05 10:50:54.460,Variant 1,1,positive,complete
+Case No. 01 [positive],Release A,2024-01-05 18:09:38.711,Variant 1,1,positive,complete
+Case No. 01 [positive],IV Liquid,2024-01-06 06:26:07.613,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-06 10:38:27.689,Variant 1,1,positive,complete
+Case No. 01 [positive],IV Liquid,2024-01-06 13:43:34.470,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission NC,2024-01-06 14:09:56.385,Variant 1,1,positive,complete
+Case No. 01 [positive],Release B,2024-01-07 06:16:29.015,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-07 15:57:43.073,Variant 1,1,positive,complete
+Case No. 01 [positive],LacticAcid,2024-01-08 05:56:51.835,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-08 12:09:30.743,Variant 1,1,positive,complete
+Case No. 01 [positive],ER Registration,2024-01-09 02:56:33.854,Variant 1,1,positive,complete
+Case No. 01 [positive],Leucocytes,2024-01-09 13:32:03.318,Variant 1,1,positive,complete
+Case No. 01 [positive],LacticAcid,2024-01-09 23:25:38.246,Variant 1,1,positive,complete
+Case No. 01 [positive],LacticAcid,2024-01-10 03:01:31.442,Variant 1,1,positive,complete
+Case No. 01 [positive],LacticAcid,2024-01-10 04:52:34.448,Variant 1,1,positive,complete
+Case No. 01 [positive],Leucocytes,2024-01-11 00:55:45.178,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-11 14:00:44.764,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-12 01:28:11.899,Variant 1,1,positive,complete
+Case No. 01 [positive],Leucocytes,2024-01-12 19:15:29.275,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-13 09:02:37.257,Variant 1,1,positive,complete
+Case No. 01 [positive],CRP,2024-01-13 22:16:38.851,Variant 1,1,positive,complete
+Case No. 01 [positive],ER Registration,2024-01-14 21:31:45.560,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-15 07:02:08.771,Variant 1,1,positive,complete
+Case No. 01 [positive],CRP,2024-01-15 23:02:52.991,Variant 1,1,positive,complete
+Case No. 01 [positive],LacticAcid,2024-01-16 17:19:07.027,Variant 1,1,positive,complete
+Case No. 01 [positive],LacticAcid,2024-01-16 20:58:03.047,Variant 1,1,positive,complete
+Case No. 01 [positive],ER Registration,2024-01-17 06:20:31.657,Variant 1,1,positive,complete
+Case No. 01 [positive],LacticAcid,2024-01-17 13:17:08.173,Variant 1,1,positive,complete
+Case No. 01 [positive],Leucocytes,2024-01-18 12:26:50.446,Variant 1,1,positive,complete
+Case No. 01 [positive],Release A,2024-01-19 08:17:15.024,Variant 1,1,positive,complete
+Case No. 01 [positive],CRP,2024-01-19 08:24:14.136,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission NC,2024-01-20 00:03:02.874,Variant 1,1,positive,complete
+Case No. 01 [positive],Release B,2024-01-20 10:03:10.798,Variant 1,1,positive,complete
+Case No. 01 [positive],CRP,2024-01-20 20:28:35.635,Variant 1,1,positive,complete
+Case No. 01 [positive],Release A,2024-01-21 10:23:44.297,Variant 1,1,positive,complete
+Case No. 01 [positive],CRP,2024-01-21 10:32:57.589,Variant 1,1,positive,complete
+Case No. 01 [positive],Admission IC,2024-01-21 13:16:53.804,Variant 1,1,positive,complete
+Case No. 02 [positive],Release A,2024-01-22 09:59:14.738,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-01-23 07:11:29.419,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Sepsis Triage,2024-01-23 10:51:22.669,Variant 2,2,positive,complete
+Case No. 02 [positive],IV Antibiotics,2024-01-23 18:17:49.722,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-01-24 00:42:16.326,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-01-24 11:29:53.121,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission NC,2024-01-24 11:45:55.802,Variant 2,2,positive,complete
+Case No. 02 [positive],Release B,2024-01-25 07:27:44.532,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission NC,2024-01-26 05:46:11.613,Variant 2,2,positive,complete
+Case No. 02 [positive],Release B,2024-01-26 16:42:41.560,Variant 2,2,positive,complete
+Case No. 02 [positive],IV Liquid,2024-01-26 19:05:18.171,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-01-27 08:14:13.862,Variant 2,2,positive,complete
+Case No. 02 [positive],CRP,2024-01-27 10:36:51.786,Variant 2,2,positive,complete
+Case No. 02 [positive],CRP,2024-01-28 02:02:24.746,Variant 2,2,positive,complete
+Case No. 02 [positive],Leucocytes,2024-01-28 14:57:59.846,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission NC,2024-01-29 06:11:06.488,Variant 2,2,positive,complete
+Case No. 02 [positive],Release B,2024-01-29 06:37:39.716,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-01-30 05:12:32.152,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-01-30 15:28:06.476,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-01-31 01:31:06.521,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-01-31 02:14:17.917,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-01-31 20:15:07.600,Variant 2,2,positive,complete
+Case No. 02 [positive],IV Liquid,2024-02-01 17:31:43.356,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-02-02 00:28:07.509,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Triage,2024-02-02 18:56:29.618,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-02-03 08:57:47.846,Variant 2,2,positive,complete
+Case No. 02 [positive],Leucocytes,2024-02-04 06:12:53.157,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-02-04 08:59:19.550,Variant 2,2,positive,complete
+Case No. 02 [positive],IV Liquid,2024-02-04 18:22:31.573,Variant 2,2,positive,complete
+Case No. 02 [positive],CRP,2024-02-04 20:11:40.990,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission NC,2024-02-05 18:06:20.942,Variant 2,2,positive,complete
+Case No. 02 [positive],Release B,2024-02-06 03:40:00.496,Variant 2,2,positive,complete
+Case No. 02 [positive],CRP,2024-02-06 03:55:07.149,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission NC,2024-02-06 18:34:30.747,Variant 2,2,positive,complete
+Case No. 02 [positive],Release B,2024-02-07 13:56:50.010,Variant 2,2,positive,complete
+Case No. 02 [positive],IV Liquid,2024-02-08 02:06:32.349,Variant 2,2,positive,complete
+Case No. 02 [positive],LacticAcid,2024-02-08 21:39:38.347,Variant 2,2,positive,complete
+Case No. 02 [positive],Return ER,2024-02-08 23:35:22.745,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-02-09 07:07:02.209,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-02-09 22:25:13.948,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-02-10 10:58:05.306,Variant 2,2,positive,complete
+Case No. 02 [positive],CRP,2024-02-10 23:20:18.885,Variant 2,2,positive,complete
+Case No. 02 [positive],LacticAcid,2024-02-11 03:49:06.296,Variant 2,2,positive,complete
+Case No. 02 [positive],LacticAcid,2024-02-11 12:47:31.046,Variant 2,2,positive,complete
+Case No. 02 [positive],ER Registration,2024-02-11 16:14:51.903,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-02-12 06:40:15.882,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission NC,2024-02-13 04:16:47.922,Variant 2,2,positive,complete
+Case No. 02 [positive],Release B,2024-02-14 03:34:14.835,Variant 2,2,positive,complete
+Case No. 02 [positive],Admission IC,2024-02-14 08:52:46.033,Variant 2,2,positive,complete
+Case No. 02 [positive],Release A,2024-02-14 16:45:34.081,Variant 2,2,positive,complete
+Case No. 03 [positive],LacticAcid,2024-02-14 23:29:50.336,Variant 3,3,positive,complete
+Case No. 03 [positive],Release A,2024-02-15 22:49:08.426,Variant 3,3,positive,complete
+Case No. 03 [positive],CRP,2024-02-16 08:07:47.649,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-02-16 12:10:57.454,Variant 3,3,positive,complete
+Case No. 03 [positive],Release A,2024-02-16 20:56:21.798,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Sepsis Triage,2024-02-16 21:15:31.490,Variant 3,3,positive,complete
+Case No. 03 [positive],IV Antibiotics,2024-02-17 01:47:18.854,Variant 3,3,positive,complete
+Case No. 03 [positive],Admission IC,2024-02-17 20:53:48.308,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-02-18 00:51:31.120,Variant 3,3,positive,complete
+Case No. 03 [positive],Leucocytes,2024-02-18 01:04:23.433,Variant 3,3,positive,complete
+Case No. 03 [positive],LacticAcid,2024-02-18 19:17:58.996,Variant 3,3,positive,complete
+Case No. 03 [positive],Return ER,2024-02-18 22:56:41.587,Variant 3,3,positive,complete
+Case No. 03 [positive],Admission NC,2024-02-19 04:27:20.726,Variant 3,3,positive,complete
+Case No. 03 [positive],Release B,2024-02-19 14:27:56.576,Variant 3,3,positive,complete
+Case No. 03 [positive],CRP,2024-02-20 08:50:08.516,Variant 3,3,positive,complete
+Case No. 03 [positive],Leucocytes,2024-02-21 07:37:53.944,Variant 3,3,positive,complete
+Case No. 03 [positive],CRP,2024-02-21 23:23:40.980,Variant 3,3,positive,complete
+Case No. 03 [positive],IV Liquid,2024-02-22 22:42:36.760,Variant 3,3,positive,complete
+Case No. 03 [positive],Return ER,2024-02-23 13:15:12.235,Variant 3,3,positive,complete
+Case No. 03 [positive],IV Liquid,2024-02-24 11:01:19.412,Variant 3,3,positive,complete
+Case No. 03 [positive],CRP,2024-02-25 03:13:06.901,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Triage,2024-02-25 22:28:37.793,Variant 3,3,positive,complete
+Case No. 03 [positive],Return ER,2024-02-26 10:52:38.100,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-02-27 04:37:26.348,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-02-27 16:06:52.041,Variant 3,3,positive,complete
+Case No. 03 [positive],Release A,2024-02-28 07:56:53.357,Variant 3,3,positive,complete
+Case No. 03 [positive],Admission NC,2024-02-29 05:09:28.039,Variant 3,3,positive,complete
+Case No. 03 [positive],Release B,2024-03-01 05:03:25.508,Variant 3,3,positive,complete
+Case No. 03 [positive],Leucocytes,2024-03-01 12:10:26.886,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-03-02 06:42:31.183,Variant 3,3,positive,complete
+Case No. 03 [positive],Admission NC,2024-03-03 03:32:23.221,Variant 3,3,positive,complete
+Case No. 03 [positive],Release B,2024-03-03 12:53:09.038,Variant 3,3,positive,complete
+Case No. 03 [positive],LacticAcid,2024-03-04 10:40:19.082,Variant 3,3,positive,complete
+Case No. 03 [positive],LacticAcid,2024-03-04 13:47:04.355,Variant 3,3,positive,complete
+Case No. 03 [positive],Leucocytes,2024-03-05 06:14:56.108,Variant 3,3,positive,complete
+Case No. 03 [positive],Admission IC,2024-03-05 19:10:10.294,Variant 3,3,positive,complete
+Case No. 03 [positive],Admission NC,2024-03-05 21:15:22.876,Variant 3,3,positive,complete
+Case No. 03 [positive],Release B,2024-03-06 02:33:44.584,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-03-06 06:04:51.620,Variant 3,3,positive,complete
+Case No. 03 [positive],IV Liquid,2024-03-06 12:39:24.295,Variant 3,3,positive,complete
+Case No. 03 [positive],LacticAcid,2024-03-07 05:19:35.108,Variant 3,3,positive,complete
+Case No. 03 [positive],CRP,2024-03-07 17:42:32.307,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-03-08 00:39:09.765,Variant 3,3,positive,complete
+Case No. 03 [positive],Release A,2024-03-08 22:55:38.659,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-03-09 08:14:25.059,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-03-09 13:34:48.424,Variant 3,3,positive,complete
+Case No. 03 [positive],CRP,2024-03-09 18:56:52.069,Variant 3,3,positive,complete
+Case No. 03 [positive],ER Registration,2024-03-10 01:09:34.868,Variant 3,3,positive,complete
+Case No. 03 [positive],IV Liquid,2024-03-10 05:22:35.547,Variant 3,3,positive,complete
+Case No. 03 [positive],Admission IC,2024-03-10 07:59:02.553,Variant 3,3,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-11 05:37:05.797,Variant 4,4,positive,complete
+Case No. 04 [positive],Return ER,2024-03-12 02:11:02.816,Variant 4,4,positive,complete
+Case No. 04 [positive],LacticAcid,2024-03-12 03:06:39.478,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission IC,2024-03-12 05:05:04.427,Variant 4,4,positive,complete
+Case No. 04 [positive],Release A,2024-03-12 05:40:41.326,Variant 4,4,positive,complete
+Case No. 04 [positive],Release A,2024-03-12 09:13:12.488,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Liquid,2024-03-12 22:57:17.434,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Sepsis Triage,2024-03-13 21:59:51.859,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Antibiotics,2024-03-13 23:15:18.869,Variant 4,4,positive,complete
+Case No. 04 [positive],Release A,2024-03-14 17:59:08.374,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Triage,2024-03-15 09:05:54.639,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission IC,2024-03-15 23:32:08.006,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-16 20:16:15.912,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission IC,2024-03-17 03:19:11.211,Variant 4,4,positive,complete
+Case No. 04 [positive],CRP,2024-03-18 03:19:02.293,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Liquid,2024-03-18 12:44:49.013,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-19 09:26:29.693,Variant 4,4,positive,complete
+Case No. 04 [positive],Return ER,2024-03-20 09:23:45.494,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission IC,2024-03-20 09:26:36.736,Variant 4,4,positive,complete
+Case No. 04 [positive],Release A,2024-03-20 18:04:58.178,Variant 4,4,positive,complete
+Case No. 04 [positive],CRP,2024-03-21 05:59:32.940,Variant 4,4,positive,complete
+Case No. 04 [positive],LacticAcid,2024-03-21 15:26:43.395,Variant 4,4,positive,complete
+Case No. 04 [positive],LacticAcid,2024-03-22 05:46:46.794,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Liquid,2024-03-22 18:29:58.040,Variant 4,4,positive,complete
+Case No. 04 [positive],Return ER,2024-03-23 00:21:55.620,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-23 00:59:02.211,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-23 08:21:51.507,Variant 4,4,positive,complete
+Case No. 04 [positive],CRP,2024-03-23 10:58:29.081,Variant 4,4,positive,complete
+Case No. 04 [positive],CRP,2024-03-23 18:28:58.894,Variant 4,4,positive,complete
+Case No. 04 [positive],Release A,2024-03-23 20:42:18.920,Variant 4,4,positive,complete
+Case No. 04 [positive],LacticAcid,2024-03-24 04:20:49.276,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission IC,2024-03-25 02:17:13.528,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Liquid,2024-03-25 15:30:57.245,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Liquid,2024-03-26 00:34:35.415,Variant 4,4,positive,complete
+Case No. 04 [positive],Return ER,2024-03-26 10:06:09.542,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-27 04:16:52.928,Variant 4,4,positive,complete
+Case No. 04 [positive],Leucocytes,2024-03-27 12:28:14.985,Variant 4,4,positive,complete
+Case No. 04 [positive],CRP,2024-03-27 20:02:58.060,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Liquid,2024-03-28 08:05:28.124,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-29 01:13:18.078,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission NC,2024-03-29 12:17:33.180,Variant 4,4,positive,complete
+Case No. 04 [positive],Release B,2024-03-29 18:40:25.128,Variant 4,4,positive,complete
+Case No. 04 [positive],ER Registration,2024-03-29 23:50:37.259,Variant 4,4,positive,complete
+Case No. 04 [positive],Leucocytes,2024-03-30 11:12:19.866,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission NC,2024-03-30 15:32:53.090,Variant 4,4,positive,complete
+Case No. 04 [positive],Release B,2024-03-30 22:46:25.706,Variant 4,4,positive,complete
+Case No. 04 [positive],Return ER,2024-03-31 08:49:51.456,Variant 4,4,positive,complete
+Case No. 04 [positive],CRP,2024-03-31 13:59:19.645,Variant 4,4,positive,complete
+Case No. 04 [positive],Admission IC,2024-03-31 16:08:12.219,Variant 4,4,positive,complete
+Case No. 04 [positive],IV Liquid,2024-03-31 18:13:43.687,Variant 4,4,positive,complete
+Case No. 05 [positive],Leucocytes,2024-03-31 21:15:41.542,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission IC,2024-04-01 06:16:54.180,Variant 5,5,positive,complete
+Case No. 05 [positive],ER Sepsis Triage,2024-04-02 01:25:14.190,Variant 5,5,positive,complete
+Case No. 05 [positive],IV Antibiotics,2024-04-02 17:16:08.739,Variant 5,5,positive,complete
+Case No. 05 [positive],IV Liquid,2024-04-02 22:51:15.994,Variant 5,5,positive,complete
+Case No. 05 [positive],ER Registration,2024-04-03 01:53:46.809,Variant 5,5,positive,complete
+Case No. 05 [positive],Release A,2024-04-03 04:55:40.777,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission NC,2024-04-03 08:47:14.155,Variant 5,5,positive,complete
+Case No. 05 [positive],Release B,2024-04-04 00:28:45.455,Variant 5,5,positive,complete
+Case No. 05 [positive],Leucocytes,2024-04-04 21:04:55.365,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-05 09:57:08.226,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-05 22:15:34.221,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission NC,2024-04-05 23:59:40.415,Variant 5,5,positive,complete
+Case No. 05 [positive],Release B,2024-04-06 16:30:25.304,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission NC,2024-04-07 00:24:30.049,Variant 5,5,positive,complete
+Case No. 05 [positive],Release B,2024-04-07 04:26:49.296,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-07 12:13:38.623,Variant 5,5,positive,complete
+Case No. 05 [positive],CRP,2024-04-08 05:41:12.141,Variant 5,5,positive,complete
+Case No. 05 [positive],IV Liquid,2024-04-09 04:29:54.675,Variant 5,5,positive,complete
+Case No. 05 [positive],LacticAcid,2024-04-09 06:59:14.791,Variant 5,5,positive,complete
+Case No. 05 [positive],ER Registration,2024-04-09 21:34:28.657,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission IC,2024-04-10 16:21:05.530,Variant 5,5,positive,complete
+Case No. 05 [positive],LacticAcid,2024-04-11 15:52:33.299,Variant 5,5,positive,complete
+Case No. 05 [positive],IV Liquid,2024-04-11 20:29:50.898,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission IC,2024-04-12 00:38:51.996,Variant 5,5,positive,complete
+Case No. 05 [positive],CRP,2024-04-12 17:32:23.986,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-13 04:44:14.922,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission NC,2024-04-13 13:42:30.431,Variant 5,5,positive,complete
+Case No. 05 [positive],Release B,2024-04-13 20:19:38.499,Variant 5,5,positive,complete
+Case No. 05 [positive],IV Liquid,2024-04-14 14:07:32.676,Variant 5,5,positive,complete
+Case No. 05 [positive],ER Registration,2024-04-15 02:23:58.448,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission NC,2024-04-15 04:31:52.120,Variant 5,5,positive,complete
+Case No. 05 [positive],Release B,2024-04-15 14:58:00.087,Variant 5,5,positive,complete
+Case No. 05 [positive],Release A,2024-04-16 02:51:46.542,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-16 09:17:01.673,Variant 5,5,positive,complete
+Case No. 05 [positive],ER Triage,2024-04-17 02:19:16.678,Variant 5,5,positive,complete
+Case No. 05 [positive],IV Liquid,2024-04-17 08:51:37.490,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission NC,2024-04-17 16:24:31.164,Variant 5,5,positive,complete
+Case No. 05 [positive],Release B,2024-04-18 10:36:57.013,Variant 5,5,positive,complete
+Case No. 05 [positive],Leucocytes,2024-04-19 08:59:33.018,Variant 5,5,positive,complete
+Case No. 05 [positive],Release A,2024-04-19 20:28:04.913,Variant 5,5,positive,complete
+Case No. 05 [positive],LacticAcid,2024-04-20 02:09:23.658,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission NC,2024-04-20 06:30:53.794,Variant 5,5,positive,complete
+Case No. 05 [positive],Release B,2024-04-20 14:59:51.939,Variant 5,5,positive,complete
+Case No. 05 [positive],Admission IC,2024-04-21 07:15:27.433,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-22 03:05:25.989,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-22 17:31:36.991,Variant 5,5,positive,complete
+Case No. 05 [positive],IV Liquid,2024-04-23 10:34:34.638,Variant 5,5,positive,complete
+Case No. 05 [positive],Return ER,2024-04-23 16:24:36.012,Variant 5,5,positive,complete
+Case No. 05 [positive],LacticAcid,2024-04-24 04:14:33.016,Variant 5,5,positive,complete
+Case No. 06 [positive],Admission NC,2024-04-24 15:01:20.550,Variant 6,6,positive,complete
+Case No. 06 [positive],Release B,2024-04-24 17:50:14.302,Variant 6,6,positive,complete
+Case No. 06 [positive],LacticAcid,2024-04-25 06:19:43.816,Variant 6,6,positive,complete
+Case No. 06 [positive],IV Liquid,2024-04-25 14:29:32.554,Variant 6,6,positive,complete
+Case No. 06 [positive],Leucocytes,2024-04-26 04:30:36.019,Variant 6,6,positive,complete
+Case No. 06 [positive],ER Triage,2024-04-27 01:41:18.924,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission IC,2024-04-27 15:07:48.952,Variant 6,6,positive,complete
+Case No. 06 [positive],ER Sepsis Triage,2024-04-27 22:21:21.614,Variant 6,6,positive,complete
+Case No. 06 [positive],IV Antibiotics,2024-04-28 06:29:37.763,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission IC,2024-04-28 20:45:02.176,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-04-29 04:57:57.804,Variant 6,6,positive,complete
+Case No. 06 [positive],CRP,2024-04-30 00:03:54.413,Variant 6,6,positive,complete
+Case No. 06 [positive],ER Registration,2024-04-30 05:14:00.490,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-01 02:09:11.025,Variant 6,6,positive,complete
+Case No. 06 [positive],Release A,2024-05-01 17:59:57.781,Variant 6,6,positive,complete
+Case No. 06 [positive],Leucocytes,2024-05-02 05:40:49.278,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-02 19:08:00.479,Variant 6,6,positive,complete
+Case No. 06 [positive],ER Registration,2024-05-03 07:30:01.987,Variant 6,6,positive,complete
+Case No. 06 [positive],IV Liquid,2024-05-03 13:06:39.888,Variant 6,6,positive,complete
+Case No. 06 [positive],IV Liquid,2024-05-04 00:34:43.813,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission NC,2024-05-04 21:11:35.471,Variant 6,6,positive,complete
+Case No. 06 [positive],Release B,2024-05-05 07:51:55.320,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission NC,2024-05-06 04:42:32.949,Variant 6,6,positive,complete
+Case No. 06 [positive],Release B,2024-05-06 12:38:28.431,Variant 6,6,positive,complete
+Case No. 06 [positive],Release A,2024-05-06 21:30:47.904,Variant 6,6,positive,complete
+Case No. 06 [positive],Release A,2024-05-07 19:31:46.946,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission NC,2024-05-08 06:41:29.257,Variant 6,6,positive,complete
+Case No. 06 [positive],Release B,2024-05-08 16:04:54.403,Variant 6,6,positive,complete
+Case No. 06 [positive],Release A,2024-05-09 08:23:45.105,Variant 6,6,positive,complete
+Case No. 06 [positive],LacticAcid,2024-05-10 00:06:29.137,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission NC,2024-05-10 13:47:10.212,Variant 6,6,positive,complete
+Case No. 06 [positive],Release B,2024-05-10 18:14:22.480,Variant 6,6,positive,complete
+Case No. 06 [positive],LacticAcid,2024-05-11 17:57:00.038,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission NC,2024-05-12 12:03:21.103,Variant 6,6,positive,complete
+Case No. 06 [positive],Release B,2024-05-12 21:52:10.557,Variant 6,6,positive,complete
+Case No. 06 [positive],Release A,2024-05-13 19:01:28.188,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-13 23:29:26.161,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-14 11:56:40.524,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-15 02:14:09.791,Variant 6,6,positive,complete
+Case No. 06 [positive],IV Liquid,2024-05-15 04:05:09.913,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission NC,2024-05-15 05:23:30.050,Variant 6,6,positive,complete
+Case No. 06 [positive],Release B,2024-05-15 19:15:37.180,Variant 6,6,positive,complete
+Case No. 06 [positive],Leucocytes,2024-05-16 18:10:09.359,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-17 04:08:55.815,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission IC,2024-05-17 07:25:55.314,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission IC,2024-05-18 05:51:19.716,Variant 6,6,positive,complete
+Case No. 06 [positive],Leucocytes,2024-05-18 09:32:24.227,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-19 04:19:55.738,Variant 6,6,positive,complete
+Case No. 06 [positive],Admission IC,2024-05-19 07:02:41.459,Variant 6,6,positive,complete
+Case No. 06 [positive],Return ER,2024-05-20 02:33:36.691,Variant 6,6,positive,complete
+Case No. 07 [positive],CRP,2024-05-20 05:07:32.725,Variant 7,7,positive,complete
+Case No. 07 [positive],CRP,2024-05-20 11:47:17.413,Variant 7,7,positive,complete
+Case No. 07 [positive],ER Triage,2024-05-20 15:26:10.661,Variant 7,7,positive,complete
+Case No. 07 [positive],ER Sepsis Triage,2024-05-21 14:09:01.674,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Antibiotics,2024-05-22 00:40:22.233,Variant 7,7,positive,complete
+Case No. 07 [positive],Release A,2024-05-22 17:24:27.731,Variant 7,7,positive,complete
+Case No. 07 [positive],Leucocytes,2024-05-23 05:59:38.045,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-05-23 17:34:50.381,Variant 7,7,positive,complete
+Case No. 07 [positive],CRP,2024-05-23 23:04:49.959,Variant 7,7,positive,complete
+Case No. 07 [positive],LacticAcid,2024-05-24 05:12:26.491,Variant 7,7,positive,complete
+Case No. 07 [positive],LacticAcid,2024-05-24 10:23:33.856,Variant 7,7,positive,complete
+Case No. 07 [positive],ER Registration,2024-05-25 02:28:20.538,Variant 7,7,positive,complete
+Case No. 07 [positive],CRP,2024-05-25 06:52:27.165,Variant 7,7,positive,complete
+Case No. 07 [positive],ER Registration,2024-05-25 19:36:26.893,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-05-26 15:50:50.955,Variant 7,7,positive,complete
+Case No. 07 [positive],Admission IC,2024-05-27 03:26:26.485,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-05-27 17:35:31.753,Variant 7,7,positive,complete
+Case No. 07 [positive],Admission IC,2024-05-28 04:22:15.124,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-05-28 10:31:22.196,Variant 7,7,positive,complete
+Case No. 07 [positive],LacticAcid,2024-05-28 23:51:59.180,Variant 7,7,positive,complete
+Case No. 07 [positive],Return ER,2024-05-29 15:28:42.459,Variant 7,7,positive,complete
+Case No. 07 [positive],Return ER,2024-05-30 12:19:51.429,Variant 7,7,positive,complete
+Case No. 07 [positive],CRP,2024-05-31 02:54:05.854,Variant 7,7,positive,complete
+Case No. 07 [positive],Leucocytes,2024-05-31 04:20:35.818,Variant 7,7,positive,complete
+Case No. 07 [positive],LacticAcid,2024-05-31 08:07:32.361,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-05-31 14:22:04.500,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-05-31 15:05:52.770,Variant 7,7,positive,complete
+Case No. 07 [positive],ER Registration,2024-06-01 08:32:23.938,Variant 7,7,positive,complete
+Case No. 07 [positive],Release A,2024-06-01 11:09:03.990,Variant 7,7,positive,complete
+Case No. 07 [positive],Return ER,2024-06-02 02:33:38.992,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-06-02 18:23:12.513,Variant 7,7,positive,complete
+Case No. 07 [positive],Release A,2024-06-03 01:35:34.816,Variant 7,7,positive,complete
+Case No. 07 [positive],Return ER,2024-06-03 04:21:58.386,Variant 7,7,positive,complete
+Case No. 07 [positive],Leucocytes,2024-06-03 08:49:06.033,Variant 7,7,positive,complete
+Case No. 07 [positive],Return ER,2024-06-04 07:35:45.948,Variant 7,7,positive,complete
+Case No. 07 [positive],LacticAcid,2024-06-05 06:31:11.052,Variant 7,7,positive,complete
+Case No. 07 [positive],Admission NC,2024-06-05 23:16:20.505,Variant 7,7,positive,complete
+Case No. 07 [positive],Release B,2024-06-06 02:39:56.566,Variant 7,7,positive,complete
+Case No. 07 [positive],CRP,2024-06-06 15:23:01.519,Variant 7,7,positive,complete
+Case No. 07 [positive],LacticAcid,2024-06-07 02:31:03.126,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-06-07 22:05:33.228,Variant 7,7,positive,complete
+Case No. 07 [positive],Leucocytes,2024-06-07 22:14:27.360,Variant 7,7,positive,complete
+Case No. 07 [positive],LacticAcid,2024-06-07 23:47:42.609,Variant 7,7,positive,complete
+Case No. 07 [positive],Admission IC,2024-06-08 03:23:19.817,Variant 7,7,positive,complete
+Case No. 07 [positive],Admission NC,2024-06-08 08:55:22.388,Variant 7,7,positive,complete
+Case No. 07 [positive],Release B,2024-06-08 10:55:39.528,Variant 7,7,positive,complete
+Case No. 07 [positive],Return ER,2024-06-09 06:52:23.308,Variant 7,7,positive,complete
+Case No. 07 [positive],Release A,2024-06-10 04:42:27.307,Variant 7,7,positive,complete
+Case No. 07 [positive],IV Liquid,2024-06-10 17:57:45.139,Variant 7,7,positive,complete
+Case No. 07 [positive],ER Registration,2024-06-11 14:25:39.434,Variant 7,7,positive,complete
+Case No. 08 [positive],CRP,2024-06-12 03:59:34.936,Variant 8,8,positive,complete
+Case No. 08 [positive],Release A,2024-06-12 07:34:06.399,Variant 8,8,positive,complete
+Case No. 08 [positive],CRP,2024-06-13 05:27:45.609,Variant 8,8,positive,complete
+Case No. 08 [positive],ER Triage,2024-06-13 21:18:48.242,Variant 8,8,positive,complete
+Case No. 08 [positive],Release A,2024-06-14 07:46:15.361,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission NC,2024-06-15 06:44:14.024,Variant 8,8,positive,complete
+Case No. 08 [positive],Release B,2024-06-16 04:15:26.680,Variant 8,8,positive,complete
+Case No. 08 [positive],Leucocytes,2024-06-16 13:16:18.353,Variant 8,8,positive,complete
+Case No. 08 [positive],LacticAcid,2024-06-17 06:26:29.690,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission NC,2024-06-17 07:45:39.637,Variant 8,8,positive,complete
+Case No. 08 [positive],Release B,2024-06-17 17:28:10.000,Variant 8,8,positive,complete
+Case No. 08 [positive],IV Liquid,2024-06-18 05:16:51.009,Variant 8,8,positive,complete
+Case No. 08 [positive],Return ER,2024-06-19 02:30:17.298,Variant 8,8,positive,complete
+Case No. 08 [positive],Leucocytes,2024-06-19 08:56:31.592,Variant 8,8,positive,complete
+Case No. 08 [positive],ER Registration,2024-06-19 09:53:52.776,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission IC,2024-06-20 07:45:38.841,Variant 8,8,positive,complete
+Case No. 08 [positive],Return ER,2024-06-21 01:17:25.963,Variant 8,8,positive,complete
+Case No. 08 [positive],Leucocytes,2024-06-21 03:50:24.567,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission IC,2024-06-21 12:11:12.777,Variant 8,8,positive,complete
+Case No. 08 [positive],IV Liquid,2024-06-21 18:04:07.802,Variant 8,8,positive,complete
+Case No. 08 [positive],ER Registration,2024-06-22 16:26:36.511,Variant 8,8,positive,complete
+Case No. 08 [positive],CRP,2024-06-23 06:47:37.015,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission NC,2024-06-24 02:05:32.235,Variant 8,8,positive,complete
+Case No. 08 [positive],Release B,2024-06-24 07:58:42.291,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission IC,2024-06-24 23:25:42.518,Variant 8,8,positive,complete
+Case No. 08 [positive],IV Liquid,2024-06-25 05:42:34.869,Variant 8,8,positive,complete
+Case No. 08 [positive],IV Liquid,2024-06-26 04:51:08.606,Variant 8,8,positive,complete
+Case No. 08 [positive],Leucocytes,2024-06-26 18:03:17.092,Variant 8,8,positive,complete
+Case No. 08 [positive],Release A,2024-06-27 17:03:46.144,Variant 8,8,positive,complete
+Case No. 08 [positive],ER Sepsis Triage,2024-06-27 20:43:20.096,Variant 8,8,positive,complete
+Case No. 08 [positive],IV Antibiotics,2024-06-28 15:21:08.248,Variant 8,8,positive,complete
+Case No. 08 [positive],Return ER,2024-06-29 11:12:49.686,Variant 8,8,positive,complete
+Case No. 08 [positive],LacticAcid,2024-06-29 20:27:21.181,Variant 8,8,positive,complete
+Case No. 08 [positive],Return ER,2024-06-30 00:41:32.676,Variant 8,8,positive,complete
+Case No. 08 [positive],LacticAcid,2024-06-30 08:09:09.120,Variant 8,8,positive,complete
+Case No. 08 [positive],CRP,2024-06-30 23:07:36.547,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission NC,2024-07-01 16:06:44.426,Variant 8,8,positive,complete
+Case No. 08 [positive],Release B,2024-07-01 18:54:04.617,Variant 8,8,positive,complete
+Case No. 08 [positive],Return ER,2024-07-02 04:49:28.598,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission IC,2024-07-02 16:30:27.019,Variant 8,8,positive,complete
+Case No. 08 [positive],Release A,2024-07-03 13:19:46.465,Variant 8,8,positive,complete
+Case No. 08 [positive],LacticAcid,2024-07-03 14:39:34.584,Variant 8,8,positive,complete
+Case No. 08 [positive],ER Registration,2024-07-03 15:24:42.497,Variant 8,8,positive,complete
+Case No. 08 [positive],CRP,2024-07-03 19:41:38.357,Variant 8,8,positive,complete
+Case No. 08 [positive],Return ER,2024-07-04 13:23:42.954,Variant 8,8,positive,complete
+Case No. 08 [positive],ER Registration,2024-07-04 16:56:01.755,Variant 8,8,positive,complete
+Case No. 08 [positive],Return ER,2024-07-04 22:12:31.398,Variant 8,8,positive,complete
+Case No. 08 [positive],LacticAcid,2024-07-04 23:18:45.534,Variant 8,8,positive,complete
+Case No. 08 [positive],Admission NC,2024-07-05 21:27:57.511,Variant 8,8,positive,complete
+Case No. 08 [positive],Release B,2024-07-06 19:27:47.476,Variant 8,8,positive,complete
+Case No. 09 [positive],CRP,2024-07-07 05:52:56.480,Variant 9,9,positive,complete
+Case No. 09 [positive],Release A,2024-07-08 05:33:12.048,Variant 9,9,positive,complete
+Case No. 09 [positive],Return ER,2024-07-08 17:55:03.704,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Registration,2024-07-09 11:15:21.112,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission NC,2024-07-10 01:53:12.035,Variant 9,9,positive,complete
+Case No. 09 [positive],Release B,2024-07-10 14:44:09.436,Variant 9,9,positive,complete
+Case No. 09 [positive],LacticAcid,2024-07-10 20:01:43.346,Variant 9,9,positive,complete
+Case No. 09 [positive],Return ER,2024-07-10 21:59:54.121,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Triage,2024-07-10 23:53:11.619,Variant 9,9,positive,complete
+Case No. 09 [positive],Release A,2024-07-11 05:34:56.257,Variant 9,9,positive,complete
+Case No. 09 [positive],Return ER,2024-07-11 09:22:23.583,Variant 9,9,positive,complete
+Case No. 09 [positive],CRP,2024-07-11 10:04:49.414,Variant 9,9,positive,complete
+Case No. 09 [positive],Release A,2024-07-11 16:35:47.201,Variant 9,9,positive,complete
+Case No. 09 [positive],Return ER,2024-07-12 06:50:37.217,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Sepsis Triage,2024-07-12 20:06:36.815,Variant 9,9,positive,complete
+Case No. 09 [positive],IV Antibiotics,2024-07-12 23:04:45.075,Variant 9,9,positive,complete
+Case No. 09 [positive],Release A,2024-07-13 03:15:20.919,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission IC,2024-07-13 12:03:52.599,Variant 9,9,positive,complete
+Case No. 09 [positive],CRP,2024-07-14 11:40:14.396,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Registration,2024-07-15 00:53:33.560,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Registration,2024-07-15 09:22:51.734,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission NC,2024-07-16 03:31:09.232,Variant 9,9,positive,complete
+Case No. 09 [positive],Release B,2024-07-16 13:39:11.125,Variant 9,9,positive,complete
+Case No. 09 [positive],Return ER,2024-07-17 05:25:18.775,Variant 9,9,positive,complete
+Case No. 09 [positive],Leucocytes,2024-07-17 07:27:31.485,Variant 9,9,positive,complete
+Case No. 09 [positive],LacticAcid,2024-07-17 13:22:46.772,Variant 9,9,positive,complete
+Case No. 09 [positive],LacticAcid,2024-07-18 02:30:55.339,Variant 9,9,positive,complete
+Case No. 09 [positive],Leucocytes,2024-07-18 17:15:43.393,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission IC,2024-07-19 16:53:00.195,Variant 9,9,positive,complete
+Case No. 09 [positive],Leucocytes,2024-07-19 19:45:46.607,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Registration,2024-07-20 16:33:09.372,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Registration,2024-07-21 00:14:08.689,Variant 9,9,positive,complete
+Case No. 09 [positive],Leucocytes,2024-07-21 19:49:00.438,Variant 9,9,positive,complete
+Case No. 09 [positive],Release A,2024-07-22 15:40:40.744,Variant 9,9,positive,complete
+Case No. 09 [positive],LacticAcid,2024-07-23 02:01:35.299,Variant 9,9,positive,complete
+Case No. 09 [positive],Release A,2024-07-23 22:58:39.302,Variant 9,9,positive,complete
+Case No. 09 [positive],Release A,2024-07-24 08:01:20.633,Variant 9,9,positive,complete
+Case No. 09 [positive],IV Liquid,2024-07-25 01:16:08.008,Variant 9,9,positive,complete
+Case No. 09 [positive],IV Liquid,2024-07-25 05:41:10.750,Variant 9,9,positive,complete
+Case No. 09 [positive],Return ER,2024-07-25 11:09:15.226,Variant 9,9,positive,complete
+Case No. 09 [positive],ER Registration,2024-07-26 02:06:07.111,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission NC,2024-07-26 22:07:34.917,Variant 9,9,positive,complete
+Case No. 09 [positive],Release B,2024-07-27 03:17:49.671,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission IC,2024-07-28 00:16:43.388,Variant 9,9,positive,complete
+Case No. 09 [positive],IV Liquid,2024-07-28 10:56:14.782,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission NC,2024-07-29 04:48:48.561,Variant 9,9,positive,complete
+Case No. 09 [positive],Release B,2024-07-29 16:09:52.884,Variant 9,9,positive,complete
+Case No. 09 [positive],Admission NC,2024-07-30 07:27:11.173,Variant 9,9,positive,complete
+Case No. 09 [positive],Release B,2024-07-31 01:30:56.278,Variant 9,9,positive,complete
+Case No. 09 [positive],Return ER,2024-07-31 17:07:38.842,Variant 9,9,positive,complete
+Case No. 10 [positive],Admission IC,2024-08-01 00:06:08.917,Variant 10,10,positive,complete
+Case No. 10 [positive],Return ER,2024-08-01 22:50:36.009,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Triage,2024-08-02 07:22:56.139,Variant 10,10,positive,complete
+Case No. 10 [positive],Admission NC,2024-08-02 16:34:50.916,Variant 10,10,positive,complete
+Case No. 10 [positive],Release B,2024-08-03 06:51:45.036,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-03 13:48:38.909,Variant 10,10,positive,complete
+Case No. 10 [positive],Release A,2024-08-03 17:26:32.223,Variant 10,10,positive,complete
+Case No. 10 [positive],Release A,2024-08-04 08:34:44.880,Variant 10,10,positive,complete
+Case No. 10 [positive],Return ER,2024-08-04 08:44:56.323,Variant 10,10,positive,complete
+Case No. 10 [positive],Return ER,2024-08-04 18:05:16.501,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Registration,2024-08-05 08:33:14.691,Variant 10,10,positive,complete
+Case No. 10 [positive],Leucocytes,2024-08-05 11:34:28.554,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Registration,2024-08-05 22:05:07.048,Variant 10,10,positive,complete
+Case No. 10 [positive],CRP,2024-08-06 10:01:38.229,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Sepsis Triage,2024-08-06 23:34:17.296,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Antibiotics,2024-08-07 09:26:41.299,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Registration,2024-08-08 01:51:44.164,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-09 00:33:57.718,Variant 10,10,positive,complete
+Case No. 10 [positive],Return ER,2024-08-09 22:15:59.402,Variant 10,10,positive,complete
+Case No. 10 [positive],Return ER,2024-08-10 13:45:22.722,Variant 10,10,positive,complete
+Case No. 10 [positive],CRP,2024-08-10 15:21:09.076,Variant 10,10,positive,complete
+Case No. 10 [positive],Admission IC,2024-08-10 22:32:55.652,Variant 10,10,positive,complete
+Case No. 10 [positive],LacticAcid,2024-08-11 21:50:59.100,Variant 10,10,positive,complete
+Case No. 10 [positive],LacticAcid,2024-08-12 18:41:43.752,Variant 10,10,positive,complete
+Case No. 10 [positive],LacticAcid,2024-08-13 12:29:00.503,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-14 06:59:11.832,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Registration,2024-08-14 08:03:52.963,Variant 10,10,positive,complete
+Case No. 10 [positive],Admission IC,2024-08-14 17:02:51.208,Variant 10,10,positive,complete
+Case No. 10 [positive],CRP,2024-08-15 13:56:37.035,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Registration,2024-08-15 17:19:12.509,Variant 10,10,positive,complete
+Case No. 10 [positive],Admission IC,2024-08-15 19:31:06.042,Variant 10,10,positive,complete
+Case No. 10 [positive],Admission IC,2024-08-16 08:58:46.911,Variant 10,10,positive,complete
+Case No. 10 [positive],CRP,2024-08-16 11:22:17.954,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-17 04:07:49.069,Variant 10,10,positive,complete
+Case No. 10 [positive],LacticAcid,2024-08-17 13:17:05.669,Variant 10,10,positive,complete
+Case No. 10 [positive],LacticAcid,2024-08-18 10:45:32.476,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-18 11:21:10.933,Variant 10,10,positive,complete
+Case No. 10 [positive],Leucocytes,2024-08-19 10:06:54.194,Variant 10,10,positive,complete
+Case No. 10 [positive],LacticAcid,2024-08-20 05:11:42.710,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-21 01:54:40.857,Variant 10,10,positive,complete
+Case No. 10 [positive],Admission NC,2024-08-21 16:19:25.212,Variant 10,10,positive,complete
+Case No. 10 [positive],Release B,2024-08-21 18:31:31.562,Variant 10,10,positive,complete
+Case No. 10 [positive],Release A,2024-08-22 15:35:53.791,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-22 16:42:05.728,Variant 10,10,positive,complete
+Case No. 10 [positive],Admission IC,2024-08-23 08:51:18.814,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Registration,2024-08-23 21:37:45.194,Variant 10,10,positive,complete
+Case No. 10 [positive],IV Liquid,2024-08-24 20:45:28.169,Variant 10,10,positive,complete
+Case No. 10 [positive],CRP,2024-08-25 13:11:29.825,Variant 10,10,positive,complete
+Case No. 10 [positive],Release A,2024-08-25 15:10:18.434,Variant 10,10,positive,complete
+Case No. 10 [positive],ER Registration,2024-08-26 13:08:44.553,Variant 10,10,positive,complete
