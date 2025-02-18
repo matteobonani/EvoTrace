@@ -12,18 +12,19 @@ from Declare4Py.ProcessModels.DeclareModel import DeclareModel
 from Declare4Py.D4PyEventLog import D4PyEventLog
 import random
 import pandas as pd
-from problem import Problem_single_ElementWise, Problem_multi_ElementWise, Problem_single_ElementWise_noConstraints
+from problem import Problem_single_ElementWise, Problem_multi_ElementWise, Problem_single_ElementWise_noConstraints, Problem_multi_no_const_ElementWise
 from pymoo.algorithms.soo.nonconvex.ga import GA
 import os
 from pymoo.operators.mutation.pm import PolynomialMutation
 from pymoo.operators.crossover.sbx import SBX
 from mutation import IntegerPolynomialMutation
+from problem2 import ProblemMultiNoConstElementWise, ProblemSingleElementWise,ProblemMultiElementWise, ProblemSingleElementWiseNoConstraints
 
 
 class Setup:
 
     @staticmethod
-    def setup_initial_population(trace_length, n_traces, activities_name, encoder):
+    def setup_initial_population(activities_name, encoder):
         """
         Sets up the initial population and shared parameters for the given trace length.
         """
@@ -91,7 +92,7 @@ class Setup:
             sampling=sampling,
             crossover=crossover,
             mutation=mutation,
-            callback=UpdatePopulationCallback(problem=problem),
+            callback=UpdatePopulationCallback(),
             eliminate_duplicates=False,
         )
 
@@ -102,9 +103,9 @@ class Setup:
         Creates the problem instance based on the algorithm type.
         """
         if algorithm_type == "single" and constraints == "no":
-            problem_class = Problem_single_ElementWise_noConstraints
+            problem_class = ProblemSingleElementWiseNoConstraints
         else:
-            problem_class = Problem_single_ElementWise if algorithm_type == "single" else Problem_multi_ElementWise
+            problem_class = ProblemSingleElementWise if algorithm_type == "single" else ProblemMultiElementWise
 
         return problem_class(
             trace_length=trace_length,
@@ -170,7 +171,7 @@ class Setup:
             plt.legend()
             plt.grid(True)
 
-        # if multi-objective and constraints == "yes", plot n violation score
+
         if algorithm_type == "multi" and constraints == "yes":
             plt.subplot(1, 3, 3)
             plt.plot(range(n_generations), n_violations_scores, label="number violation score", color="green")
@@ -184,7 +185,7 @@ class Setup:
         plot_name = f"ID_{ID}_run_{test_run}_{algorithm_type}_{constraints}_constraints.png"
         plt.tight_layout()
         os.makedirs(f"plots/run_{current_date}", exist_ok=True)
-        plt.savefig(f"plots2/run_{current_date}/{plot_name}")
+        plt.savefig(f"plots/run_{current_date}/{plot_name}")
         plt.close()
 
     @staticmethod
@@ -195,6 +196,7 @@ class Setup:
 
         final_population = [individual.X.tolist() for individual in population]
         G = np.array([individual.G for individual in population])
+        # G = np.array([individual.F[1] for individual in population])
 
 
         os.makedirs(f"results/encoded_traces_{current_date}", exist_ok=True)
@@ -220,40 +222,4 @@ class Setup:
         # print(f"Feasible traces saved to {file_name}")
 
 
-    def plot_progress(diversity_scores=None, constraint_scores=None, n_violations_scores=None, n_generations=None, constraints='yes', algorithm_type="single"):
-        """
-        Plot and save the fitness and constraint scores for the given algorithm (callback).
-        """
-        plt.figure(figsize=(15, 5))
 
-        # diversity scores (always plot diversity scores)
-        plt.subplot(1, 2 if constraints == "no" else (3 if algorithm_type == "multi" else 2), 1)
-        plt.plot(range(n_generations), diversity_scores, label="Avg. Diversity", color="blue")
-        plt.xlabel("Generation")
-        plt.ylabel("Diversity")
-        plt.title("Diversity Over Generations")
-        plt.legend()
-        plt.grid(True)
-
-        # constraint scores (only if constraints == "yes")
-        if constraints == "yes":
-            plt.subplot(1, 3 if algorithm_type == "multi" else 2, 2)
-            plt.plot(range(n_generations), constraint_scores, label="Avg. Constraint Score", color="orange")
-            plt.xlabel("Generation")
-            plt.ylabel("Constraint Score")
-            plt.title("Constraint Scores Over Generations")
-            plt.legend()
-            plt.grid(True)
-
-        # if multi-objective and constraints == "yes", plot n vio score
-        if algorithm_type == "multi" and constraints == "yes":
-            plt.subplot(1, 3, 3)
-            plt.plot(range(n_generations), n_violations_scores, label="Number violation score", color="green")
-            plt.xlabel("Generation")
-            plt.ylabel("Number Violation")
-            plt.title("Number Violations Over Generations")
-            plt.legend()
-            plt.grid(True)
-
-        plt.tight_layout()
-        plt.show()

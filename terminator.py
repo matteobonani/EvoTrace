@@ -9,6 +9,7 @@ class MyTermination(Termination):
 
     def _update(self, algorithm):
         G = algorithm.pop.get("G")
+        F = algorithm.pop.get("F")
 
 
         if G is None or len(G) == 0:

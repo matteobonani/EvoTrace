@@ -5,9 +5,9 @@ import numpy as np
 
 
 class UpdatePopulationCallback(Callback):
-    def __init__(self, problem):
+    def __init__(self):
         super().__init__()
-        self.problem = problem
+
         self.constraint_history = []
         self.n_violations_scores = []
         self.diversity_scores = []
@@ -19,7 +19,8 @@ class UpdatePopulationCallback(Callback):
         Update the problem's current population and gather data for plotting.
         """
         population = algorithm.pop.get("X")
-        self.problem.set_current_population(population)
+
+        algorithm.problem.set_current_population(population)
 
         # gather fitness and constraint scores for the current population
         G = algorithm.pop.get("G")
@@ -32,14 +33,11 @@ class UpdatePopulationCallback(Callback):
             n_violations_scores = F[:, 1]
             self.n_violations_scores.append(np.mean(n_violations_scores))
 
-        # store the average scores for plotting
-
         self.diversity_scores.append(np.mean(diversity_scores))
+
 
         self.generation += 1
 
-        # if self.plot:
-        #     self.plot_progress()
 
     def get_data(self):
         """
@@ -91,16 +89,3 @@ class UpdatePopulationCallback(Callback):
         plt.show(block=False)
 
 
-class UpdatePopCallback(Callback):
-    def __init__(self, problem, plot=1):
-        super().__init__()
-        self.problem = problem
-
-
-    def notify(self, algorithm):
-        """
-        Update the problem's current population and gather data for plotting.
-        """
-        # Update the current population
-        population = algorithm.pop.get("X")
-        self.problem.set_current_population(population)

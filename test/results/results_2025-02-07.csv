@@ -1,0 +1,9 @@
+ID,Population,TraceLength,Model,Termination,Algorithm,Constraints,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+1,3000,50,model1.decl,multi,multi,yes,108.17,0.97,NaN,5.10
+ID,Population,TraceLength,Model,Termination,Algorithm,Constraints,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+ID,Population,TraceLength,Model,Termination,Algorithm,Constraints,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+1,3000,50,model1.decl,multi,multi,yes,109.45,0.97,5.14,NaN
+ID,Population,TraceLength,Model,Termination,Algorithm,Constraints,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+1,3000,50,model1.decl,multi,multi,yes,112.03,0.98,5.20,NaN
+ID,Population,TraceLength,Model,Termination,Algorithm,Constraints,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+1,3000,50,model1.decl,multi,multi,yes,112.90,0.98,5.48,NaN
