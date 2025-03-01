@@ -1,14 +1,14 @@
 from matplotlib import pyplot as plt
 from encoder import Encoder
-from sampling import MySampling
-from callback import UpdatePopulationCallback
+from ga_objects.sampling import MySampling
+from ga_objects.callback import UpdatePopulationCallback
 from tools import Tools
 from Declare4Py.ProcessModels.DeclareModel import DeclareModel
 from Declare4Py.D4PyEventLog import D4PyEventLog
 import os
 from pymoo.operators.crossover.sbx import SBX
-from mutation import IntegerPolynomialMutation
-from problem import *
+from ga_objects.mutation import IntegerPolynomialMutation
+from ga_objects.problem import *
 from pymoo.optimize import minimize
 
 

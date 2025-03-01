@@ -1,9 +1,9 @@
-from callback import UpdatePopulationCallback
-from testSetup import Setup
-from problem import *
+from ga_objects.callback import UpdatePopulationCallback
+from utils.testSetup import Setup
+from ga_objects.problem import *
 from pymoo.algorithms.moo.nsga2 import NSGA2
-from sampling import MySampling
-from terminator import MyTermination
+from ga_objects.sampling import MySampling
+from ga_objects.terminator import MyTermination
 from pymoo.algorithms.soo.nonconvex.ga import GA
 
 
