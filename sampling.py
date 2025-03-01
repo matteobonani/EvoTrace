@@ -1,9 +1,8 @@
-from pymoo.core.individual import Individual
-from pymoo.core.population import Population
 from pymoo.core.sampling import Sampling
 import numpy as np
 
 class MySampling(Sampling):
+    """Custom sampling class that returns the initial population for sampling."""
     def __init__(self, initial_population):
         super().__init__()
         self.initial_population = np.array(initial_population)

@@ -1,0 +1,3 @@
+ID,Population,TraceLength,Model,Problem,MutationExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+1,3000,50,model1.decl,IntegerPolynomialMutation,ProblemMultiElementWise,245.34,0.36,0.00,0.00,1
+2,3000,50,model1.decl,IntegerPolynomialMutation,ProblemMultiNoConstElementWise,13362.02,0.00,0.20,NaN,1
