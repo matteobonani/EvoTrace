@@ -1,4 +1,4 @@
-# genetic algorithm trace generator
+#  EvoTrace
 
 
 
@@ -15,7 +15,7 @@
 
 ## Overview
 
-The **Genetic Algorithm Trace Generator** is designed to track and log various operations in a genetic algorithm (GA), 
+**EvoTrace** is designed to track and log various operations in a genetic algorithm (GA), 
 providing insights into how the algorithm evolves and behaves over generations.
 
 ---
@@ -28,13 +28,13 @@ Follow these steps to install and set up the **Genetic Algorithm Trace Generator
 First, clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/yourusername/genetic-algorithm-trace-generator.git
+git clone https://github.com/matteobonani/EvoTrace.git
 ```
 ### 2. Navigate to the Project Directory
 Once the repository is cloned, navigate into the project directory:
 
 ```bash
-cd genetic-algorithm-trace-generator
+cd EvoTrace
 ```
 
 ### 3. Set Up a Virtual Environment (Optional but Recommended)
