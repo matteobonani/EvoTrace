@@ -1,8 +1,8 @@
 from matplotlib import pyplot as plt
-from encoder import Encoder
+from utils.encoder import Encoder
 from ga_objects.sampling import MySampling
 from ga_objects.callback import UpdatePopulationCallback
-from tools import Tools
+from utils.tools import Tools
 from Declare4Py.ProcessModels.DeclareModel import DeclareModel
 from Declare4Py.D4PyEventLog import D4PyEventLog
 import os
