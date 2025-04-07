@@ -1,3 +1,4 @@
+import random
 from matplotlib import pyplot as plt
 from utils.encoder import Encoder
 from ga_objects.sampling import MySampling
@@ -10,10 +11,27 @@ from pymoo.operators.crossover.sbx import SBX
 from ga_objects.mutation import IntegerPolynomialMutation
 from ga_objects.problem import *
 from pymoo.optimize import minimize
+import pm4py
 
 
 class Setup:
     """A utility class for managing the setup and execution of optimization experiments."""
+
+    @staticmethod
+    def invert_wighted_normalization(diversity_scores, weighted_diversity_value, constraint_scores, weighted_constraint_value, trace_length):
+
+
+        if weighted_diversity_value == 1 and weighted_constraint_value == 1:
+            diversity_scores = [abs(score) for score in diversity_scores]
+
+        else:
+            diversity_scores = [abs(score) / weighted_diversity_value for score in diversity_scores]
+            constraint_scores = [score / weighted_constraint_value * 10 for score in constraint_scores]
+
+
+        return diversity_scores, constraint_scores
+
+
 
     @staticmethod
     def run_result(problem, algorithm, termination, verbose):
@@ -67,6 +85,8 @@ class Setup:
 
         return exec_time, constraint_scores, first_objective, second_objective, n_generations, population
 
+
+
     @staticmethod
     def initial_population(path_to_population, trace_length, trace_number):
         """
@@ -98,6 +118,42 @@ class Setup:
                              ][:trace_number]
 
         return initial_population
+
+    @staticmethod
+    def extract_traces(path_to_population, trace_length=50):
+        """
+        Extract traces from a CSV file, assuming each trace has exactly `trace_length` activities.
+
+        Parameters:
+        - path_to_population (str): Path to the CSV file.
+        - trace_length (int): Number of activities per trace (default is 50).
+
+        Returns:
+        - list: A list of traces, where each trace is a list of `trace_length` activities.
+        """
+
+        # Load CSV and read only the 'concept:name' column
+        df = pd.read_csv(path_to_population, usecols=['concept:name'])
+
+        # Convert column to a list of activities
+        activities = df['concept:name'].tolist()
+
+        # Split activities into chunks of `trace_length`
+        traces = [activities[i:i + trace_length] for i in range(0, len(activities), trace_length)]
+
+        return traces
+    @staticmethod
+    def initial_random_population(path_to_declareModel, trace_length, trace_number):
+        """
+        Generates n random traces, each of a specified length.
+        """
+
+        declare = DeclareModel().parse_from_file(path_to_declareModel)
+        activities_name = declare.get_model_activities()
+        traces = [[random.choice(activities_name) for _ in range(trace_length)] for _ in range(trace_number)]
+        return traces
+
+
 
 
     @staticmethod
@@ -161,7 +217,7 @@ class Setup:
         )
 
     @staticmethod
-    def initialize_shared_components(path_to_declareModel, trace_length, initial_population):
+    def initialize_shared_components(path_to_declareModel, trace_length, initial_population, pop_size):
         """
         Initializes shared components like the encoder, Declare model, and event log.
 
@@ -209,8 +265,21 @@ class Setup:
             'concept:name': ['1'] * trace_length,
             'timestamp': pd.to_datetime(timestamps),
         }
-        dataframe = pd.DataFrame(data)
 
+        # case_concept_name = np.array([[str(i + 1)] * trace_length for i in range(pop_size)])
+        # concept_name = np.full((pop_size, trace_length), '1')  # 2D array filled with '1'
+        # timestamps = pd.to_datetime(timestamps)
+        # repeated_timestamps = np.tile(timestamps, (pop_size, 1))
+        #
+        #
+        # data = {
+        #     'case:concept:name': case_concept_name.flatten(),  # convert 2D array to list of lists
+        #     'concept:name': concept_name.flatten(),  # convert 2D array to list of lists
+        #     'timestamp': repeated_timestamps.flatten()  # convert 2D array to list of lists
+        # }
+
+
+        dataframe = pd.DataFrame(data)
 
         event_log = D4PyEventLog()
         event_log.log = dataframe
@@ -220,7 +289,8 @@ class Setup:
 
         encoder = Encoder(activities_name)
 
-        initial_encoded_pop = [encoder.encode(trace) for trace in initial_population]
+        # initial_encoded_pop = [encoder.encode(trace) for trace in initial_population]
+        initial_encoded_pop = encoder.encode(initial_population)
         lower_bounds = 0
         upper_bounds = len(activities_name) - 1
 
@@ -269,7 +339,6 @@ class Setup:
     @staticmethod
     def create_problem(problem_class, trace_length, encoder, declare, initial_encoded_pop, lower_bounds, upper_bounds,
                        event_log, dataframe):
-
         """
         Creates an optimization problem with the given configuration.
 
@@ -364,7 +433,7 @@ class Setup:
         plt.subplot(1, n_subplots, subplot_idx)
         plt.plot(range(n_generations), diversity_scores, label="Avg. Diversity", color="blue")
         plt.xlabel("Generation")
-        plt.ylabel("Diversity")
+        plt.ylabel("% Diversity")
         plt.title("Diversity Over Generations")
         plt.legend()
         plt.grid(True)
@@ -399,9 +468,8 @@ class Setup:
 
 
     @staticmethod
-    def record_experiment_results(file, run, ID, pop_size, trace_length, model, problem_type, mutation_type,
-                    exec_time, diversity_scores=None, constraint_scores=None,
-                    n_violations_scores=None, error=None):
+    def record_experiment_results(file, run, ID, pop_size, trace_length, model, problem_type, mutation_type, termination_type,
+                    exec_time, diversity_scores=None, constraint_scores=None, n_violations_scores=None, error=None):
         """
         Logs experiment results to a file.
 
@@ -446,21 +514,22 @@ class Setup:
 
         status = f"{exec_time:.2f}" if exec_time else "ERROR"
 
-        diversity_score = abs(diversity_scores[-1]) / trace_length if diversity_scores else "NaN"
+
+        diversity_score = abs(diversity_scores[-1]) if diversity_scores else "NaN"
         diversity = f"{diversity_score:.2f}" if diversity_scores else "NaN"
         constraint = f"{constraint_scores[-1]:.2f}" if constraint_scores else "NaN"
         n_violations = f"{n_violations_scores[-1]:.2f}" if n_violations_scores else "NaN"
 
 
         file.write(
-            f"{ID},{pop_size},{trace_length},{model},{problem_type},{mutation_type},{status},"
-            f"{diversity},{constraint},{n_violations},{run}\n"
+            f"{ID},{pop_size},{trace_length},{model},{problem_type.__name__},{type(mutation_type).__name__} eta={mutation_type.eta} prob ={mutation_type.prob.value},{termination_type},{status},"
+            f"{diversity},{constraint},{run}\n"
         )
 
         if error:
-            print(f"Error encountered with ID={ID}, Problem={problem_type}, Mutation:{mutation_type}: {error}")
+            print(f"Error encountered with ID={ID}, Problem={problem_type.__name__}, Mutation:{type(mutation_type).__name__}: {error}")
         else:
-            print(f"Execution Time ({problem_type}): {exec_time:.2f} seconds")
+            print(f"Execution Time ({problem_type.__name__}): {exec_time:.2f} seconds")
 
     @staticmethod
     def save_valid_solutions(population, encoder, run, ID, problem_type,
@@ -508,18 +577,13 @@ class Setup:
         file_name = f"ID_{ID}_run_{run}_{problem_type}.csv"
         file_path = os.path.join(save_path, file_name)
 
-
-
         # feasible solutions (constraint should be <= 0)
         feasible_solutions = [trace for trace, constraint in zip(final_population, constraints_array) if
                               constraint <= 0]
 
-
-        decoded_traces = [encoder.decode(trace) for trace in feasible_solutions]
+        decoded_traces = encoder.decode(feasible_solutions)
 
         # save the traces into the file
         with open(file_path, "w") as f:
             for trace in decoded_traces:
-                encoded_trace = ";".join(map(str, trace))
-                f.write(f"{encoded_trace}\n")
-
+                f.write(";".join(map(str, trace)) + "\n")

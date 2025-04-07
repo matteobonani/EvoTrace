@@ -1,0 +1,4 @@
+ID,Population,TraceLength,Model,Problem,Mutation,Termination,ExecutionTime,DiversityScore,ConstraintScore,Iteration
+1,3000,50,model2.decl,ProblemSingle,IntegerPolynomialMutation eta=5 prob =0.8,myTerminator,ERROR,NaN,NaN,1
+ID,Population,TraceLength,Model,Problem,Mutation,Termination,ExecutionTime,DiversityScore,ConstraintScore,Iteration
+1,3000,50,model2.decl,ProblemSingle,IntegerPolynomialMutation eta=5 prob =0.8,myTerminator,ERROR,NaN,NaN,1

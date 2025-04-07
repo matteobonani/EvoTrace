@@ -1,6 +1,30 @@
 import numpy as np
 import random
 from pymoo.core.crossover import Crossover
+from pymoo.operators.crossover.sbx import SBX
+
+
+class ConstraintAwareCrossover(SBX):
+    def _do(self, problem, X, **kwargs):
+        max_retries = 10  # Limit retries to avoid excessive computation
+        parents = X
+
+        for _ in range(max_retries):
+            offspring = super()._do(problem, parents, **kwargs)  # Generate offspring
+
+            # Check feasibility for each offspring
+            feasible_offspring = []
+            for i in range(offspring.shape[0]):  # Iterate over offspring
+                child = offspring[i]
+
+                constraint_values = problem.evaluate_constraints(child.reshape(1, -1))  # Ensure correct shape
+                if np.all(constraint_values <= 0):  # If all constraints are satisfied
+                    feasible_offspring.append(child)
+
+            if len(feasible_offspring) > 0:  # If at least one valid solution was found, return them
+                return np.array(feasible_offspring)
+
+        return offspring  # If no feasible solutions were found after retries, return best attempt
 
 
 class TraceCrossover(Crossover):

@@ -1,0 +1,501 @@
+CRP,concept:name,org:group,lifecycle:transition,Diagnose,time:timestamp,Age,case:concept:name,case:trace:type,InfectionSuspected,DiagnosticBlood,DisfuncOrg,SIRSCritTachypnea,Hypotensie,SIRSCritHeartRate,Infusion,DiagnosticArtAstrup,DiagnosticIC,DiagnosticSputum,DiagnosticLiquor,DiagnosticOther,SIRSCriteria2OrMore,DiagnosticXthorax,SIRSCritTemperature,DiagnosticUrinaryCulture,SIRSCritLeucos,Oligurie,DiagnosticLacticAcid,Hypoxie,DiagnosticUrinarySediment,DiagnosticECG,LacticAcid,Leucocytes
+5.0,CRP,C,complete,YA,2025-04-01 14:08:05.420000+00:00,23.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,D,complete,YC,2025-04-01 14:11:34.428000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,A,complete,QB,2025-04-01 14:17:46.639000+00:00,22.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,D,complete,YA,2025-04-01 14:25:45.175000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+97.0,CRP,F,complete,YB,2025-04-01 14:41:09.078000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YA,2025-04-01 14:49:48.023000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 14:54:57.189000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YC,2025-04-01 14:58:34.746000+00:00,22.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 15:02:15.520000+00:00,22.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+441.0,CRP,E,complete,YA,2025-04-01 15:03:09.950000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 15:09:45.709000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YA,2025-04-01 15:11:03.827000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,CD,2025-04-01 15:16:40.382000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 15:17:45.962000+00:00,24.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YC,2025-04-01 15:26:16.575000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,A,complete,YB,2025-04-01 15:31:26.423000+00:00,23.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Registration,A,complete,QA,2025-04-01 15:35:07.295000+00:00,20.0,Case No. 01 [positive],positive,true,true,false,true,false,false,false,true,true,false,true,true,true,false,false,true,false,false,true,false,true,true,,
+,ER Triage,A,complete,YA,2025-04-01 15:35:25.264000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 15:40:15.541000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Sepsis Triage,A,complete,YA,2025-04-01 15:45:22.622000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,B,complete,,2025-04-01 15:56:12.017000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YC,2025-04-01 16:00:31.880000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 16:04:39.313000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+208.0,CRP,A,complete,YD,2025-04-01 16:05:51.133000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Release A,D,complete,,2025-04-01 16:20:37.489000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Return ER,A,complete,,2025-04-01 16:24:01.683000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,QA,2025-04-01 16:27:03.263000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,D,complete,,2025-04-01 16:27:34.631000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,B,complete,YA,2025-04-01 16:27:59.789000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,159.3
+,LacticAcid,A,complete,,2025-04-01 16:31:32.437000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,D,complete,QB,2025-04-01 16:45:46.661000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,273.40000000000003
+,LacticAcid,C,complete,,2025-04-01 16:47:17.339000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,B,complete,YA,2025-04-01 16:51:34.611000+00:00,22.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,136.6
+254.0,CRP,A,complete,YA,2025-04-01 16:53:14.761000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 16:56:19.962000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,14.600000000000001,
+,Leucocytes,B,complete,YA,2025-04-01 17:00:26.052000+00:00,58.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,370.1
+,Leucocytes,X,complete,YA,2025-04-01 17:06:20.645000+00:00,89.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,22.3
+6.0,CRP,C,complete,YB,2025-04-01 17:09:50.709000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YC,2025-04-01 17:11:41.313000+00:00,22.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,134.1
+306.0,CRP,A,complete,YC,2025-04-01 17:14:41.603000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 17:22:39.267000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,B,complete,YB,2025-04-01 17:28:44.117000+00:00,90.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,56.900000000000006
+,IV Liquid,A,complete,YB,2025-04-01 17:30:37.344000+00:00,90.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YB,2025-04-01 17:30:54.524000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,67.3
+,Leucocytes,A,complete,NA,2025-04-01 17:32:20.741000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,216.60000000000002
+,Leucocytes,A,complete,YA,2025-04-01 17:36:39.192000+00:00,20.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,306.7
+402.0,CRP,B,complete,YA,2025-04-01 17:40:54.015000+00:00,26.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 17:41:56.858000+00:00,,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,14.9,
+,Leucocytes,B,complete,YC,2025-04-01 17:49:59.194000+00:00,21.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,1.6
+,Leucocytes,A,complete,YA,2025-04-01 17:51:00.856000+00:00,22.0,Case No. 01 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,335.20000000000005
+508.0,CRP,A,complete,YC,2025-04-01 14:09:28.431000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,B,complete,YA,2025-04-01 14:12:19.993000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Registration,B,complete,YA,2025-04-01 14:19:59.190000+00:00,21.0,Case No. 02 [positive],positive,false,true,false,true,false,true,true,false,false,false,false,false,true,false,true,true,false,true,false,true,true,true,,
+,ER Triage,A,complete,LB,2025-04-01 14:25:05.114000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 14:26:13.029000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,11.9,
+,Leucocytes,B,complete,YA,2025-04-01 14:26:40.672000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,334.70000000000005
+,Leucocytes,A,complete,YC,2025-04-01 14:27:56.579000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,41.300000000000004
+464.0,CRP,C,complete,AE,2025-04-01 14:30:30.617000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+480.0,CRP,A,complete,HB,2025-04-01 14:35:48.094000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 14:47:37.357000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,YC,2025-04-01 14:49:17.847000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+349.0,CRP,A,complete,YC,2025-04-01 14:52:10.400000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+340.0,CRP,A,complete,YA,2025-04-01 14:53:35.409000+00:00,22.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YD,2025-04-01 14:55:14.308000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,307.70000000000005
+,Leucocytes,A,complete,YA,2025-04-01 14:58:39.771000+00:00,22.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,46.0
+,IV Liquid,B,complete,YB,2025-04-01 15:02:13.794000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Release A,C,complete,,2025-04-01 15:13:32.843000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 15:18:40.769000+00:00,24.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,45.1
+,ER Sepsis Triage,I,complete,YA,2025-04-01 15:24:43.888000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,A,complete,,2025-04-01 15:29:18.873000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 15:41:15.373000+00:00,22.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,189.60000000000002
+5.0,CRP,C,complete,YB,2025-04-01 15:41:55.659000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YC,2025-04-01 15:44:01.956000+00:00,25.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,73.5
+,Leucocytes,C,complete,YA,2025-04-01 15:44:44.547000+00:00,25.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,65.5
+301.0,CRP,A,complete,YC,2025-04-01 15:55:31.432000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 16:00:11.853000+00:00,23.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+416.0,CRP,B,complete,YA,2025-04-01 16:07:04.869000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 16:08:58.187000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,10.4,
+,Leucocytes,A,complete,YB,2025-04-01 16:17:51.002000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,234.5
+,Leucocytes,E,complete,YC,2025-04-01 16:25:03.549000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,97.9
+,Leucocytes,B,complete,YB,2025-04-01 16:30:13.344000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,LacticAcid,A,complete,,2025-04-01 16:33:24.211000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,C,complete,YC,2025-04-01 16:34:08.561000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,39.6
+,Leucocytes,A,complete,YA,2025-04-01 16:35:52.867000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,274.7
+6.0,CRP,E,complete,YA,2025-04-01 16:36:36.474000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,A,complete,,2025-04-01 16:40:37.148000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.4,
+,Leucocytes,A,complete,YB,2025-04-01 16:46:04.443000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,55.6
+,Leucocytes,A,complete,YA,2025-04-01 16:48:18.288000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,60.0
+,Leucocytes,B,complete,QA,2025-04-01 16:49:57.183000+00:00,21.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,69.8
+,LacticAcid,X,complete,,2025-04-01 16:55:25.476000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,7.6000000000000005,
+,Leucocytes,A,complete,YA,2025-04-01 17:15:31.552000+00:00,88.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,160.9
+,Leucocytes,B,complete,YB,2025-04-01 17:26:39.498000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,346.90000000000003
+,Leucocytes,C,complete,HD,2025-04-01 17:30:46.094000+00:00,88.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,151.70000000000002
+,LacticAcid,A,complete,,2025-04-01 17:31:43.054000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,B,complete,HE,2025-04-01 17:34:24.164000+00:00,90.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,79.60000000000001
+,LacticAcid,B,complete,,2025-04-01 17:37:19.617000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,A,complete,YA,2025-04-01 17:48:07.760000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,90.80000000000001
+,LacticAcid,A,complete,,2025-04-01 17:50:37.349000+00:00,,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,14.8,
+,Leucocytes,A,complete,YB,2025-04-01 17:52:15.398000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,306.2
+,Leucocytes,A,complete,TC,2025-04-01 17:56:43.626000+00:00,20.0,Case No. 02 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,156.4
+5.0,CRP,A,complete,QC,2025-04-01 14:14:58.422000+00:00,21.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 14:20:07.240000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 14:23:09.655000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+271.0,CRP,C,complete,YB,2025-04-01 14:29:50.985000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,A,complete,YA,2025-04-01 14:37:50.272000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,B,complete,YA,2025-04-01 14:41:37.732000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YB,2025-04-01 14:43:30.746000+00:00,23.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,F,complete,AE,2025-04-01 14:48:00.271000+00:00,22.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YA,2025-04-01 14:49:03.928000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+572.0,CRP,D,complete,YB,2025-04-01 14:52:42.810000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+563.0,CRP,C,complete,YB,2025-04-01 15:01:41.842000+00:00,21.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,C,complete,YD,2025-04-01 15:03:35.874000+00:00,21.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+9.0,CRP,A,complete,YA,2025-04-01 15:05:48.293000+00:00,21.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YA,2025-04-01 15:35:50.656000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+12.0,CRP,D,complete,QA,2025-04-01 15:40:41.428000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Release A,C,complete,,2025-04-01 15:42:29.076000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,OA,2025-04-01 15:46:56.398000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+419.0,CRP,A,complete,YA,2025-04-01 15:53:29.238000+00:00,23.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+231.0,CRP,A,complete,YA,2025-04-01 15:53:36.311000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Sepsis Triage,B,complete,YA,2025-04-01 16:00:53.542000+00:00,21.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,B,complete,,2025-04-01 16:04:56.190000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 16:06:25.701000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004
+,Leucocytes,E,complete,YA,2025-04-01 16:09:44.111000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,41.900000000000006
+5.0,CRP,A,complete,YA,2025-04-01 16:17:03.782000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,WB,2025-04-01 16:19:37.446000+00:00,21.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,127.60000000000001
+,Leucocytes,A,complete,YB,2025-04-01 16:28:28.130000+00:00,23.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,74.8
+,ER Registration,D,complete,YB,2025-04-01 16:32:02.947000+00:00,22.0,Case No. 03 [positive],positive,false,false,false,true,false,true,false,false,true,true,true,false,false,true,true,true,true,false,true,true,false,false,,
+,ER Triage,A,complete,QA,2025-04-01 16:39:07.104000+00:00,23.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+281.0,CRP,A,complete,YA,2025-04-01 16:45:56.187000+00:00,21.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Liquid,A,complete,YA,2025-04-01 17:00:03.635000+00:00,23.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,A,complete,,2025-04-01 17:01:26.643000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.4,
+,Leucocytes,C,complete,YA,2025-04-01 17:02:14.626000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,351.5
+,LacticAcid,A,complete,,2025-04-01 17:05:01.541000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,A,complete,YA,2025-04-01 17:12:59.453000+00:00,24.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,90.4
+,LacticAcid,D,complete,,2025-04-01 17:13:58.487000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,F,complete,YA,2025-04-01 17:15:59.450000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,LacticAcid,C,complete,,2025-04-01 17:17:12.373000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,5.4,
+,Leucocytes,A,complete,YA,2025-04-01 17:22:41.766000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,314.1
+475.0,CRP,A,complete,YA,2025-04-01 17:27:52.352000+00:00,25.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,A,complete,,2025-04-01 17:31:18.940000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,YA,2025-04-01 17:34:01.166000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,321.20000000000005
+6.0,CRP,C,complete,YA,2025-04-01 17:34:08.127000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,A,complete,,2025-04-01 17:41:26.525000+00:00,,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,13.100000000000001,
+,Leucocytes,D,complete,YA,2025-04-01 17:45:35.039000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,176.4
+,Leucocytes,C,complete,YA,2025-04-01 17:45:55.061000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,115.2
+5.0,CRP,C,complete,YA,2025-04-01 17:48:30.009000+00:00,28.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+249.0,CRP,A,complete,YA,2025-04-01 17:50:00.582000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,D,complete,YA,2025-04-01 17:51:30.456000+00:00,22.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,325.90000000000003
+,Leucocytes,H,complete,YA,2025-04-01 17:53:41.052000+00:00,23.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,376.0
+16.0,CRP,A,complete,YA,2025-04-01 17:58:53.516000+00:00,20.0,Case No. 03 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YC,2025-04-01 14:09:45.357000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,339.1
+,Leucocytes,C,complete,YB,2025-04-01 14:11:27.739000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004
+,LacticAcid,A,complete,,2025-04-01 14:14:01.122000+00:00,,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,F,complete,YC,2025-04-01 14:15:16.821000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,124.7
+,Leucocytes,A,complete,HE,2025-04-01 14:16:59.561000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,Leucocytes,B,complete,YA,2025-04-01 14:17:18.722000+00:00,22.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,306.3
+,LacticAcid,F,complete,,2025-04-01 14:24:02.053000+00:00,,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,A,complete,YB,2025-04-01 14:36:59.234000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.5
+,Leucocytes,A,complete,YC,2025-04-01 14:41:34.541000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,LacticAcid,B,complete,,2025-04-01 14:52:38.035000+00:00,,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,QB,2025-04-01 14:57:38.546000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,Release A,C,complete,,2025-04-01 15:03:02.284000+00:00,,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YA,2025-04-01 15:03:24.415000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,131.5
+,ER Sepsis Triage,B,complete,YA,2025-04-01 15:06:08.606000+00:00,22.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,A,complete,,2025-04-01 15:10:28.159000+00:00,,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YB,2025-04-01 15:17:31.231000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,280.0
+,LacticAcid,C,complete,,2025-04-01 15:19:54.199000+00:00,,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,A,complete,QC,2025-04-01 15:22:06.453000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.5
+,Leucocytes,A,complete,QB,2025-04-01 15:26:14.844000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,373.20000000000005
+,ER Registration,A,complete,YA,2025-04-01 15:43:48.525000+00:00,20.0,Case No. 04 [positive],positive,false,true,false,true,false,false,false,false,false,false,false,true,true,true,false,false,false,true,false,true,true,true,,
+,ER Triage,C,complete,KC,2025-04-01 15:43:51.752000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 15:43:58.252000+00:00,90.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+469.0,CRP,B,complete,YC,2025-04-01 15:44:17.794000+00:00,27.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,C,complete,YA,2025-04-01 15:46:34.059000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,OB,2025-04-01 15:47:58.466000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,56.7
+,Leucocytes,A,complete,YA,2025-04-01 15:59:15.720000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,291.8
+438.0,CRP,A,complete,YA,2025-04-01 15:59:50.351000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,E,complete,KB,2025-04-01 16:01:23.908000+00:00,22.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,224.8
+,Leucocytes,A,complete,YA,2025-04-01 16:06:50.342000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,133.20000000000002
+5.0,CRP,A,complete,YC,2025-04-01 16:09:09.961000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Liquid,A,complete,HC,2025-04-01 16:13:43.524000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YB,2025-04-01 16:25:20.442000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,11.3
+,Leucocytes,B,complete,YA,2025-04-01 16:30:48.531000+00:00,23.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,Leucocytes,D,complete,YA,2025-04-01 16:37:45.646000+00:00,89.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,124.2
+5.0,CRP,A,complete,YD,2025-04-01 16:40:35.865000+00:00,23.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+163.0,CRP,C,complete,YB,2025-04-01 16:43:48.794000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+573.0,CRP,B,complete,YA,2025-04-01 16:57:34.413000+00:00,55.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+299.0,CRP,A,complete,YA,2025-04-01 16:59:05.005000+00:00,25.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 17:23:04.914000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,42.5
+8.0,CRP,C,complete,YA,2025-04-01 17:26:26.675000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,?,complete,HE,2025-04-01 17:31:29.181000+00:00,89.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,212.10000000000002
+,Leucocytes,C,complete,YB,2025-04-01 17:32:34.502000+00:00,22.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,241.20000000000002
+,Leucocytes,B,complete,YA,2025-04-01 17:35:28.381000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,76.5
+,Leucocytes,B,complete,YC,2025-04-01 17:41:11.423000+00:00,86.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,381.1
+,Leucocytes,A,complete,YA,2025-04-01 17:45:28.305000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,LacticAcid,A,complete,,2025-04-01 17:46:50.746000+00:00,,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.4,
+,Leucocytes,A,complete,YB,2025-04-01 17:50:09.223000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,78.80000000000001
+,Leucocytes,C,complete,YB,2025-04-01 17:53:20.898000+00:00,21.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,62.0
+,Leucocytes,D,complete,XA,2025-04-01 17:56:49.770000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,101.2
+11.0,CRP,A,complete,YC,2025-04-01 17:58:49.564000+00:00,20.0,Case No. 04 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,A,complete,,2025-04-01 14:01:50.187000+00:00,,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,YA,2025-04-01 14:30:25.962000+00:00,21.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,150.20000000000002
+,Leucocytes,A,complete,YB,2025-04-01 14:31:20.225000+00:00,21.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,LacticAcid,C,complete,,2025-04-01 14:32:36.869000+00:00,,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,B,complete,YA,2025-04-01 14:39:50.736000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,42.900000000000006
+,Leucocytes,D,complete,YA,2025-04-01 14:41:53.556000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,161.3
+,LacticAcid,A,complete,,2025-04-01 14:44:43.119000+00:00,,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.5,
+,Leucocytes,D,complete,YC,2025-04-01 14:47:00.122000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.5
+88.0,CRP,C,complete,YA,2025-04-01 14:51:47.488000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,C,complete,YA,2025-04-01 15:05:19.580000+00:00,24.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 15:05:31.433000+00:00,23.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.4
+5.0,CRP,B,complete,YB,2025-04-01 15:06:02.119000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 15:06:02.897000+00:00,24.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,352.8
+,Leucocytes,B,complete,QA,2025-04-01 15:07:46.023000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,318.6
+,Leucocytes,A,complete,YA,2025-04-01 15:24:35.831000+00:00,76.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,231.3
+,Leucocytes,A,complete,YA,2025-04-01 15:37:22.419000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,343.20000000000005
+5.0,CRP,A,complete,YA,2025-04-01 15:41:52.294000+00:00,38.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,XA,2025-04-01 15:42:10.570000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,362.40000000000003
+,Leucocytes,A,complete,YB,2025-04-01 15:44:10.161000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,248.9
+,Release A,C,complete,,2025-04-01 15:51:50.238000+00:00,,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Sepsis Triage,A,complete,KC,2025-04-01 15:55:11.053000+00:00,21.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,A,complete,,2025-04-01 15:58:27.307000+00:00,,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,LD,2025-04-01 16:00:36.216000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,108.4
+,Leucocytes,C,complete,YB,2025-04-01 16:03:10.761000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,374.0
+,Leucocytes,B,complete,YA,2025-04-01 16:07:11.094000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,57.800000000000004
+,Leucocytes,B,complete,L,2025-04-01 16:10:12.100000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.4
+,Leucocytes,B,complete,YA,2025-04-01 16:12:57.548000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,217.60000000000002
+5.0,CRP,A,complete,YA,2025-04-01 16:20:45.209000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+9.0,CRP,A,complete,YA,2025-04-01 16:22:22.632000+00:00,24.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,C,complete,T,2025-04-01 16:26:51.756000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,221.10000000000002
+5.0,CRP,C,complete,YA,2025-04-01 16:30:27.760000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+506.0,CRP,A,complete,ME,2025-04-01 16:32:40.981000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 16:32:55.327000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,81.0
+,Leucocytes,C,complete,YB,2025-04-01 16:39:27.433000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,232.10000000000002
+,LacticAcid,B,complete,,2025-04-01 16:43:57.678000+00:00,,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.5,
+,Leucocytes,A,complete,YA,2025-04-01 16:54:53.431000+00:00,75.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,187.0
+6.0,CRP,A,complete,YC,2025-04-01 16:55:31.449000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,A,complete,,2025-04-01 16:59:25.075000+00:00,,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,A,complete,YB,2025-04-01 17:05:51.412000+00:00,21.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,38.2
+,Leucocytes,F,complete,YD,2025-04-01 17:11:17.281000+00:00,25.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,213.3
+56.0,CRP,A,complete,YB,2025-04-01 17:12:25.344000+00:00,90.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 17:14:54.393000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,104.9
+,Leucocytes,A,complete,YD,2025-04-01 17:19:43.595000+00:00,90.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,180.0
+,IV Liquid,A,complete,YA,2025-04-01 17:22:48.067000+00:00,22.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,BB,2025-04-01 17:26:57.525000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,94.5
+,ER Registration,C,complete,YA,2025-04-01 17:38:07.072000+00:00,21.0,Case No. 05 [positive],positive,true,true,false,false,false,true,false,false,false,true,false,true,false,true,true,true,false,false,true,false,false,true,,
+,ER Triage,C,complete,YA,2025-04-01 17:46:15.408000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+538.0,CRP,B,complete,YC,2025-04-01 17:47:12.541000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+70.0,CRP,B,complete,YA,2025-04-01 17:47:23.801000+00:00,20.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,C,complete,YA,2025-04-01 17:58:55.042000+00:00,62.0,Case No. 05 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+8.0,CRP,A,complete,YB,2025-04-01 14:01:00.619000+00:00,24.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YA,2025-04-01 14:03:08.460000+00:00,23.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,QA,2025-04-01 14:16:53.007000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Liquid,B,complete,YB,2025-04-01 14:19:16.562000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YA,2025-04-01 14:20:53.451000+00:00,22.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YC,2025-04-01 14:35:44.178000+00:00,89.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Sepsis Triage,G,complete,YB,2025-04-01 14:45:29.727000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,B,complete,,2025-04-01 14:49:19.002000+00:00,,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YC,2025-04-01 14:50:25.818000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,YC,2025-04-01 14:56:44.328000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,B,complete,YB,2025-04-01 15:06:59.633000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YB,2025-04-01 15:10:10.891000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 15:17:38.755000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,D,complete,MD,2025-04-01 15:17:58.380000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,A,complete,YB,2025-04-01 15:32:32.235000+00:00,53.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 15:34:29.472000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,C,complete,RB,2025-04-01 15:36:05.782000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,D,complete,YA,2025-04-01 15:47:16.384000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YB,2025-04-01 15:52:41.244000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 15:52:59.130000+00:00,22.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YA,2025-04-01 16:03:10.141000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,XC,2025-04-01 16:13:16.185000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Registration,A,complete,YA,2025-04-01 16:19:58.129000+00:00,21.0,Case No. 06 [positive],positive,true,false,true,true,false,true,true,true,true,false,false,true,false,false,true,false,false,false,true,true,false,true,,
+,ER Triage,A,complete,YA,2025-04-01 16:27:29.366000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 16:28:19.691000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,E,complete,YA,2025-04-01 16:47:37.124000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,85.7
+,Leucocytes,D,complete,YD,2025-04-01 16:48:13.434000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,245.9
+,Leucocytes,A,complete,YB,2025-04-01 16:51:48.291000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,199.8
+5.0,CRP,A,complete,QE,2025-04-01 16:53:53.716000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,C,complete,,2025-04-01 17:02:12.598000+00:00,,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,E,complete,HD,2025-04-01 17:06:16.123000+00:00,22.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,206.8
+,Leucocytes,A,complete,YB,2025-04-01 17:08:12.516000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,173.70000000000002
+,Leucocytes,B,complete,YB,2025-04-01 17:08:49.211000+00:00,33.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,150.8
+298.0,CRP,A,complete,YA,2025-04-01 17:15:29.089000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 17:16:02.597000+00:00,23.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,132.9
+,LacticAcid,A,complete,,2025-04-01 17:20:09.963000+00:00,,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,YA,2025-04-01 17:31:38.756000+00:00,89.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,118.2
+234.0,CRP,B,complete,YD,2025-04-01 17:32:51.351000+00:00,24.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,G,complete,YA,2025-04-01 17:33:56.483000+00:00,89.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,117.7
+572.0,CRP,B,complete,YA,2025-04-01 17:35:43.494000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,X,complete,,2025-04-01 17:40:35.012000+00:00,,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,14.9,
+,Leucocytes,A,complete,YC,2025-04-01 17:46:05.077000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,160.5
+,LacticAcid,A,complete,,2025-04-01 17:49:01.913000+00:00,,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,13.100000000000001,
+,Leucocytes,B,complete,YA,2025-04-01 17:51:39.312000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,20.3
+,Release A,C,complete,,2025-04-01 17:52:02.783000+00:00,,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Return ER,B,complete,,2025-04-01 17:52:48.482000+00:00,,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,G,complete,YA,2025-04-01 17:52:57.159000+00:00,24.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,103.9
+,Leucocytes,B,complete,YB,2025-04-01 17:57:02.546000+00:00,22.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,1.3
+8.0,CRP,A,complete,YA,2025-04-01 17:58:30.579000+00:00,21.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 17:59:31.209000+00:00,20.0,Case No. 06 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,313.40000000000003
+,LacticAcid,B,complete,,2025-04-01 14:03:16.978000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,YA,2025-04-01 14:05:34.871000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,108.80000000000001
+,Leucocytes,A,complete,YB,2025-04-01 14:11:13.473000+00:00,22.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,10.600000000000001
+,LacticAcid,B,complete,,2025-04-01 14:14:35.816000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,A,complete,YB,2025-04-01 14:18:59.421000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,139.9
+,LacticAcid,A,complete,,2025-04-01 14:23:31.951000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,A,complete,YA,2025-04-01 14:26:21.231000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,Leucocytes,B,complete,HE,2025-04-01 14:37:56.947000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,334.20000000000005
+,Leucocytes,A,complete,YB,2025-04-01 14:41:41.174000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,77.9
+,Leucocytes,G,complete,YC,2025-04-01 14:44:27.359000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004
+,Leucocytes,A,complete,YA,2025-04-01 14:44:55.929000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,87.2
+,Leucocytes,B,complete,YA,2025-04-01 14:48:30.290000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,360.5
+,Leucocytes,A,complete,YA,2025-04-01 14:57:21.061000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,355.0
+,Leucocytes,D,complete,YC,2025-04-01 15:02:50.985000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,22.0
+,Leucocytes,A,complete,YB,2025-04-01 15:07:10.670000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,253.10000000000002
+,LacticAcid,A,complete,,2025-04-01 15:08:45.200000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,8.9,
+,Leucocytes,A,complete,ZD,2025-04-01 15:10:43.368000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,223.20000000000002
+,ER Sepsis Triage,B,complete,YA,2025-04-01 15:13:07.315000+00:00,22.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,E,complete,,2025-04-01 15:13:31.749000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YB,2025-04-01 15:18:49.329000+00:00,22.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,272.5
+,Leucocytes,D,complete,YC,2025-04-01 15:19:10.529000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,328.0
+,Leucocytes,C,complete,YA,2025-04-01 15:19:34.630000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.5
+,Leucocytes,A,complete,YB,2025-04-01 15:19:45.963000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004
+,Release A,C,complete,,2025-04-01 15:20:19.950000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,D,complete,,2025-04-01 15:22:23.584000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,A,complete,YA,2025-04-01 15:30:55.627000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,277.6
+,Leucocytes,D,complete,YB,2025-04-01 15:46:02.194000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,277.6
+,Leucocytes,A,complete,YB,2025-04-01 15:58:15.742000+00:00,22.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,Leucocytes,A,complete,YA,2025-04-01 16:04:33.306000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,141.9
+,Leucocytes,B,complete,HB,2025-04-01 16:07:40.989000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,91.30000000000001
+,Leucocytes,A,complete,YA,2025-04-01 16:11:28.618000+00:00,22.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,374.8
+,Leucocytes,A,complete,YD,2025-04-01 16:13:34.451000+00:00,23.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,22.200000000000003
+,Leucocytes,F,complete,YA,2025-04-01 16:13:46.321000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,124.60000000000001
+,LacticAcid,A,complete,,2025-04-01 16:16:34.543000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.9,
+,Leucocytes,B,complete,QA,2025-04-01 16:19:47.287000+00:00,24.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,196.60000000000002
+,LacticAcid,C,complete,,2025-04-01 16:28:32.961000+00:00,,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,B,complete,CB,2025-04-01 16:44:15.582000+00:00,59.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,75.7
+,Leucocytes,D,complete,GC,2025-04-01 16:55:05.380000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,337.0
+,IV Liquid,E,complete,YA,2025-04-01 17:03:33.008000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,D,complete,YA,2025-04-01 17:07:43.995000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,58.5
+,Leucocytes,C,complete,YB,2025-04-01 17:09:15.188000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,308.1
+,ER Registration,B,complete,YB,2025-04-01 17:13:06.389000+00:00,20.0,Case No. 07 [positive],positive,true,false,true,true,true,true,true,false,false,true,true,false,true,true,false,false,true,false,false,true,true,true,,
+,ER Triage,A,complete,YA,2025-04-01 17:13:07.594000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YC,2025-04-01 17:25:47.372000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,227.60000000000002
+,Leucocytes,A,complete,YD,2025-04-01 17:27:19.959000+00:00,22.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,249.4
+,Leucocytes,D,complete,YA,2025-04-01 17:29:46.150000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,359.20000000000005
+282.0,CRP,A,complete,YB,2025-04-01 17:34:59.415000+00:00,21.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,C,complete,YB,2025-04-01 17:38:59.844000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,F,complete,YA,2025-04-01 17:41:05.114000+00:00,26.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,149.20000000000002
+381.0,CRP,A,complete,YA,2025-04-01 17:59:48.629000+00:00,20.0,Case No. 07 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,A,complete,YA,2025-04-01 14:07:51.492000+00:00,22.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YD,2025-04-01 14:14:45.683000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+298.0,CRP,B,complete,YA,2025-04-01 14:15:46.626000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,B,complete,YB,2025-04-01 14:20:00.773000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+141.0,CRP,A,complete,YA,2025-04-01 14:26:41.293000+00:00,55.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,YA,2025-04-01 14:41:29.695000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YA,2025-04-01 14:44:46.217000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+493.0,CRP,A,complete,YB,2025-04-01 14:51:57.228000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Sepsis Triage,C,complete,YB,2025-04-01 15:11:47.123000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,C,complete,,2025-04-01 15:14:09.713000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+10.0,CRP,B,complete,YB,2025-04-01 15:14:17.418000+00:00,21.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+572.0,CRP,D,complete,YA,2025-04-01 15:15:02.603000+00:00,24.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 15:17:11.470000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,C,complete,YA,2025-04-01 15:21:51.990000+00:00,22.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Registration,A,complete,YC,2025-04-01 15:24:13.357000+00:00,23.0,Case No. 08 [positive],positive,true,true,false,false,false,true,true,false,false,false,false,false,false,true,true,true,true,true,true,true,false,false,,
+,ER Triage,B,complete,YA,2025-04-01 15:26:09.541000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,BB,2025-04-01 15:26:18.306000+00:00,21.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,210.10000000000002
+9.0,CRP,F,complete,CE,2025-04-01 15:29:45.091000+00:00,23.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,G,complete,ED,2025-04-01 15:31:49.883000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,117.0
+,Leucocytes,O,complete,YB,2025-04-01 15:31:54.934000+00:00,21.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,40.300000000000004
+,IV Liquid,B,complete,HC,2025-04-01 15:36:20.371000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+165.0,CRP,B,complete,YA,2025-04-01 15:40:17.850000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,HD,2025-04-01 15:41:49.580000+00:00,21.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,0.2
+,Leucocytes,B,complete,YA,2025-04-01 15:42:04.207000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,255.4
+356.0,CRP,B,complete,YA,2025-04-01 15:50:39.263000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 15:52:29.199000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,14.8,
+,Leucocytes,A,complete,YA,2025-04-01 15:53:26.434000+00:00,21.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,190.3
+268.0,CRP,B,complete,YC,2025-04-01 16:12:16.796000+00:00,21.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+418.0,CRP,F,complete,YA,2025-04-01 16:13:47.786000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 16:16:22.286000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,C,complete,YB,2025-04-01 16:19:22.305000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,326.8
+,Leucocytes,B,complete,YB,2025-04-01 16:27:14.868000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,322.0
+,Leucocytes,D,complete,YC,2025-04-01 16:32:40.053000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,156.20000000000002
+,Leucocytes,Q,complete,LB,2025-04-01 16:34:47.499000+00:00,25.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,99.10000000000001
+,LacticAcid,A,complete,,2025-04-01 16:39:04.574000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,5.9,
+,Leucocytes,A,complete,YD,2025-04-01 16:40:23.269000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,23.400000000000002
+,Leucocytes,A,complete,YB,2025-04-01 16:43:59.516000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,155.8
+573.0,CRP,A,complete,HE,2025-04-01 16:45:21.002000+00:00,90.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Release A,A,complete,,2025-04-01 16:56:24.547000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Return ER,B,complete,,2025-04-01 16:57:37.384000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YA,2025-04-01 17:03:38.050000+00:00,22.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,350.6
+,LacticAcid,C,complete,,2025-04-01 17:05:19.388000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,YD,2025-04-01 17:06:29.510000+00:00,21.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,266.0
+5.0,CRP,A,complete,YB,2025-04-01 17:07:05.383000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+571.0,CRP,A,complete,YA,2025-04-01 17:15:09.146000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YD,2025-04-01 17:22:05.639000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,294.7
+,LacticAcid,B,complete,,2025-04-01 17:32:24.625000+00:00,,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,YD,2025-04-01 17:34:49.014000+00:00,22.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,1.3
+,Leucocytes,A,complete,HE,2025-04-01 17:44:41.592000+00:00,50.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,185.20000000000002
+,Leucocytes,B,complete,YA,2025-04-01 17:56:10.885000+00:00,20.0,Case No. 08 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,68.10000000000001
+,ER Registration,B,complete,YA,2025-04-01 14:00:55.918000+00:00,25.0,Case No. 09 [positive],positive,true,true,true,false,false,false,true,false,false,false,true,false,false,false,true,false,true,false,false,false,false,false,,
+,ER Triage,F,complete,F,2025-04-01 14:03:13.164000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YC,2025-04-01 14:09:04.212000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,165.4
+,Leucocytes,C,complete,HC,2025-04-01 14:20:38.614000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,2.6
+,Leucocytes,A,complete,YA,2025-04-01 14:21:21.728000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,183.5
+6.0,CRP,B,complete,YA,2025-04-01 14:35:01.688000+00:00,21.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,C,complete,YB,2025-04-01 14:41:21.212000+00:00,21.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,65.3
+,Leucocytes,B,complete,YA,2025-04-01 14:48:01.195000+00:00,21.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,323.3
+6.0,CRP,A,complete,YC,2025-04-01 14:49:54.119000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,IA,2025-04-01 14:50:43.941000+00:00,21.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,130.9
+,LacticAcid,A,complete,,2025-04-01 15:04:28.857000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,A,complete,YC,2025-04-01 15:20:59.395000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,348.5
+,Leucocytes,B,complete,YB,2025-04-01 15:23:57.578000+00:00,21.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,46.400000000000006
+5.0,CRP,A,complete,YA,2025-04-01 15:25:13.451000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,C,complete,C,2025-04-01 15:39:00.164000+00:00,85.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,C,complete,YA,2025-04-01 15:41:55.425000+00:00,21.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,A,complete,YC,2025-04-01 15:43:28.877000+00:00,22.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,267.90000000000003
+,Leucocytes,A,complete,YA,2025-04-01 15:50:46.425000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,44.0
+,LacticAcid,A,complete,,2025-04-01 15:53:48.392000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,A,complete,YD,2025-04-01 15:54:46.349000+00:00,21.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,377.20000000000005
+,ER Sepsis Triage,F,complete,YA,2025-04-01 15:59:04.889000+00:00,23.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,A,complete,,2025-04-01 16:01:56.959000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YA,2025-04-01 16:06:02.129000+00:00,22.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,130.20000000000002
+,LacticAcid,A,complete,,2025-04-01 16:17:07.124000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,14.9,
+,Leucocytes,Y,complete,HC,2025-04-01 16:19:07.006000+00:00,87.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,266.0
+48.0,CRP,C,complete,S,2025-04-01 16:20:11.585000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,F,complete,QB,2025-04-01 16:41:14.408000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,123.80000000000001
+,LacticAcid,A,complete,,2025-04-01 16:51:26.405000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.30000000000000004,
+,Leucocytes,B,complete,YB,2025-04-01 16:52:04.476000+00:00,22.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,346.90000000000003
+,LacticAcid,A,complete,,2025-04-01 16:52:40.060000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,B,complete,HA,2025-04-01 16:52:47.152000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,364.90000000000003
+,LacticAcid,A,complete,,2025-04-01 16:56:21.963000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.2,
+,Leucocytes,A,complete,YA,2025-04-01 16:59:14.029000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,24.3
+,LacticAcid,A,complete,,2025-04-01 17:06:55.395000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,11.4,
+,Leucocytes,A,complete,HD,2025-04-01 17:10:15.213000+00:00,23.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,135.0
+,Leucocytes,A,complete,YA,2025-04-01 17:10:29.678000+00:00,51.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,219.70000000000002
+,Release A,A,complete,,2025-04-01 17:17:32.958000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,D,complete,YB,2025-04-01 17:22:09.887000+00:00,22.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,100.4
+,Leucocytes,A,complete,YA,2025-04-01 17:33:52.461000+00:00,27.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,346.70000000000005
+5.0,CRP,B,complete,YD,2025-04-01 17:35:07.645000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,D,complete,YA,2025-04-01 17:36:33.597000+00:00,22.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,346.20000000000005
+6.0,CRP,A,complete,YA,2025-04-01 17:37:18.819000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,A,complete,,2025-04-01 17:38:59.060000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,0.4,
+,Leucocytes,B,complete,YA,2025-04-01 17:41:26.871000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,43.400000000000006
+12.0,CRP,B,complete,YD,2025-04-01 17:43:20.567000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Liquid,A,complete,HD,2025-04-01 17:45:29.893000+00:00,89.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,LacticAcid,B,complete,,2025-04-01 17:55:16.803000+00:00,,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,14.9,
+,Leucocytes,C,complete,YA,2025-04-01 17:55:27.025000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,340.1
+,Leucocytes,A,complete,YA,2025-04-01 17:56:07.583000+00:00,20.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,108.9
+,Leucocytes,B,complete,QD,2025-04-01 17:58:30.356000+00:00,22.0,Case No. 09 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,273.1
+5.0,CRP,A,complete,YA,2025-04-01 14:04:31.509000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YB,2025-04-01 14:07:43.786000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,C,complete,YD,2025-04-01 14:15:35.937000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,C,complete,QD,2025-04-01 14:17:57.555000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YD,2025-04-01 14:18:10.330000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,QB,2025-04-01 14:18:34.848000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YA,2025-04-01 14:27:02.959000+00:00,21.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+462.0,CRP,C,complete,EC,2025-04-01 14:31:22.401000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YA,2025-04-01 14:31:23.364000+00:00,21.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+103.0,CRP,B,complete,YB,2025-04-01 14:32:05.163000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,A,complete,HC,2025-04-01 14:42:18.331000+00:00,22.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+163.0,CRP,C,complete,QC,2025-04-01 15:04:05.989000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,A,complete,YC,2025-04-01 15:16:50.682000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YD,2025-04-01 15:16:59.037000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+423.0,CRP,A,complete,ED,2025-04-01 15:18:26.521000+00:00,21.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 15:25:30.420000+00:00,25.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,A,complete,YA,2025-04-01 15:32:56.500000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+19.0,CRP,D,complete,YA,2025-04-01 15:39:52.857000+00:00,21.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,QA,2025-04-01 15:43:26.911000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YB,2025-04-01 15:45:26.677000+00:00,21.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,C,complete,YA,2025-04-01 15:53:01.386000+00:00,72.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,YB,2025-04-01 15:59:19.759000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,X,complete,YA,2025-04-01 16:09:22.038000+00:00,24.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+154.0,CRP,B,complete,YA,2025-04-01 16:09:28.006000+00:00,21.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Release A,D,complete,,2025-04-01 16:09:47.353000+00:00,,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Return ER,C,complete,,2025-04-01 16:11:42.874000+00:00,,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,YA,2025-04-01 16:16:11.856000+00:00,22.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YA,2025-04-01 16:18:04.925000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YB,2025-04-01 16:29:44.214000+00:00,23.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,L,complete,LC,2025-04-01 16:31:01.302000+00:00,24.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,PE,2025-04-01 16:34:51.686000+00:00,23.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+510.0,CRP,A,complete,YA,2025-04-01 16:35:30.773000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YA,2025-04-01 16:39:06.728000+00:00,43.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+31.0,CRP,B,complete,QE,2025-04-01 16:40:19.882000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,A,complete,YC,2025-04-01 16:41:10.276000+00:00,22.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+183.0,CRP,D,complete,U,2025-04-01 16:42:14.555000+00:00,40.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+7.0,CRP,B,complete,YA,2025-04-01 16:55:48.222000+00:00,21.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+398.0,CRP,G,complete,QD,2025-04-01 16:56:36.069000+00:00,22.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,B,complete,YB,2025-04-01 16:57:14.454000+00:00,22.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+15.0,CRP,A,complete,YB,2025-04-01 16:59:58.574000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+6.0,CRP,B,complete,YD,2025-04-01 17:03:41.625000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Sepsis Triage,A,complete,YB,2025-04-01 17:10:21.388000+00:00,24.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,IV Antibiotics,B,complete,,2025-04-01 17:20:43.623000+00:00,,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,ER Registration,E,complete,YA,2025-04-01 17:26:22.696000+00:00,21.0,Case No. 10 [positive],positive,false,true,true,false,false,false,false,false,true,false,true,true,false,true,false,true,true,true,true,false,false,true,,
+,ER Triage,C,complete,YA,2025-04-01 17:29:52.798000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,A,complete,YA,2025-04-01 17:40:19.548000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,A,complete,YA,2025-04-01 17:40:48.115000+00:00,20.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+8.0,CRP,C,complete,HE,2025-04-01 17:43:29.118000+00:00,88.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+5.0,CRP,?,complete,HD,2025-04-01 17:45:18.233000+00:00,83.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,
+,Leucocytes,B,complete,YA,2025-04-01 17:58:36.583000+00:00,88.0,Case No. 10 [positive],positive,,,,,,,,,,,,,,,,,,,,,,,,225.10000000000002

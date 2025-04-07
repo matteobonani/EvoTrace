@@ -1,0 +1,6 @@
+ID,Population,TraceLength,Model,Problem,Mutation,Termination,ExecutionTime,DiversityScore,ConstraintScore,Iteration
+1,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=5,myTerminator,ERROR,NaN,NaN,1
+2,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,myTerminator,ERROR,NaN,NaN,1
+ID,Population,TraceLength,Model,Problem,Mutation,Termination,ExecutionTime,DiversityScore,ConstraintScore,Iteration
+1,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=5,myTerminator,ERROR,NaN,NaN,1
+2,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,myTerminator,ERROR,NaN,NaN,1

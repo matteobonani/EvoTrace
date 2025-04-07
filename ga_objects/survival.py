@@ -9,9 +9,7 @@ from pymoo.operators.survival.rank_and_crowding.metrics import get_crowding_func
 class MySurvival(Survival):
 
     def __init__(self, nds=None, crowding_func="cd", n_children_survive=None):
-        """
-        Customized survival method to allow specifying a distinct number of offspring to survive.
-        """
+        """Customized survival method to allow specifying a distinct number of offspring to survive."""
         crowding_func_ = get_crowding_function(crowding_func)
 
         super().__init__(filter_infeasible=True)

@@ -1,9 +1,0 @@
-ID,Population,TraceLength,Model,Termination,Algorithm, Constraints, ExecutionTime, DiversityScore, ConstraintScore, NumberViolationScore, Iteration1
-1,2000,20,model1.decl,my_termination,single,yes,53.47,-17.68,0.00,NaN
-2,2000,20,model1.decl,my_termination,multi,yes,53.04,-17.69,0.00,0.00
-3,2000,20,model1.decl,multi,single,yes,81.86,-18.99,0.00,NaN
-4,2000,20,model1.decl,multi,multi,yes,85.39,-19.06,0.00,0.00
-5,2000,20,model1.decl,multi,single,no,4.24,-19.88,NaN,NaN
-6,2000,20,model1.decl,single,single,yes,83.17,-18.94,0.00,NaN
-7,2000,20,model1.decl,single,multi,yes,85.84,-18.92,0.00,0.00
-8,2000,20,model1.decl,single,single,no,3.20,-19.76,NaN,NaN

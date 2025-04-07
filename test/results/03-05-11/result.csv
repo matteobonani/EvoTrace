@@ -1,0 +1,15 @@
+ID,Population,TraceLength,Model,Problem,Mutation,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+ID,Population,TraceLength,Model,Problem,Mutation,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+1,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=20,1203.66,0.00,0.25,NaN,1
+2,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,211.29,25215.71,0.00,NaN,1
+3,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=20,ERROR,NaN,NaN,NaN,1
+4,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,ERROR,NaN,NaN,NaN,1
+5,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=5,1200.32,0.00,0.25,NaN,1
+6,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=5,133.00,430903444425132.38,0.00,NaN,1
+7,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=5,ERROR,NaN,NaN,NaN,1
+8,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=5,ERROR,NaN,NaN,NaN,1
+ID,Population,TraceLength,Model,Problem,Mutation,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
+1,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=20,1201.66,0.00,0.30,NaN,2
+2,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,138.68,2649615.48,0.00,NaN,2
+3,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=20,ERROR,NaN,NaN,NaN,2
+4,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,ERROR,NaN,NaN,NaN,2

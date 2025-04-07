@@ -1,0 +1,3 @@
+ID,Population,TraceLength,Model,Problem,Mutation,Termination,ExecutionTime,DiversityScore,ConstraintScore,Iteration
+1,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=5,default,136.64,0.91,3.67,1
+2,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=5,default,63.39,0.84,1.83,1

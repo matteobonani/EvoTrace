@@ -1,0 +1,2647 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<string key="concept:name" value="Case No. 01 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="CRP" value="66.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:22:22.232+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:31:25.735+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="198.20000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:39:04.566+02:00"/>
+			<int key="Age" value="24"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:51:24.982+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:53:00.452+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<date key="time:timestamp" value="2025-04-03T16:53:36.437+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:55:35.216+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Sepsis Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:57:22.614+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Antibiotics"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T17:03:21.948+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="127.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:03:44.609+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="26.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:10:54.055+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="E"/>
+			<float key="LacticAcid" value="0.2"/>
+			<date key="time:timestamp" value="2025-04-03T17:21:38.456+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="126.10000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:34:02.391+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="57.300000000000004"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T17:35:01.084+02:00"/>
+			<int key="Age" value="75"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="Y"/>
+			<date key="time:timestamp" value="2025-04-03T17:39:08.643+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="86.80000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:54:08.258+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="217.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:15:09.449+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="5.1000000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:23:06.107+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="297.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:39:03.051+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="171.4"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="MB"/>
+			<date key="time:timestamp" value="2025-04-03T18:49:09.263+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="CRP" value="208.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:50:38.761+02:00"/>
+			<int key="Age" value="24"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:11:57.763+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="3.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:14:15.034+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="81.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:19:02.624+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="145.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:25:33.047+02:00"/>
+			<int key="Age" value="90"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="25.200000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:29:17.058+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="366.20000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:29:21.562+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="217.60000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="DB"/>
+			<date key="time:timestamp" value="2025-04-03T19:42:45.145+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T19:46:19.116+02:00"/>
+			<int key="Age" value="89"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="67.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:58:29.554+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 02 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="175.20000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:09:13.508+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<date key="time:timestamp" value="2025-04-03T16:16:32.443+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="179.4"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HC"/>
+			<date key="time:timestamp" value="2025-04-03T16:16:40.266+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="70.10000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:29:52.836+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="469.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T16:44:55.625+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="70.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:20:20.557+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<float key="LacticAcid" value="0.30000000000000004"/>
+			<date key="time:timestamp" value="2025-04-03T17:22:36.384+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="268.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="QA"/>
+			<date key="time:timestamp" value="2025-04-03T17:26:52.243+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="226.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:47:46.899+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="CRP" value="466.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:51:39.451+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="InfectionSuspected" value="true"/>
+			<string key="org:group" value="B"/>
+			<string key="DiagnosticBlood" value="false"/>
+			<string key="DisfuncOrg" value="false"/>
+			<string key="SIRSCritTachypnea" value="false"/>
+			<string key="Hypotensie" value="true"/>
+			<string key="SIRSCritHeartRate" value="false"/>
+			<string key="Infusion" value="false"/>
+			<string key="DiagnosticArtAstrup" value="true"/>
+			<string key="concept:name" value="ER Registration"/>
+			<int key="Age" value="20"/>
+			<string key="DiagnosticIC" value="true"/>
+			<string key="DiagnosticSputum" value="false"/>
+			<string key="DiagnosticLiquor" value="true"/>
+			<string key="DiagnosticOther" value="false"/>
+			<string key="SIRSCriteria2OrMore" value="false"/>
+			<string key="DiagnosticXthorax" value="false"/>
+			<string key="SIRSCritTemperature" value="false"/>
+			<date key="time:timestamp" value="2025-04-03T17:58:31.725+02:00"/>
+			<string key="DiagnosticUrinaryCulture" value="true"/>
+			<string key="SIRSCritLeucos" value="false"/>
+			<string key="Oligurie" value="false"/>
+			<string key="DiagnosticLacticAcid" value="true"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<string key="Hypoxie" value="true"/>
+			<string key="DiagnosticUrinarySediment" value="true"/>
+			<string key="DiagnosticECG" value="true"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T18:07:42.890+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="265.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:11:18.445+02:00"/>
+			<int key="Age" value="24"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Sepsis Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:14:40.040+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Antibiotics"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T18:18:38.939+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="251.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:26:41.647+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="370.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:34:06.938+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="D"/>
+			<string key="Diagnose" value="BA"/>
+			<date key="time:timestamp" value="2025-04-03T18:34:49.541+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="165.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:35:12.063+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="CRP" value="376.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:43:12.274+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="26.700000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:54:15.709+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="572.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="E"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:03:04.593+02:00"/>
+			<int key="Age" value="83"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="71.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="O"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T19:07:10.125+02:00"/>
+			<int key="Age" value="90"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="269.2"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HE"/>
+			<date key="time:timestamp" value="2025-04-03T19:07:53.369+02:00"/>
+			<int key="Age" value="90"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T19:17:45.137+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="341.40000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:24:24.905+02:00"/>
+			<int key="Age" value="42"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="222.20000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:34:22.361+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="146.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:44:27.305+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="28.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:48:53.377+02:00"/>
+			<int key="Age" value="25"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="30.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HE"/>
+			<date key="time:timestamp" value="2025-04-03T20:02:26.966+02:00"/>
+			<int key="Age" value="90"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 03 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="CRP" value="481.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T16:08:00.320+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="14.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T16:09:07.354+02:00"/>
+			<int key="Age" value="74"/>
+		</event>
+		<event>
+			<float key="CRP" value="406.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T16:19:32.403+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="363.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="ID"/>
+			<date key="time:timestamp" value="2025-04-03T16:40:35.268+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="139.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T16:51:20.341+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="CRP" value="157.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="JE"/>
+			<date key="time:timestamp" value="2025-04-03T16:54:26.990+02:00"/>
+			<int key="Age" value="75"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="271.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:56:16.710+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="27.900000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="GB"/>
+			<date key="time:timestamp" value="2025-04-03T17:18:12.355+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Sepsis Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T17:31:15.484+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Antibiotics"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T17:31:39.756+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="334.70000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:32:10.133+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="276.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:39:15.236+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="314.90000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="NC"/>
+			<date key="time:timestamp" value="2025-04-03T17:39:20.156+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="228.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:41:39.172+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="InfectionSuspected" value="true"/>
+			<string key="org:group" value="D"/>
+			<string key="DiagnosticBlood" value="true"/>
+			<string key="DisfuncOrg" value="true"/>
+			<string key="SIRSCritTachypnea" value="false"/>
+			<string key="Hypotensie" value="true"/>
+			<string key="SIRSCritHeartRate" value="true"/>
+			<string key="Infusion" value="true"/>
+			<string key="DiagnosticArtAstrup" value="true"/>
+			<string key="concept:name" value="ER Registration"/>
+			<int key="Age" value="20"/>
+			<string key="DiagnosticIC" value="false"/>
+			<string key="DiagnosticSputum" value="false"/>
+			<string key="DiagnosticLiquor" value="false"/>
+			<string key="DiagnosticOther" value="false"/>
+			<string key="SIRSCriteria2OrMore" value="true"/>
+			<string key="DiagnosticXthorax" value="false"/>
+			<string key="SIRSCritTemperature" value="true"/>
+			<date key="time:timestamp" value="2025-04-03T17:44:32.041+02:00"/>
+			<string key="DiagnosticUrinaryCulture" value="true"/>
+			<string key="SIRSCritLeucos" value="true"/>
+			<string key="Oligurie" value="false"/>
+			<string key="DiagnosticLacticAcid" value="false"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<string key="Hypoxie" value="true"/>
+			<string key="DiagnosticUrinarySediment" value="false"/>
+			<string key="DiagnosticECG" value="true"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:21:58.214+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T18:45:56.043+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="147.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:49:45.293+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="161.10000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="VD"/>
+			<date key="time:timestamp" value="2025-04-03T19:01:49.204+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T19:03:51.672+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="24.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T19:07:15.569+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="378.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:10:51.743+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="62.300000000000004"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="JA"/>
+			<date key="time:timestamp" value="2025-04-03T19:16:25.288+02:00"/>
+			<int key="Age" value="89"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<float key="LacticAcid" value="0.30000000000000004"/>
+			<date key="time:timestamp" value="2025-04-03T19:18:46.242+02:00"/>
+		</event>
+		<event>
+			<float key="CRP" value="245.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:22:06.213+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="314.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:26:04.400+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<date key="time:timestamp" value="2025-04-03T19:29:49.684+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T19:40:36.593+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T19:41:37.735+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="249.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:56:31.246+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 04 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="9.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:08:12.496+02:00"/>
+			<int key="Age" value="78"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="255.4"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="E"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:15:05.888+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:15:20.383+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="235.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HE"/>
+			<date key="time:timestamp" value="2025-04-03T16:25:28.571+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="96.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:26:06.676+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="128.4"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="JC"/>
+			<date key="time:timestamp" value="2025-04-03T16:34:03.880+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<float key="LacticAcid" value="0.2"/>
+			<date key="time:timestamp" value="2025-04-03T16:57:14.089+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:57:59.912+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="323.40000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:08:37.587+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="E"/>
+			<date key="time:timestamp" value="2025-04-03T17:13:35.421+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Return ER"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T17:14:52.095+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<float key="LacticAcid" value="3.6"/>
+			<date key="time:timestamp" value="2025-04-03T17:33:18.343+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="355.90000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:36:28.038+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="298.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:01:22.444+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="182.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:08:38.008+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T18:18:17.374+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T18:22:52.473+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T18:38:16.924+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<float key="LacticAcid" value="0.2"/>
+			<date key="time:timestamp" value="2025-04-03T18:44:21.432+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="54.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:51:24.657+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="5.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:51:46.909+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="282.90000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:05:00.331+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T19:17:21.224+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="341.20000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T19:26:50.554+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="79.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T19:31:53.168+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<float key="LacticAcid" value="1.7000000000000002"/>
+			<date key="time:timestamp" value="2025-04-03T19:33:43.865+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="292.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:39:04.306+02:00"/>
+			<int key="Age" value="90"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="199.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="?"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HD"/>
+			<date key="time:timestamp" value="2025-04-03T19:47:25.941+02:00"/>
+			<int key="Age" value="90"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="234.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:51:40.668+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="QB"/>
+			<date key="time:timestamp" value="2025-04-03T19:56:18.493+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 05 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="319.20000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T16:08:45.078+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="103.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:18:19.820+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:19:18.251+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="76.80000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T16:36:27.335+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="183.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="PE"/>
+			<date key="time:timestamp" value="2025-04-03T16:42:16.277+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="InfectionSuspected" value="true"/>
+			<string key="org:group" value="B"/>
+			<string key="DiagnosticBlood" value="false"/>
+			<string key="DisfuncOrg" value="true"/>
+			<string key="SIRSCritTachypnea" value="true"/>
+			<string key="Hypotensie" value="true"/>
+			<string key="SIRSCritHeartRate" value="true"/>
+			<string key="Infusion" value="false"/>
+			<string key="DiagnosticArtAstrup" value="false"/>
+			<string key="concept:name" value="ER Registration"/>
+			<int key="Age" value="20"/>
+			<string key="DiagnosticIC" value="false"/>
+			<string key="DiagnosticSputum" value="true"/>
+			<string key="DiagnosticLiquor" value="false"/>
+			<string key="DiagnosticOther" value="false"/>
+			<string key="SIRSCriteria2OrMore" value="false"/>
+			<string key="DiagnosticXthorax" value="true"/>
+			<string key="SIRSCritTemperature" value="false"/>
+			<date key="time:timestamp" value="2025-04-03T16:50:35.739+02:00"/>
+			<string key="DiagnosticUrinaryCulture" value="true"/>
+			<string key="SIRSCritLeucos" value="true"/>
+			<string key="Oligurie" value="true"/>
+			<string key="DiagnosticLacticAcid" value="false"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="UB"/>
+			<string key="Hypoxie" value="false"/>
+			<string key="DiagnosticUrinarySediment" value="true"/>
+			<string key="DiagnosticECG" value="false"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:52:31.202+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="269.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:54:13.249+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="274.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="X"/>
+			<date key="time:timestamp" value="2025-04-03T17:00:52.149+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="82.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:01:16.249+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="55.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:30:44.884+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="339.40000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:32:52.722+02:00"/>
+			<int key="Age" value="34"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="146.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="E"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="NC"/>
+			<date key="time:timestamp" value="2025-04-03T17:47:45.890+02:00"/>
+			<int key="Age" value="63"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="319.20000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T17:54:35.995+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="37.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:58:22.804+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="87.4"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:02:57.906+02:00"/>
+			<int key="Age" value="24"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="329.20000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:17:26.935+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T18:18:09.504+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<float key="LacticAcid" value="13.5"/>
+			<date key="time:timestamp" value="2025-04-03T18:18:56.812+02:00"/>
+		</event>
+		<event>
+			<float key="CRP" value="71.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:31:39.789+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="320.70000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="PA"/>
+			<date key="time:timestamp" value="2025-04-03T18:34:35.085+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="351.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:36:17.912+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T18:43:08.441+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="219.4"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:44:26.461+02:00"/>
+			<int key="Age" value="27"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="96.30000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="QA"/>
+			<date key="time:timestamp" value="2025-04-03T18:46:50.473+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="62.900000000000006"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:58:01.550+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="250.4"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:04:13.603+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Sepsis Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="D"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T19:20:34.528+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Antibiotics"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T19:34:59.905+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:56:13.667+02:00"/>
+			<int key="Age" value="46"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 06 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="371.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:07:35.467+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="83.80000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:20:40.381+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="E"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:21:32.423+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="247.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="WB"/>
+			<date key="time:timestamp" value="2025-04-03T16:27:09.223+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:48:11.342+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T16:59:18.654+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T17:07:36.761+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="207.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T17:19:24.373+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="128.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:24:24.901+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="32.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:44:52.161+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="310.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:45:28.240+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="30.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:45:59.202+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="327.70000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:46:45.426+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="335.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:06:42.631+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="253.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="G"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:31:23.804+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T18:37:08.182+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="288.2"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:41:33.379+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="279.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:59:12.427+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="9.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:02:30.398+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="7.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:05:59.893+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="119.2"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:15:32.824+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="3.8000000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="ID"/>
+			<date key="time:timestamp" value="2025-04-03T19:22:39.605+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="216.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:22:59.379+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="61.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:26:56.380+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="CRP" value="5.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:27:52.059+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="381.20000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:35:33.837+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="368.90000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:48:53.651+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="InfectionSuspected" value="false"/>
+			<string key="org:group" value="E"/>
+			<string key="DiagnosticBlood" value="true"/>
+			<string key="DisfuncOrg" value="false"/>
+			<string key="SIRSCritTachypnea" value="true"/>
+			<string key="Hypotensie" value="false"/>
+			<string key="SIRSCritHeartRate" value="true"/>
+			<string key="Infusion" value="false"/>
+			<string key="DiagnosticArtAstrup" value="false"/>
+			<string key="concept:name" value="ER Registration"/>
+			<int key="Age" value="20"/>
+			<string key="DiagnosticIC" value="false"/>
+			<string key="DiagnosticSputum" value="false"/>
+			<string key="DiagnosticLiquor" value="true"/>
+			<string key="DiagnosticOther" value="false"/>
+			<string key="SIRSCriteria2OrMore" value="true"/>
+			<string key="DiagnosticXthorax" value="false"/>
+			<string key="SIRSCritTemperature" value="false"/>
+			<date key="time:timestamp" value="2025-04-03T19:57:21.748+02:00"/>
+			<string key="DiagnosticUrinaryCulture" value="true"/>
+			<string key="SIRSCritLeucos" value="false"/>
+			<string key="Oligurie" value="false"/>
+			<string key="DiagnosticLacticAcid" value="false"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<string key="Hypoxie" value="true"/>
+			<string key="DiagnosticUrinarySediment" value="true"/>
+			<string key="DiagnosticECG" value="true"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="HB"/>
+			<date key="time:timestamp" value="2025-04-03T20:05:01.618+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<float key="LacticAcid" value="0.2"/>
+			<date key="time:timestamp" value="2025-04-03T20:06:55.251+02:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 07 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="271.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T16:18:09.007+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<date key="time:timestamp" value="2025-04-03T16:22:40.588+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<float key="LacticAcid" value="13.0"/>
+			<date key="time:timestamp" value="2025-04-03T16:24:53.982+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="338.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:37:36.206+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="508.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="BB"/>
+			<date key="time:timestamp" value="2025-04-03T17:13:31.410+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="364.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:15:52.802+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="245.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:16:41.249+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="105.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T17:17:02.891+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="187.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:19:13.749+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T17:21:01.564+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T17:47:30.842+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T17:54:23.846+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="307.70000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HE"/>
+			<date key="time:timestamp" value="2025-04-03T17:59:49.153+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="327.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:08:10.860+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T18:14:07.163+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="29.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:14:09.044+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Sepsis Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="AC"/>
+			<date key="time:timestamp" value="2025-04-03T18:29:18.607+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Antibiotics"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T18:35:50.652+02:00"/>
+		</event>
+		<event>
+			<float key="CRP" value="566.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:47:42.815+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="323.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:48:22.003+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="5.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="E"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:04:10.723+02:00"/>
+			<int key="Age" value="36"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="142.8"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T19:13:17.221+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="250.60000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:22:16.699+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="D"/>
+			<date key="time:timestamp" value="2025-04-03T19:30:26.972+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="347.70000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:33:09.716+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="191.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="QA"/>
+			<date key="time:timestamp" value="2025-04-03T19:35:03.965+02:00"/>
+			<int key="Age" value="48"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:47:07.287+02:00"/>
+			<int key="Age" value="88"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<float key="LacticAcid" value="0.2"/>
+			<date key="time:timestamp" value="2025-04-03T19:53:06.083+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="307.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:55:01.623+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T20:02:54.183+02:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 08 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="358.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:35:07.746+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="338.40000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:43:21.241+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:52:34.494+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="E"/>
+			<date key="time:timestamp" value="2025-04-03T16:54:32.157+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="D"/>
+			<date key="time:timestamp" value="2025-04-03T16:55:24.848+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="274.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:05:05.389+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="376.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:10:19.193+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="370.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="E"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:13:18.696+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="254.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="QB"/>
+			<date key="time:timestamp" value="2025-04-03T17:21:27.783+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="InfectionSuspected" value="true"/>
+			<string key="org:group" value="A"/>
+			<string key="DiagnosticBlood" value="true"/>
+			<string key="DisfuncOrg" value="false"/>
+			<string key="SIRSCritTachypnea" value="false"/>
+			<string key="Hypotensie" value="false"/>
+			<string key="SIRSCritHeartRate" value="false"/>
+			<string key="Infusion" value="false"/>
+			<string key="DiagnosticArtAstrup" value="false"/>
+			<string key="concept:name" value="ER Registration"/>
+			<int key="Age" value="23"/>
+			<string key="DiagnosticIC" value="false"/>
+			<string key="DiagnosticSputum" value="false"/>
+			<string key="DiagnosticLiquor" value="true"/>
+			<string key="DiagnosticOther" value="false"/>
+			<string key="SIRSCriteria2OrMore" value="false"/>
+			<string key="DiagnosticXthorax" value="false"/>
+			<string key="SIRSCritTemperature" value="false"/>
+			<date key="time:timestamp" value="2025-04-03T17:22:56.029+02:00"/>
+			<string key="DiagnosticUrinaryCulture" value="false"/>
+			<string key="SIRSCritLeucos" value="false"/>
+			<string key="Oligurie" value="true"/>
+			<string key="DiagnosticLacticAcid" value="false"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<string key="Hypoxie" value="true"/>
+			<string key="DiagnosticUrinarySediment" value="false"/>
+			<string key="DiagnosticECG" value="true"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="HE"/>
+			<date key="time:timestamp" value="2025-04-03T17:28:51.800+02:00"/>
+			<int key="Age" value="25"/>
+		</event>
+		<event>
+			<float key="CRP" value="157.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HB"/>
+			<date key="time:timestamp" value="2025-04-03T17:38:23.447+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<float key="LacticAcid" value="0.2"/>
+			<date key="time:timestamp" value="2025-04-03T17:42:41.216+02:00"/>
+		</event>
+		<event>
+			<float key="CRP" value="209.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T17:49:22.629+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="131.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:55:08.816+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="342.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:58:12.789+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="CRP" value="5.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HC"/>
+			<date key="time:timestamp" value="2025-04-03T18:17:21.102+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="222.10000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="H"/>
+			<date key="time:timestamp" value="2025-04-03T18:22:24.232+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="272.90000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:29:20.818+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="CRP" value="210.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:32:37.183+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="95.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:34:12.411+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="76.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:32:15.084+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="210.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="X"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="FD"/>
+			<date key="time:timestamp" value="2025-04-03T19:41:56.570+02:00"/>
+			<int key="Age" value="45"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="D"/>
+			<date key="time:timestamp" value="2025-04-03T19:42:04.863+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="377.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:46:11.478+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="16.400000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:53:46.560+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="319.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HD"/>
+			<date key="time:timestamp" value="2025-04-03T19:58:57.779+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="225.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:59:37.305+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="258.40000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T20:02:52.785+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T20:06:49.681+02:00"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 09 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="133.20000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:08:56.811+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="34.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:11:51.306+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="146.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:22:20.308+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="CRP" value="5.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:27:09.216+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="217.20000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T16:41:35.811+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="InfectionSuspected" value="true"/>
+			<string key="org:group" value="A"/>
+			<string key="DiagnosticBlood" value="true"/>
+			<string key="DisfuncOrg" value="true"/>
+			<string key="SIRSCritTachypnea" value="true"/>
+			<string key="Hypotensie" value="false"/>
+			<string key="SIRSCritHeartRate" value="false"/>
+			<string key="Infusion" value="true"/>
+			<string key="DiagnosticArtAstrup" value="false"/>
+			<string key="concept:name" value="ER Registration"/>
+			<int key="Age" value="22"/>
+			<string key="DiagnosticIC" value="true"/>
+			<string key="DiagnosticSputum" value="true"/>
+			<string key="DiagnosticLiquor" value="true"/>
+			<string key="DiagnosticOther" value="true"/>
+			<string key="SIRSCriteria2OrMore" value="true"/>
+			<string key="DiagnosticXthorax" value="false"/>
+			<string key="SIRSCritTemperature" value="true"/>
+			<date key="time:timestamp" value="2025-04-03T16:51:26.552+02:00"/>
+			<string key="DiagnosticUrinaryCulture" value="false"/>
+			<string key="SIRSCritLeucos" value="false"/>
+			<string key="Oligurie" value="true"/>
+			<string key="DiagnosticLacticAcid" value="false"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<string key="Hypoxie" value="false"/>
+			<string key="DiagnosticUrinarySediment" value="true"/>
+			<string key="DiagnosticECG" value="false"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<string key="Diagnose" value="OB"/>
+			<date key="time:timestamp" value="2025-04-03T17:01:55.276+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:03:20.029+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="78.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:05:30.854+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="CRP" value="355.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:06:06.940+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="243.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T17:07:11.416+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T17:09:46.892+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Sepsis Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:11:52.286+02:00"/>
+			<int key="Age" value="25"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Antibiotics"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<date key="time:timestamp" value="2025-04-03T17:25:31.219+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="218.20000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:28:53.923+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="30.3"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:36:54.139+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="CRP" value="6.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YD"/>
+			<date key="time:timestamp" value="2025-04-03T17:40:50.700+02:00"/>
+			<int key="Age" value="23"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="66.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T17:48:10.049+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="40.300000000000004"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:17:52.888+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<float key="CRP" value="7.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HD"/>
+			<date key="time:timestamp" value="2025-04-03T18:20:22.822+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="CRP" value="512.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:25:08.873+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<float key="LacticAcid" value="0.30000000000000004"/>
+			<date key="time:timestamp" value="2025-04-03T18:38:31.927+02:00"/>
+		</event>
+		<event>
+			<float key="CRP" value="542.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HC"/>
+			<date key="time:timestamp" value="2025-04-03T18:39:37.154+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<float key="LacticAcid" value="11.5"/>
+			<date key="time:timestamp" value="2025-04-03T18:53:25.748+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T19:03:24.040+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T19:07:40.155+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="E"/>
+			<date key="time:timestamp" value="2025-04-03T19:33:18.174+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<date key="time:timestamp" value="2025-04-03T19:41:29.288+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="275.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="QB"/>
+			<date key="time:timestamp" value="2025-04-03T19:46:32.778+02:00"/>
+			<int key="Age" value="86"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="257.1"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T20:06:23.911+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="Case No. 10 [positive]"/>
+		<string key="trace:type" value="positive"/>
+		<event>
+			<float key="Leucocytes" value="123.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:10:49.559+02:00"/>
+			<int key="Age" value="42"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:12:14.001+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission NC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:28:04.797+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T16:33:14.404+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="120.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:33:29.532+02:00"/>
+			<int key="Age" value="33"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="73.60000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T16:42:34.746+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="47.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T16:53:03.444+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="D"/>
+			<date key="time:timestamp" value="2025-04-03T16:55:17.048+02:00"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Sepsis Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:04:37.116+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Antibiotics"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T17:37:46.835+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="358.5"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="QB"/>
+			<date key="time:timestamp" value="2025-04-03T17:43:19.811+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="230.9"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T17:55:37.784+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Release A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="C"/>
+			<date key="time:timestamp" value="2025-04-03T18:00:15.838+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="55.6"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T18:23:54.705+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="IV Liquid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:35:20.409+02:00"/>
+			<int key="Age" value="21"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="84.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="D"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="SB"/>
+			<date key="time:timestamp" value="2025-04-03T18:36:35.294+02:00"/>
+			<int key="Age" value="22"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<float key="LacticAcid" value="5.5"/>
+			<date key="time:timestamp" value="2025-04-03T18:40:26.357+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="217.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T18:51:35.939+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T18:54:12.723+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="83.30000000000001"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:03:00.139+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="281.40000000000003"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:09:30.789+02:00"/>
+			<int key="Age" value="32"/>
+		</event>
+		<event>
+			<string key="concept:name" value="Admission IC"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<date key="time:timestamp" value="2025-04-03T19:23:49.098+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="355.20000000000005"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="B"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YB"/>
+			<date key="time:timestamp" value="2025-04-03T19:30:40.547+02:00"/>
+			<int key="Age" value="25"/>
+		</event>
+		<event>
+			<float key="CRP" value="5.0"/>
+			<string key="concept:name" value="CRP"/>
+			<string key="org:group" value="C"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T19:42:57.531+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="74.7"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="?"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="HE"/>
+			<date key="time:timestamp" value="2025-04-03T19:48:58.658+02:00"/>
+			<int key="Age" value="90"/>
+		</event>
+		<event>
+			<string key="concept:name" value="ER Triage"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="A"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T20:00:29.291+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<string key="concept:name" value="LacticAcid"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="org:group" value="B"/>
+			<float key="LacticAcid" value="1.0"/>
+			<date key="time:timestamp" value="2025-04-03T20:01:43.609+02:00"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="255.20000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T20:03:07.717+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="137.70000000000002"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="A"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YC"/>
+			<date key="time:timestamp" value="2025-04-03T20:06:17.766+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+		<event>
+			<float key="Leucocytes" value="148.0"/>
+			<string key="concept:name" value="Leucocytes"/>
+			<string key="org:group" value="E"/>
+			<string key="lifecycle:transition" value="complete"/>
+			<string key="Diagnose" value="YA"/>
+			<date key="time:timestamp" value="2025-04-03T20:06:36.814+02:00"/>
+			<int key="Age" value="20"/>
+		</event>
+	</trace>
+</log>

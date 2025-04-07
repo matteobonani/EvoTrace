@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
 import random
+import pm4py
 from Declare4Py.ProcessMiningTasks.ConformanceChecking.MPDeclareResultsBrowser import MPDeclareResultsBrowser
 from Declare4Py.ProcessMiningTasks.ConformanceChecking.MPDeclareAnalyzer import MPDeclareAnalyzer
 from matplotlib import pyplot as plt
@@ -9,6 +10,62 @@ from matplotlib import pyplot as plt
 
 class Tools:
     """A utility class that provides various helper methods."""
+
+
+    @staticmethod
+    def xes_to_csv(xes_path, csv_path):
+        """
+        Convert an XES file to a CSV file.
+
+        Parameters:
+        - xes_path (str): Path to the input XES file.
+        - csv_path (str): Path to save the output CSV file.
+        """
+        event_log = pm4py.read_xes(xes_path)
+        event_log.to_csv(csv_path, index=False)
+
+    @staticmethod
+    def create_df(pop_size, trace_length, csv_path, save_path):
+        timestamps = Tools.generate_random_timestamps(trace_length)
+
+        case_concept_name = np.array([[str(i + 1)] * trace_length for i in range(pop_size)])
+
+        timestamps = pd.to_datetime(timestamps)
+        repeated_timestamps = np.tile(timestamps, (pop_size, 1))
+
+        df = pd.read_csv(csv_path, header=None)
+        concept_name = df[0].str.split(";").explode().to_numpy()
+
+        data = {
+            'case:concept:name': case_concept_name.flatten(),
+            'concept:name': concept_name.flatten(),
+            'timestamp': repeated_timestamps.flatten()
+        }
+
+        df_final = pd.DataFrame(data)
+        df_final.to_csv(save_path, index=False)
+
+    @staticmethod
+    def extract_traces_from_xes(xes_path, n_events_per_trace):
+        # Load XES file into a Pandas DataFrame
+        event_log = pm4py.read_xes(xes_path)
+
+        # Convert to DataFrame
+        df = pm4py.convert_to_dataframe(event_log)
+
+        # Ensure necessary columns exist
+        if 'case:concept:name' not in df.columns or 'concept:name' not in df.columns:
+            raise ValueError(
+                "The XES file does not contain the required 'case:concept:name' and 'concept:name' columns.")
+
+        # Group events by case ID and extract activity names
+        traces = [
+            activities[:n_events_per_trace] for activities in
+            (df.groupby('case:concept:name')['concept:name'].apply(list).values)
+            if len(activities) >= n_events_per_trace
+        ]
+
+        return traces
 
     @staticmethod
     def generate_random_timestamps(length):
@@ -147,16 +204,15 @@ class Tools:
             Path to the CSV file containing traces.
 
         n_events_per_trace : int
-            Number of events per trace.
+            Number of events per trace (truncates or pads each trace to this length).
         """
-        # read CSV assuming events are separated by semicolons
-        df = pd.read_csv(traces_path, header=None, delimiter=";")
 
-        # convert each row into a list of event sequences
+        df = pd.read_csv(traces_path, header=None, delimiter=";")
         traces = df.values.tolist()
+
         encoded_traces = [encoder.encode(trace) for trace in traces]
 
-        # convert encoded_traces to a numpy array for efficient processing
+
         population = np.array(encoded_traces)
 
         # calculate the diversity for each trace
@@ -167,7 +223,7 @@ class Tools:
 
         overall_diversity = np.mean(diversity_scores)
 
-        print(f"Overall Diversity Score: {overall_diversity / n_events_per_trace}")
+        print(f"Overall Diversity Score: {overall_diversity/n_events_per_trace}")
 
     @staticmethod
     def save_simple_solution(result_population, encoder, exec_time, algorithm, population, trace_length, constraint_location, constraint_index=None):

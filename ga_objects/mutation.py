@@ -67,6 +67,11 @@ def mut_pm_int(X, xl, xu, eta, prob, at_least_once):
 
     return Xp
 
+
+# ---------------------------------------------------------------------------------------------------------
+# Class
+# ---------------------------------------------------------------------------------------------------------
+
 class IntegerPolynomialMutation(Mutation):
     """
     Integer version of polynomial mutation.
