@@ -1,0 +1,2 @@
+ID,Population,TraceLength,Model,Problem,Mutation,Termination,ExecutionTime,DiversityScore,ConstraintScore,Generations,Iteration
+1,3000,50,model1.decl,ProblemSingle,IntegerPolynomialMutation eta=1 prob=0.5,DiversityTermination,304.37,0.88,0.00,275,1

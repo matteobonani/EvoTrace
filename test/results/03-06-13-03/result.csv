@@ -1,2 +1,0 @@
-ID,Population,TraceLength,Model,Problem,Mutation,ExecutionTime,DiversityScore,ConstraintScore,NumberViolationScore,Iteration
-1,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=20,119.69,0.01,0.17,NaN,1

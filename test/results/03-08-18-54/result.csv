@@ -1,9 +1,0 @@
-ID,Population,TraceLength,Model,Problem,Mutation,Termination,ExecutionTime,DiversityScore,ConstraintScore,Iteration
-1,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=5,default,116.17,0.91,3.34,1
-2,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=5,myTerminator,302.94,0.92,2.94,1
-3,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=5,default,53.83,0.77,0.00,1
-4,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=5,myTerminator,37.93,0.75,0.00,1
-5,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=20,default,114.79,0.91,3.12,1
-6,3000,50,model1.decl,ProblemMultiNoConstElementWise,IntegerPolynomialMutation with eta=20,myTerminator,302.75,0.91,2.88,1
-7,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,default,53.88,0.78,0.00,1
-8,3000,50,model1.decl,ProblemSingleElementWise,IntegerPolynomialMutation with eta=20,myTerminator,28.42,0.74,0.00,1
