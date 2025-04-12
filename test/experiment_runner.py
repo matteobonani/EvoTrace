@@ -2,6 +2,8 @@ import warnings
 import logging
 import itertools
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from datetime import datetime
 from utils.problemSetup import ProblemSetup
 from ga_objects.problem import ProblemSingle
@@ -35,9 +37,11 @@ def main():
 
     # timestamped results directory
     current_date = datetime.today().strftime('%m-%d-%H-%M')
-    directory = f"results/{current_date}"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    directory = os.path.join(base_dir, "results", current_date)
     os.makedirs(directory, exist_ok=True)
-    file_name = f"{directory}/result.csv"
+
+    file_name = os.path.join(directory, "result.csv")
 
     with open(file_name, "a") as f:
         f.write("ID,Population,TraceLength,Model,Problem,Mutation,Termination,"
@@ -51,11 +55,14 @@ def main():
                 pop_size, trace_length, model, mutation, crossover, problem, termination = combination
 
                 print(f"Run {run} - ID {ID}: Population={pop_size}, TraceLength={trace_length}, Model={model}, "
-                      f"Problem={problem.__name__}, Mutation={type(mutation).__name__} eta={mutation.eta} prob={mutation.prob.value}, "
+                      f"Problem={problem.__name__}, Mutation={type(mutation).__name__}, "
                       f"Crossover={type(crossover).__name__}, Termination={type(termination).__name__}")
 
+                plot_path = os.path.join(base_dir, "results", f"{directory}/plots")
+                solution_path = os.path.join(base_dir, f"{directory}/encoded_traces")
+
                 problemSetup = ProblemSetup(pop_size, trace_length, model, mutation, crossover, problem, termination)
-                problemSetup.run_experiment(run, ID, f, model, f"{directory}/plots", f"{directory}/encoded_traces")
+                problemSetup.run_experiment(run, ID, f, model, plot_path, solution_path)
 
                 ID += 1
 

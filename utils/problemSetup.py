@@ -9,6 +9,7 @@ from pymoo.algorithms.soo.nonconvex.ga import GA
 import os
 from typing import Dict, Any, Type
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # ---------------------------------------------------------------------------------------------------------
 # Function
@@ -138,12 +139,12 @@ class ProblemSetup:
     def _load_initial_population(self, model_name: str):
         """Loads the initial population based on the model name."""
         model_name_no_ext = os.path.splitext(model_name)[0]
-        file_path = os.path.join("..", "declare_models", model_name_no_ext, f"initial_pop_{self.trace_length}.csv")
+        file_path = os.path.join(BASE_DIR, "..", "declare_models", model_name_no_ext, f"initial_pop_{self.trace_length}.csv")
         return Setup.extract_traces(file_path, self.trace_length)
 
     def _initialize_problem_instance(self, model_name: str, initial_population):
         """Initializes the problem instance."""
-        model_path = os.path.join("..", "declare_models", os.path.splitext(model_name)[0], model_name)
+        model_path = os.path.join(BASE_DIR, "..", "declare_models", os.path.splitext(model_name)[0], model_name)
 
         encoder, d4py_obj, event_log, dataframe, encoded_pop, lb, ub = Setup.initialize_shared_components(
             path_to_declareModel=model_path,
