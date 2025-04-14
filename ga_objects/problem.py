@@ -12,7 +12,7 @@ import time
 
 
 
-class BaseProblem(ElementwiseProblem):
+class BaseElementProblem(ElementwiseProblem):
     """
     Base class for defining element-wise optimization problems.
 
@@ -88,7 +88,7 @@ class BaseProblem(ElementwiseProblem):
         self.current_population = np.array(population)
 
 
-class ProblemMultiElementWise(BaseProblem):
+class ProblemMultiElementWise(BaseElementProblem):
     """
     Multi-objective problem with constraints.
 
@@ -140,7 +140,7 @@ class ProblemMultiElementWise(BaseProblem):
         out["F"] = [diversity_score, violation_score]
 
 
-class ProblemMultiNoConstElementWise(BaseProblem):
+class ProblemMultiNoConstElementWise(BaseElementProblem):
     """
     Multi-objective problem without constraints.
 
@@ -172,7 +172,7 @@ class ProblemMultiNoConstElementWise(BaseProblem):
         out["F"] = [weighted_diversity, weighted_constraint_eval]
 
 
-class ProblemSingleElementWise(BaseProblem):
+class ProblemSingleElementWise(BaseElementProblem):
     """
     Single-objective problem with constraints.
 
@@ -198,7 +198,7 @@ class ProblemSingleElementWise(BaseProblem):
         out["F"] = [-diversity_score]
 
 
-class ProblemSingleElementWiseNoConstraints(BaseProblem):
+class ProblemSingleElementWiseNoConstraints(BaseElementProblem):
     """
     Single-objective problem without constraints.
 
@@ -212,40 +212,9 @@ class ProblemSingleElementWiseNoConstraints(BaseProblem):
         diversity_score = -self.calculate_diversity(x, self.current_population) # pymoo minimizes, so diversity must be negative (high hamming distance = high diversity)
         out["F"] = [diversity_score]
 
-
-class ProblemSingle(Problem):
-    """
-    Single-objective optimization problem.
-
-    Objective:
-    - Maximize diversity (minimize similarity to existing population).
-
-    Constraints:
-    - Constraint satisfaction score must be <= 0 for feasibility.
-
-    Parameters:
-    ----------
-    trace_length : int
-        The length of each trace.
-    encoder : Encoder
-        Converts between activity names and integer representations.
-    d4py : DeclareForPyModel
-        The declarative model used for constraint checking.
-    initial_population : list
-        The initial population of traces.
-    xl : np.ndarray or int
-        The lower bound of decision variables.
-    xu : np.ndarray or int
-        The upper bound of decision variables.
-    event_log : EventLog
-        The event log containing process execution traces.
-    dataframe : pd.DataFrame
-        The dataframe representation of the event log.
-    """
-
-    def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
-        super().__init__(n_var=trace_length, n_obj=1, n_constr=1, xl=xl, xu=xu)
-
+class BaseProblem(Problem):
+    def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj, n_constr):
+        super().__init__(n_var=trace_length, n_obj=n_obj, n_constr=n_constr, xl=xl, xu=xu)
         self.trace_length = trace_length
         self.encoder = encoder
         self.d4py = d4py
@@ -254,118 +223,75 @@ class ProblemSingle(Problem):
         self.event_log = event_log
         self.dataframe = dataframe
 
-
     def evaluate_constraints_batch(self, X):
-        """
-        Evaluate constraints for a batch of traces in parallel.
-
-        Parameters:
-        ----------
-        X : np.ndarray
-            A batch of traces.
-
-        Returns:
-        -------
-        np.ndarray
-            An array of constraint scores for each trace.
-        """
-
-        constraint_scores = Parallel(n_jobs=-1)(delayed(self.evaluate_constraints)(trace) for trace in X)
-        return np.array(constraint_scores)
+        return np.array(Parallel(n_jobs=-1)(delayed(self.evaluate_constraints)(trace) for trace in X))
 
     def evaluate_constraints(self, trace):
-        """
-        Evaluate constraint violations for a single trace.
-
-        Parameters:
-        ----------
-        trace : np.ndarray
-            A single encoded process trace.
-
-        Returns:
-        -------
-        int
-            The total number of violated constraints.
-        """
         decoded_trace = self.encoder.decode(trace)
         self.dataframe["concept:name"] = pd.DataFrame(decoded_trace)
         self.event_log.log = self.dataframe
-        self.event_log.to_eventlog() # 1.3s | pop = 3000 - trace_length = 50 - model1
+        self.event_log.to_eventlog()
 
         basic_checker = MPDeclareAnalyzer(log=self.event_log, declare_model=self.d4py, consider_vacuity=True)
-        conf_check_res: MPDeclareResultsBrowser = basic_checker.run() # 1.7s | pop = 3000 - trace_length = 50 - model1
+        conf_check_res = basic_checker.run()
         metric_state = np.array(conf_check_res.get_metric(trace_id=0, metric="state"))
-        metric_state_inverted = 1 - metric_state
-
-        return np.sum(metric_state_inverted)
+        return np.sum(1 - metric_state)
 
     def evaluate_all_constraints(self, population):
-
-        start_time = time.perf_counter()
         decoded_pop = self.encoder.decode(population)
-
         flattened_decoded_pop = np.array(decoded_pop).flatten()
-        end_time = time.perf_counter()
-        print(f"Time elapsed in decoding and flatten: {end_time - start_time:.6f} seconds")
-
         self.dataframe["concept:name"] = pd.DataFrame(flattened_decoded_pop)
-
-
-
         self.event_log.log = self.dataframe
-
-
-        start_time = time.perf_counter()
         self.event_log.to_eventlog()
-        end_time = time.perf_counter()
-        print(f"Time elapsed eventlog.to_eventlog: {end_time - start_time:.6f} seconds")
-
 
         basic_checker = MPDeclareAnalyzer(log=self.event_log, declare_model=self.d4py, consider_vacuity=True)
-
-
-        start_time = time.perf_counter()
-        conf_check_res: MPDeclareResultsBrowser = basic_checker.run()
-        end_time = time.perf_counter()
-        print(f"Time elapsed basic_checker.run(): {end_time - start_time:.6f} seconds")
-
+        conf_check_res = basic_checker.run()
         metric_states = np.array(conf_check_res.get_metric(metric="state"))
-
-
-        metric_states_inverted = 1 - metric_states
-
-
-        return np.sum(metric_states_inverted, axis=1)
+        return np.sum(1 - metric_states, axis=1)
 
     def set_current_population(self, population):
-        """Update the current population."""
         self.current_population = np.array(population)
 
+
+class ProblemSingle(BaseProblem):
+    def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
+        super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=1, n_constr=1)
+
     def _evaluate(self, X, out, *args, **kwargs):
-        """
-        Evaluate multiple traces one-by-one in a loop.
-
-        Parameters:
-        ----------
-        X : np.ndarray
-            A batch of traces.
-        out : dict
-            Dictionary to store results.
-        """
-
         constraint_scores = self.evaluate_constraints_batch(X)
-        # constraint_scores = self.evaluate_all_constraints(X)
-
-        # pairwise Hamming distance matrix
-        dist_matrix = cdist(X,self.current_population, metric='hamming')
-
-        # n = dist_matrix.shape[0]
-        # mean_per_trace = (np.sum(dist_matrix, axis=1) - np.diag(dist_matrix)) / (n - 1)
-
+        dist_matrix = cdist(X, self.current_population, metric='hamming')
         diversity_scores = np.mean(dist_matrix, axis=1)
 
         out["G"] = constraint_scores[:, None]
         out["F"] = -diversity_scores[:, None]
+
+
+class ProblemMulti(BaseProblem):
+    def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
+        super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=2, n_constr=0)
+
+    def _evaluate(self, X, out, *args, **kwargs):
+        constraint_scores = self.evaluate_constraints_batch(X)
+        dist_matrix = cdist(X, self.current_population, metric='hamming')
+        diversity_scores = np.mean(dist_matrix, axis=1)
+
+        # # Weights
+        # diversity_weight = 0.2
+        # constraint_weight = 0.8
+        #
+        # # Normalization constants
+        # max_diversity = 50
+        # max_constraint = 10
+        #
+        # # Normalize
+        # normalized_diversity = diversity_scores / max_diversity
+        # normalized_constraints = constraint_scores / max_constraint
+        #
+        # # Weighted score computation (still arrays)
+        # weighted_diversity = diversity_weight * normalized_diversity
+        # weighted_constraint = constraint_weight * normalized_constraints
+
+        out["F"] = [-diversity_scores[:, None], constraint_scores[:, None]]
 
 
 

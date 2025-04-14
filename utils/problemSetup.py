@@ -27,12 +27,12 @@ def _get_scores_configuration(problem, constraint_scores, first_objective, secon
             "weighted_diversity_value": 1,
             "weighted_constraint_value": 1
         },
-        ProblemMultiNoConstElementWise: {
+        ProblemMulti: {
             "diversity_scores": first_objective,
             "constraint_scores": second_objective,
             "n_violations_scores": None,
-            "weighted_diversity_value": 0.2,
-            "weighted_constraint_value": 0.8
+            "weighted_diversity_value": 1,
+            "weighted_constraint_value": 1
         },
         ProblemSingleElementWise: {
             "diversity_scores": first_objective,
@@ -68,10 +68,10 @@ def _get_algorithm_configuration(problem: Any) -> Dict[str, Any]:
             "constraint_index": None,
             "n_subplots": 3
         },
-        ProblemMultiNoConstElementWise: {
+        ProblemMulti: {
             "algorithm": NSGA2,
             "constraint_location": "F",
-            "constraint_index": 0,
+            "constraint_index": 1,
             "n_subplots": 2
         },
         ProblemSingleElementWise: {
