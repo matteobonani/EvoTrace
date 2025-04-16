@@ -320,14 +320,10 @@ class ProblemMultiObjectiveNovelty(BaseProblem):
         k = min(5, novelty_matrix.shape[1])
         novelty_scores = np.mean(np.sort(novelty_matrix, axis=1)[:, :k], axis=1)
 
-        pairwise_dist = cdist(X, X, metric='hamming')
-        std_dev = np.std(pairwise_dist, axis=1)
-
         out["G"] = constraint_scores[:, None]
         out["F"] = np.column_stack([
             -diversity_scores,
-            -novelty_scores,
-            -std_dev  # Maximize standard deviation (diversity of population around this individual)
+            -novelty_scores
         ])
 
         top_n = 5

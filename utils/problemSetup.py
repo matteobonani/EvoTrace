@@ -171,10 +171,6 @@ class ProblemSetup:
         """Sets up the algorithm based on the problem type."""
         config = _get_algorithm_configuration(problem_instance)
 
-
-        # For example, 3 objectives, and we want ~100 individuals
-        ref_dirs = get_reference_directions("das-dennis", n_dim=3, n_partitions=12)
-
         algorithm = config["algorithm"](
             problem=problem_instance,
             pop_size=self.pop_size,
@@ -182,8 +178,7 @@ class ProblemSetup:
             crossover=self.crossover,
             mutation=self.mutation,
             callback=UpdatePopulationCallback(),
-            eliminate_duplicates=False,
-            ref_dirs=ref_dirs
+            eliminate_duplicates=False
         )
 
         return algorithm, config
