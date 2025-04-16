@@ -45,17 +45,22 @@ class UpdatePopulationCallback(Callback):
         # store current population
         algorithm.problem.set_current_population(population)
 
+        # TODO now is setted for a multi obj with CV
         G = algorithm.pop.get("G")
         if G is not None and G.size > 0:
             algorithm.pop.set("F", -mean_per_trace[:, None])
+            # ---------------------------------------
+            # F = algorithm.pop.get("F")
+            # F[:, 0] = -mean_per_trace  # set first column
+            # algorithm.pop.set("F", F)
             self.constraint_history.append(np.mean(G[:, 0]))
 
-        F = algorithm.pop.get("F")
-        # self.first_objective.append(np.mean(F[:, None]))
-        if F.shape[1] > 1:  # if F[1] exists (multi obj GA)
-            F[:, 0] = -mean_per_trace  # set first column
-            algorithm.pop.set("F", F)
-            self.second_objective.append(np.mean(F[:, 1]))
+        # F = algorithm.pop.get("F")
+        # # self.first_objective.append(np.mean(F[:, None]))
+        # if F.shape[1] > 1:  # if F[1] exists (multi obj GA)
+        #     F[:, 0] = -mean_per_trace  # set first column
+        #     algorithm.pop.set("F", F)
+        #     self.second_objective.append(np.mean(F[:, 1]))
 
     def get_data(self) -> Dict[str, Any]:
         """Retrieve and return recorded data from the optimization process."""

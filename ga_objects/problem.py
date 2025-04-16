@@ -268,7 +268,7 @@ class ProblemSingle(BaseProblem):
 
 class ProblemMulti(BaseProblem):
     def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
-        super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=2, n_constr=0)
+        super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=2, n_constr=1)
 
     def _evaluate(self, X, out, *args, **kwargs):
         constraint_scores = self.evaluate_constraints_batch(X)
@@ -291,8 +291,55 @@ class ProblemMulti(BaseProblem):
         # weighted_diversity = diversity_weight * normalized_diversity
         # weighted_constraint = constraint_weight * normalized_constraints
 
+        out["G"] = constraint_scores[:, None]
+
         out["F"] = [-diversity_scores[:, None], constraint_scores[:, None]]
 
+
+class ProblemMultiObjectiveNovelty(BaseProblem):
+    def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
+        super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=3, n_constr=1)
+
+        # Initialize a novelty archive (empty at start)
+        self.novelty_archive = np.empty((0, trace_length))
+
+    def _evaluate(self, X, out, *args, **kwargs):
+
+        constraint_scores = self.evaluate_constraints_batch(X)
+        dist_matrix = cdist(X, self.current_population, metric='hamming')
+        diversity_scores = np.mean(dist_matrix, axis=1)
+
+
+        if self.novelty_archive.shape[0] > 0:
+            novelty_matrix = cdist(X, self.novelty_archive, metric='hamming')
+
+        else:
+            novelty_matrix = cdist(X, self.current_population, metric='hamming')
+
+        # Use k-nearest neighbors to compute novelty
+        k = min(5, novelty_matrix.shape[1])
+        novelty_scores = np.mean(np.sort(novelty_matrix, axis=1)[:, :k], axis=1)
+
+        pairwise_dist = cdist(X, X, metric='hamming')
+        std_dev = np.std(pairwise_dist, axis=1)
+
+        out["G"] = constraint_scores[:, None]
+        out["F"] = np.column_stack([
+            -diversity_scores,
+            -novelty_scores,
+            -std_dev  # Maximize standard deviation (diversity of population around this individual)
+        ])
+
+        top_n = 5
+        top_n_idx = np.argsort(novelty_scores)[-top_n:]
+        new_novel = X[top_n_idx]
+
+        self.novelty_archive = np.vstack([self.novelty_archive, new_novel])
+
+        # Optionally limit archive size
+        archive_limit = 500
+        if self.novelty_archive.shape[0] > archive_limit:
+            self.novelty_archive = self.novelty_archive[-archive_limit:]
 
 
 

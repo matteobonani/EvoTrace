@@ -10,6 +10,7 @@ from ga_objects.problem import ProblemSingle
 from pymoo.operators.crossover.sbx import SBX
 from ga_objects.mutation import IntegerPolynomialMutation
 from ga_objects.terminator import DiversityTermination
+from pymoo.operators.crossover.pntx import TwoPointCrossover
 
 # silence warnings and logs
 logging.getLogger('matplotlib').setLevel(logging.WARNING)
@@ -31,7 +32,7 @@ def main():
     num_event_list = [30,50,70,90]
     declare_model_list = ["model1.decl", "model2.decl", "model3.decl", "model4.decl"]
     mutation_list = [IntegerPolynomialMutation(prob=0.5, eta=1)]
-    crossover_list = [SBX(prob=0.9, eta=1)]
+    crossover_list = [TwoPointCrossover(prob=0.9)]
     problem_list = [ProblemSingle]
     termination_list = [DiversityTermination(0.9, 300)]
 

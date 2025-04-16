@@ -1,3 +1,4 @@
+from pymoo.algorithms.moo.nsga3 import NSGA3
 from pymoo.termination.default import DefaultMultiObjectiveTermination, DefaultSingleObjectiveTermination
 from ga_objects.callback import UpdatePopulationCallback
 from utils.testSetup import Setup
@@ -8,6 +9,7 @@ from ga_objects.terminator import MyTermination, DiversityTermination
 from pymoo.algorithms.soo.nonconvex.ga import GA
 import os
 from typing import Dict, Any, Type
+from pymoo.util.ref_dirs import get_reference_directions
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -20,13 +22,13 @@ def _get_scores_configuration(problem, constraint_scores, first_objective, secon
     problem_type = type(problem)
 
     score_configs = {
-        ProblemMultiElementWise: {
-            "diversity_scores": first_objective,
-            "constraint_scores": constraint_scores,
-            "n_violations_scores": second_objective,
-            "weighted_diversity_value": 1,
-            "weighted_constraint_value": 1
-        },
+        # ProblemSingleObjectiveNovelty: {
+        #     "diversity_scores": first_objective,
+        #     "constraint_scores": constraint_scores,
+        #     "n_violations_scores": None,
+        #     "weighted_diversity_value": 1,
+        #     "weighted_constraint_value": 1
+        # },
         ProblemMulti: {
             "diversity_scores": first_objective,
             "constraint_scores": second_objective,
@@ -34,7 +36,7 @@ def _get_scores_configuration(problem, constraint_scores, first_objective, secon
             "weighted_diversity_value": 1,
             "weighted_constraint_value": 1
         },
-        ProblemSingleElementWise: {
+        ProblemMultiObjectiveNovelty: {
             "diversity_scores": first_objective,
             "constraint_scores": constraint_scores,
             "n_violations_scores": None,
@@ -62,20 +64,20 @@ def _get_algorithm_configuration(problem: Any) -> Dict[str, Any]:
     problem_type = type(problem)
 
     algorithm_configs = {
-        ProblemMultiElementWise: {
-            "algorithm": NSGA2,
-            "constraint_location": "G",
-            "constraint_index": None,
-            "n_subplots": 3
-        },
+        # ProblemSingleObjectiveNovelty: {
+        #     "algorithm": GA,
+        #     "constraint_location": "G",
+        #     "constraint_index": None,
+        #     "n_subplots": 2
+        # },
         ProblemMulti: {
             "algorithm": NSGA2,
             "constraint_location": "F",
             "constraint_index": 1,
             "n_subplots": 2
         },
-        ProblemSingleElementWise: {
-            "algorithm": GA,
+        ProblemMultiObjectiveNovelty: {
+            "algorithm": NSGA3,
             "constraint_location": "G",
             "constraint_index": None,
             "n_subplots": 2
@@ -169,6 +171,10 @@ class ProblemSetup:
         """Sets up the algorithm based on the problem type."""
         config = _get_algorithm_configuration(problem_instance)
 
+
+        # For example, 3 objectives, and we want ~100 individuals
+        ref_dirs = get_reference_directions("das-dennis", n_dim=3, n_partitions=12)
+
         algorithm = config["algorithm"](
             problem=problem_instance,
             pop_size=self.pop_size,
@@ -177,6 +183,7 @@ class ProblemSetup:
             mutation=self.mutation,
             callback=UpdatePopulationCallback(),
             eliminate_duplicates=False,
+            ref_dirs=ref_dirs
         )
 
         return algorithm, config
@@ -223,6 +230,7 @@ class ProblemSetup:
         try:
             # load initial population and initialize the problem
             initial_pop = self._load_initial_population(model_name)
+
             problem_instance, encoder, encoded_pop = self._initialize_problem_instance(model_name, initial_pop)
 
             # setup the optimization algorithm
