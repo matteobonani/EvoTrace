@@ -28,9 +28,9 @@ def main():
     print(f"Starting {num_runs} run of optimization...")
 
     # configuration lists
-    pop_list = [1000,2000,3000,4000]
-    num_event_list = [30,50,70,90]
-    declare_model_list = ["model1.decl", "model2.decl", "model3.decl", "model4.decl"]
+    pop_list = [4000]
+    num_event_list = [90]
+    declare_model_list = ["model1.decl"]
     mutation_list = [IntegerPolynomialMutation(prob=0.5, eta=1)]
     crossover_list = [TwoPointCrossover(prob=0.9)]
     problem_list = [ProblemSingle]
