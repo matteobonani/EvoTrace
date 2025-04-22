@@ -45,7 +45,7 @@ class UpdatePopulationCallback(Callback):
         # store current population
         algorithm.problem.set_current_population(population)
 
-        # TODO now is setted for a multi obj with CV
+        # TODO now is setted for a single obj with CV
         G = algorithm.pop.get("G")
         if G is not None and G.size > 0:
             algorithm.pop.set("F", -mean_per_trace[:, None])

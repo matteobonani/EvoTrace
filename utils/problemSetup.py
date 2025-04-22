@@ -22,13 +22,13 @@ def _get_scores_configuration(problem, constraint_scores, first_objective, secon
     problem_type = type(problem)
 
     score_configs = {
-        # ProblemSingleObjectiveNovelty: {
-        #     "diversity_scores": first_objective,
-        #     "constraint_scores": constraint_scores,
-        #     "n_violations_scores": None,
-        #     "weighted_diversity_value": 1,
-        #     "weighted_constraint_value": 1
-        # },
+        ProblemSingleSing: {
+            "diversity_scores": first_objective,
+            "constraint_scores": None,
+            "n_violations_scores": None,
+            "weighted_diversity_value": 1,
+            "weighted_constraint_value": 1
+        },
         ProblemMulti: {
             "diversity_scores": first_objective,
             "constraint_scores": second_objective,
@@ -64,12 +64,12 @@ def _get_algorithm_configuration(problem: Any) -> Dict[str, Any]:
     problem_type = type(problem)
 
     algorithm_configs = {
-        # ProblemSingleObjectiveNovelty: {
-        #     "algorithm": GA,
-        #     "constraint_location": "G",
-        #     "constraint_index": None,
-        #     "n_subplots": 2
-        # },
+        ProblemSingleSing: {
+            "algorithm": GA,
+            "constraint_location": None,
+            "constraint_index": None,
+            "n_subplots": 1
+        },
         ProblemMulti: {
             "algorithm": NSGA2,
             "constraint_location": "F",
