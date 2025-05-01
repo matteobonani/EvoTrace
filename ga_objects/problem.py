@@ -268,31 +268,33 @@ class ProblemSingle(BaseProblem):
 
 class ProblemMulti(BaseProblem):
     def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
-        super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=2, n_constr=1)
+        super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=2, n_constr=0)
+        self.n_constraint = len(d4py.get_decl_model_constraints())
+        self.n_events = len(initial_population[0])
 
     def _evaluate(self, X, out, *args, **kwargs):
         constraint_scores = self.evaluate_constraints_batch(X)
         dist_matrix = cdist(X, self.current_population, metric='hamming')
         diversity_scores = np.mean(dist_matrix, axis=1)
 
-        # # Weights
-        # diversity_weight = 0.2
-        # constraint_weight = 0.8
-        #
-        # # Normalization constants
-        # max_diversity = 50
-        # max_constraint = 10
-        #
-        # # Normalize
-        # normalized_diversity = diversity_scores / max_diversity
-        # normalized_constraints = constraint_scores / max_constraint
-        #
-        # # Weighted score computation (still arrays)
-        # weighted_diversity = diversity_weight * normalized_diversity
-        # weighted_constraint = constraint_weight * normalized_constraints
+        # Weights
+        diversity_weight = 0.2
+        constraint_weight = 0.8
+
+        # Normalization constants
+        max_diversity = self.n_events
+        max_constraint = self.n_constraint
+
+        # Normalize
+        normalized_diversity = diversity_scores / max_diversity
+        normalized_constraints = constraint_scores / max_constraint
+
+        # Weighted score computation (still arrays)
+        weighted_diversity = diversity_weight * normalized_diversity
+        weighted_constraint = constraint_weight * normalized_constraints
 
 
-        out["F"] = [-diversity_scores[:, None], constraint_scores[:, None]]
+        out["F"] = [-weighted_diversity[:, None], weighted_constraint[:, None]]
 
 
 class ProblemMultiObjectiveNovelty(BaseProblem):

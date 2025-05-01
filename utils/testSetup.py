@@ -92,22 +92,20 @@ class Setup:
         population = result.pop
 
         return (
-            data.get("constraint_history", None),
-            data.get("first_objective", None),
-            data.get("second_objective", None),
+            data,
             population,
             n_generations,
             execution_time
         )
 
     @staticmethod
-    def invert_weighted_normalization(div_scores, div_weight, cons_scores, cons_weight):
+    def invert_weighted_normalization(div_scores, div_weight, cons_scores, cons_weight, max_constraint, max_diversity):
+
         if div_weight == 1 and cons_weight == 1:
             div_scores = [abs(score) for score in div_scores]
-
         else:
-            div_scores = [abs(score) / div_weight for score in div_scores]
-            cons_scores = [score / cons_weight * 10 for score in cons_scores]
+            div_scores = [abs(score) / div_weight * max_diversity for score in div_scores]
+            cons_scores = [score / cons_weight * max_constraint for score in cons_scores]
 
         return div_scores, cons_scores
 

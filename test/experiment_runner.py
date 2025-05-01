@@ -6,7 +6,7 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from datetime import datetime
 from utils.problemSetup import ProblemSetup
-from ga_objects.problem import ProblemSingle
+from ga_objects.problem import ProblemSingle, ProblemMulti
 from pymoo.operators.crossover.sbx import SBX
 from ga_objects.mutation import IntegerPolynomialMutation
 from ga_objects.terminator import DiversityTermination
@@ -28,13 +28,13 @@ def main():
     print(f"Starting {num_runs} run of optimization...")
 
     # configuration lists
-    pop_list = [4000]
-    num_event_list = [90]
-    declare_model_list = ["model1.decl"]
-    mutation_list = [IntegerPolynomialMutation(prob=0.5, eta=1)]
+    pop_list = [1000,2000,3000,4000]
+    num_event_list = [30,50,70,90]
+    declare_model_list = ["model1.decl","model2.decl","model3.decl","model4.decl"]
+    mutation_list = [IntegerPolynomialMutation(prob=0.7, eta=1)]
     crossover_list = [TwoPointCrossover(prob=0.9)]
-    problem_list = [ProblemSingle]
-    termination_list = [DiversityTermination(0.9, 300)]
+    problem_list = [ProblemMulti]
+    termination_list = [DiversityTermination(0.95, 300)]
 
     # timestamped results directory
     current_date = datetime.today().strftime('%m-%d-%H-%M')

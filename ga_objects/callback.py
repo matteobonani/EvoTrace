@@ -16,6 +16,8 @@ class UpdatePopulationCallback(Callback):
         self.constraint_history = []
         self.second_objective = []
         self.first_objective = []
+        self.max_diversity = 0
+
 
 
     def notify(self, algorithm):
@@ -38,7 +40,7 @@ class UpdatePopulationCallback(Callback):
         # normalized_diversity = mean_per_trace / max_diversity
         # weighted_diversity = diversity_weight * normalized_diversity
 
-        self.first_objective.append(np.mean(mean_per_trace[:, None]))
+
 
         # algorithm.pop.set("F", -mean_per_trace[:, None])
 
@@ -53,21 +55,31 @@ class UpdatePopulationCallback(Callback):
             # F = algorithm.pop.get("F")
             # F[:, 0] = -mean_per_trace  # set first column
             # algorithm.pop.set("F", F)
+            self.first_objective.append(np.mean(mean_per_trace[:, None]))
             self.constraint_history.append(np.mean(G[:, 0]))
 
-        # F = algorithm.pop.get("F")
-        # # self.first_objective.append(np.mean(F[:, None]))
-        # if F.shape[1] > 1:  # if F[1] exists (multi obj GA)
-        #     F[:, 0] = -mean_per_trace  # set first column
-        #     algorithm.pop.set("F", F)
-        #     self.second_objective.append(np.mean(F[:, 1]))
+        F = algorithm.pop.get("F")
+        # self.first_objective.append(np.mean(F[:, None]))
+        if F.shape[1] > 1:  # if F[1] exists (multi obj GA)
+            if self.max_diversity == 0:
+                self.max_diversity = len(population[0])
+            normalized_diversity = mean_per_trace / self.max_diversity
+
+            weighted_diversity = 0.2 * normalized_diversity
+            F[:, 0] = -weighted_diversity  # set first column
+            algorithm.pop.set("F", F)
+
+            self.first_objective.append(np.mean(weighted_diversity))
+            self.second_objective.append(np.mean(F[:, 1]))
+
 
     def get_data(self) -> Dict[str, Any]:
         """Retrieve and return recorded data from the optimization process."""
         return {
             "constraint_history": self.constraint_history,
             "second_objective": self.second_objective,
-            "first_objective": self.first_objective
+            "first_objective": self.first_objective,
+            "max_diversity": self.max_diversity
         }
 
 

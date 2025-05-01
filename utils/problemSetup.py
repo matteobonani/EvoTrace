@@ -33,8 +33,8 @@ def _get_scores_configuration(problem, constraint_scores, first_objective, secon
             "diversity_scores": first_objective,
             "constraint_scores": second_objective,
             "n_violations_scores": None,
-            "weighted_diversity_value": 1,
-            "weighted_constraint_value": 1
+            "weighted_diversity_value": 0.2,
+            "weighted_constraint_value": 0.8
         },
         ProblemMultiObjectiveNovelty: {
             "diversity_scores": first_objective,
@@ -165,7 +165,7 @@ class ProblemSetup:
             dataframe=dataframe
         )
 
-        return problem, encoder, encoded_pop
+        return problem, encoder, encoded_pop, d4py_obj
 
     def _setup_algorithm(self, problem_instance, encoded_pop):
         """Sets up the algorithm based on the problem type."""
@@ -183,16 +183,18 @@ class ProblemSetup:
 
         return algorithm, config
 
-    def _handle_successful_run(self, population, n_gen, exec_time, problem_instance, encoder, run, ID, model_name, file, plot_path,
-                               solution_path, algorithm_args, constraint_scores, first_obj, second_obj):
+    def _handle_successful_run(self, d4py, population, n_gen, exec_time, problem_instance, encoder, run, ID, model_name, file, plot_path,
+                               solution_path, algorithm_args, data):
         """Handles post-processing, saving results, and plotting after a successful run."""
-        scores_args = _get_scores_configuration(problem_instance, constraint_scores, first_obj, second_obj)
+        scores_args = _get_scores_configuration(problem_instance, data.get("constraint_history", None), data.get("first_objective", None), data.get("second_objective", None))
 
         diversity_scores, constraint_scores = Setup.invert_weighted_normalization(
             scores_args["diversity_scores"],
             scores_args["weighted_diversity_value"],
             scores_args["constraint_scores"],
-            scores_args["weighted_constraint_value"]
+            scores_args["weighted_constraint_value"],
+            len(d4py.get_decl_model_constraints()),
+            data.get("max_diversity", None),
         )
 
         Setup.record_experiment_results(file, run, ID, self.pop_size, self.trace_length, model_name,
@@ -226,20 +228,20 @@ class ProblemSetup:
             # load initial population and initialize the problem
             initial_pop = self._load_initial_population(model_name)
 
-            problem_instance, encoder, encoded_pop = self._initialize_problem_instance(model_name, initial_pop)
+            problem_instance, encoder, encoded_pop, d4py = self._initialize_problem_instance(model_name, initial_pop)
 
             # setup the optimization algorithm
             algorithm, algorithm_args = self._setup_algorithm(problem_instance, encoded_pop)
 
             # run
-            constraint_scores, first_obj, second_obj, population, n_gen, exec_time = Setup.run_result(
+            data, population, n_gen, exec_time = Setup.run_result(
                 problem_instance, algorithm, self.termination, False
             )
 
             # save results, and plot
-            self._handle_successful_run(population, n_gen, exec_time, problem_instance, encoder, run, ID,
+            self._handle_successful_run(d4py, population, n_gen, exec_time, problem_instance, encoder, run, ID,
                                         model_name, file, plot_path, solution_path,
-                                        algorithm_args, constraint_scores, first_obj, second_obj)
+                                        algorithm_args, data)
 
         except Exception as e:
             # handle failure
