@@ -1,5 +1,4 @@
 import random
-
 from Declare4Py.D4PyEventLog import D4PyEventLog
 from matplotlib import pyplot as plt
 from ga_objects.utils.encoder import Encoder
@@ -9,6 +8,7 @@ from Declare4Py.ProcessModels.DeclareModel import DeclareModel
 import os
 from ga_objects.problems.multi_objective_problems import *
 from pymoo.optimize import minimize
+from pymoo.constraints.as_obj import ConstraintsAsObjective
 
 
 class Setup:
@@ -100,7 +100,6 @@ class Setup:
 
     @staticmethod
     def invert_weighted_normalization(div_scores, div_weight, cons_scores, cons_weight, max_constraint, max_diversity): #TODO delete max_diversity, is not necessary
-
         if max_diversity is None:
             div_scores = [abs(score) for score in div_scores]
         else:

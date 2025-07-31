@@ -38,6 +38,8 @@ class ProblemSingleElementWiseWiseNoConstraints(BaseElementWiseProblem):
     def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
         super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=1, n_constr=0)
 
+
+
     def _evaluate(self, x, out, *args, **kwargs):
         diversity_score = -self.calculate_diversity(x, self.current_population) # pymoo minimizes, so diversity must be negative (high hamming distance = high diversity)
         out["F"] = [diversity_score]
@@ -45,11 +47,16 @@ class ProblemSingleElementWiseWiseNoConstraints(BaseElementWiseProblem):
 class ProblemSingle(BaseProblem):
     def __init__(self, trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe):
         super().__init__(trace_length, encoder, d4py, initial_population, xl, xu, event_log, dataframe, n_obj=1, n_constr=1)
+        self.n_constraint = len(d4py.get_decl_model_constraints())
 
     def _evaluate(self, X, out, *args, **kwargs):
         constraint_scores = self.evaluate_constraints_batch(X)
         dist_matrix = cdist(X, self.current_population, metric='hamming')
         diversity_scores = np.mean(dist_matrix, axis=1)
 
-        out["G"] = constraint_scores[:, None]
+        max_constraint = self.n_constraint
+
+        normalized_constraints = constraint_scores / max_constraint
+
+        out["G"] = normalized_constraints[:, None]
         out["F"] = -diversity_scores[:, None]

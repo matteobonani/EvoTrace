@@ -101,4 +101,4 @@ class DiversityTermination(Termination):
             # print(f"[Termination] Max time {self.max_time:.1f}s reached.")
             return 1.0
 
-        return min(average_diversity_score / self.required_diversity_threshold, 0.99)
+        return min(self.required_diversity_threshold, 0.99)

@@ -5,7 +5,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from datetime import datetime
-from ga_objects.utils import ProblemSetup
+from ga_objects.utils.problemSetup import ProblemSetup
 from ga_objects.problems.single_objective_problems import ProblemSingle
 from ga_objects.operators.mutation import IntegerPolynomialMutation
 from ga_objects.operators.terminator import DiversityTermination

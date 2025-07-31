@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from Declare4Py.ProcessModels.DeclareModel import DeclareModel
 from Declare4Py.ProcessMiningTasks.LogGenerator.ASP.ASPLogGenerator import AspGenerator
 import time
-from ga_objects.utils import Encoder
+from ga_objects.utils.encoder import Encoder
 from scipy.spatial.distance import pdist
 import numpy as np
 from ga_objects.utils.tools import Tools
@@ -22,9 +22,9 @@ def main():
     print(f"Starting {num_runs} run of optimization...")
 
     # configuration lists
-    pop_list = [1000,2000,3000,4000]
-    num_event_list = [30,50,70,90]
-    declare_model_list = ["model1","model2","model3","model4"]
+    pop_list = [1000]
+    num_event_list = [30]
+    declare_model_list = ["model1"]
 
     # timestamped results directory
     current_date = datetime.today().strftime('%m-%d-%H-%M')

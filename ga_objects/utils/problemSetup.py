@@ -1,3 +1,4 @@
+from pymoo.algorithms.moo.nsga2 import NSGA2
 from pymoo.algorithms.moo.nsga3 import NSGA3
 from pymoo.algorithms.moo.rnsga2 import RNSGA2
 from ga_objects.operators.callback import SingleObjectiveCallback, MultiObjectiveCallback
@@ -57,7 +58,7 @@ def _get_algorithm_configuration(problem: Any) -> Dict[str, Any]:
 
     algorithm_configs = {
         ProblemMulti: {
-            "algorithm": RNSGA2,
+            "algorithm": NSGA2,
             "callback": MultiObjectiveCallback(),
             "constraint_location": "F",
             "constraint_index": 1,
@@ -167,9 +168,7 @@ class ProblemSetup:
             crossover=self.crossover,
             mutation=self.mutation,
             callback=config["callback"],
-            eliminate_duplicates=False,
-            ref_points = np.array([[-0.7, 0.05]]),
-            extreme_points_as_reference_points=False,
+            eliminate_duplicates=False
         )
 
         return algorithm, config
