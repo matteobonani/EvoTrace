@@ -31,11 +31,7 @@ First, clone the repository to your local machine using Git:
 git clone https://github.com/matteobonani/EvoTrace.git
 ```
 ### 2. Navigate to the Project Directory
-Once the repository is cloned, navigate into the project directory:
-
-```bash
-cd EvoTrace
-```
+Once the repository is cloned, navigate into the project directory `cd EvoTrace`.
 
 ### 3. Set Up a Virtual Environment (Optional but Recommended)
 
